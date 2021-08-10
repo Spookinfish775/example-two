@@ -1,15 +1,20 @@
 <template>
-	<div class="test">
-		123123123123123123123
-	</div>
+  <div class="main-wrapper">
+    <Menu />
+  </div>
 </template>
 
 <script>
-export default {};
+import Menu from "../components/layouts/menu/index.vue";
+export default {
+  components: {
+    Menu,
+  },
+};
 </script>
 
 <style lang="scss">
-.test {
-	color: $main-color;
+.main-wrapper {
+  color: $main-color;
 }
 </style>
