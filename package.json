@@ -1,0 +1,24 @@
+{
+  "name": "oktawa",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^1.2.1",
+    "nuxt": "^2.14.0",
+    "nuxt-i18n": "^6.13.10"
+  },
+  "devDependencies": {
+    "sass-loader": "^10.0.4",
+    "node-sass": "^4.13.1"
+  }
+}

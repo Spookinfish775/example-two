@@ -1,0 +1,43 @@
+@mixin max($media) {
+  @media only screen and (max-width: $media) {
+    -webkit-min-device-pixel-ratio: 2;
+    @content;
+  }
+}
+
+@mixin min($media) {
+  @media only screen and (min-width: $media) {
+    -webkit-min-device-pixel-ratio: 2;
+    @content;
+  }
+}
+
+@mixin minmax($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    -webkit-min-device-pixel-ratio: 2;
+    @content;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
