@@ -1,3 +1,7 @@
+@import '../fonts/Montserrat/stylesheet.css';
+@import '../fonts/TTHazelnuts/stylesheet.css';
+// @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap';
+
 @mixin max($media) {
   @media only screen and (max-width: $media) {
     -webkit-min-device-pixel-ratio: 2;
@@ -23,6 +27,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  font-style: normal;
 
   ::-webkit-scrollbar {
     display: none;
@@ -40,4 +46,61 @@ body {
 
 a {
   text-decoration: none;
+}
+
+button{
+  outline: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "TT Hazelnuts";
+}
+
+p {
+  font-family: "Montserrat";
+}
+
+.page-title {
+  color: $main-color;
+  font-family: "TT Hazelnuts";
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.page-text {
+  color: $main-color;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8em;
+  line-height: 1.4em;
+}
+
+.card-title {
+  color: $main-color;
+  font-family: TT Hazelnuts;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: $main-color;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6em;
+  line-height: 2.6em;
+  text-transform: lowercase;
 }
