@@ -5,7 +5,7 @@ export default {
   mode: 'spa',
   target: 'server',
   head: {
-    title: "Oktawa",
+    title: "Aknur",
     meta: [{
       charset: 'utf-8'
     },
@@ -44,7 +44,9 @@ export default {
       '~/assets/themes/index.scss',
     ],
   },
-  plugins: [],
+  plugins: [
+    '~/plugins/slider',
+  ],
   modules: [
     '@nuxtjs/style-resources',
     ['nuxt-i18n', {
