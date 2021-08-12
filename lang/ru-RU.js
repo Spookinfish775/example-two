@@ -11,7 +11,8 @@ export default {
             "туалетное мыло Пякизе",
             "кислородный отбеливатель",
         ],
-        contactsSubMenuLink: "стать дилером"
+        contactsSubMenuLink: "стать дилером",
+
 
     }
 }

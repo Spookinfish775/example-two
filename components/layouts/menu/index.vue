@@ -153,9 +153,9 @@ export default {
       justify-content: space-between;
       width: 3.3em;
       height: 2.93em;
-      z-index: 11;
+      z-index: 10;
       .line {
-        height: 0.37em;
+        height: 0.3em;
         background-color: $main-color;
         transition: 0.4s;
       }
@@ -180,10 +180,10 @@ export default {
           // position: absolute;
         }
         .top {
-          transform: rotate(-47deg) translate(-2.1em);
+          transform: rotate(-46deg) translate(-2.2em);
         }
         .bottom {
-          transform: rotate(47deg) translate(-1.4em);
+          transform: rotate(46deg) translate(-1.5em);
         }
       }
     }
