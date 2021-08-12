@@ -174,7 +174,7 @@ export default {
     }
   }
   .language-panel {
-    padding-left: 24.8em;
+    padding-left: 12.4em;
     .lang {
       font-size: 1.8em;
       font-weight: 500;
