@@ -17,7 +17,16 @@ export default {
         contactsSubMenuLink: "Стать дилером",
         contactsSubMenuLocation: "Туркменистан, Ахалалский велаят, Ак бугдай этрап, город Анев, улица Телекечилер, дом № 14"
     },
-
+    form: {
+        namePlaceholder: "Имя",
+        surnamePlaceholder: "Фамилия",
+        emailPlaceholder: "E-mail",
+        numberPlaceholder: "Номер телефона",
+        countryPlaceholder: "Страна",
+        cityPlaceholder: "Город",
+        textPlaceholder: "Текст",
+        agreePlaceholder: "Я согласен (согласна) на персональную обработку данных"
+    },
     mainPage: {
         hero: {
             flawlessPurity: "Безупречная чистота",
