@@ -6,7 +6,10 @@
     <div class="content">
       <Nuxt />
     </div>
-    <div class="footer">footer</div>
+
+    <div class="footer">
+      <MyFooter />
+    </div>
   </div>
 </template>
 
@@ -35,9 +38,11 @@ window.onresize = fontSize;
 fontSize();
 
 import MyMenu from "~/components/layouts/menu/index.vue";
+import MyFooter from "~/components/layouts/footer/index.vue";
 export default {
   components: {
     MyMenu,
+    MyFooter,
   },
 };
 </script>
