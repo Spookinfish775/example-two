@@ -60,7 +60,7 @@ export default {};
   width: 100%;
   height: 68.75em;
   background-color: $main-color;
-  padding: 0 15.22em;
+  padding: 0 0 0 15.22em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -203,6 +203,147 @@ export default {};
       font-weight: 700;
       line-height: 1.8em;
       color: $default-text-color;
+    }
+  }
+  @include max($large) {
+    width: 100%;
+    height: 89em;
+    padding: 0 0 0 5.41em;
+    .logo {
+      width: 11.4em;
+      img {
+        margin-top: 6.25em;
+        width: 100%;
+      }
+    }
+    .middle-group {
+      height: 45%;
+      width: 100%;
+      .form {
+        width: 70%;
+        height: 100%;
+        .submit-button {
+          width: 1.9em;
+          height: 2.5em;
+          .top {
+            width: 1.7em;
+            height: 0.4em;
+            transform: rotate(45deg) translate(-0.26em);
+          }
+          .bottom {
+            width: 1.7em;
+            height: 0.4em;
+            transform: rotate(-45deg) translate(-0.26em);
+          }
+        }
+        input {
+          font-size: 2.7em;
+        }
+        label {
+          margin-top: 1.4em;
+          font-weight: 300;
+          font-size: 2.1em;
+        }
+        .our-socials {
+          position: absolute;
+          bottom: 0;
+          .header {
+            font-size: 2.03em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $default-text-color;
+          }
+          a {
+            margin-top: 1em;
+            img {
+              margin-top: 1.42em;
+            }
+          }
+        }
+      }
+      .links-group {
+        display: none;
+      }
+    }
+    .bottom-group {
+      width: 42%;
+      margin-bottom: 4em;
+      .location {
+        font-size: 2.03em;
+      }
+      .rights {
+        font-size: 1.7em;
+      }
+    }
+  }
+  @include max($small) {
+    width: 100%;
+    height: 62em;
+    padding: 0 0 0 2.28em;
+    align-items: center;
+    .logo {
+      width: 7em;
+      img {
+        margin-top: 4.7em;
+        width: 100%;
+      }
+    }
+    .middle-group {
+      height: 40%;
+      width: 100%;
+      .form {
+        width: 95%;
+        height: 90%;
+        .submit-button {
+          width: 1.9em;
+          height: 2.5em;
+          .top {
+            width: 1.7em;
+            height: 0.4em;
+            transform: rotate(45deg) translate(-0.3em);
+          }
+          .bottom {
+            width: 1.7em;
+            height: 0.4em;
+            transform: rotate(-45deg) translate(-0.3em);
+          }
+        }
+        input {
+          font-size: 2em;
+        }
+        label {
+          margin-top: 1.4em;
+          font-weight: 300;
+          font-size: 1.71em;
+        }
+        .our-socials {
+          position: absolute;
+          bottom: 0;
+          .header {
+            font-size: 1.43em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $default-text-color;
+          }
+          a {
+            margin-top: 1em;
+            img {
+              margin-top: 1.42em;
+            }
+          }
+        }
+      }
+    }
+    .bottom-group {
+      width: 100%;
+      margin-bottom: 4em;
+      .location {
+        font-size: 1.61em;
+        line-height: 2.4em;
+      }
+      .rights {
+        font-size: 1.43em;
+      }
     }
   }
 }
