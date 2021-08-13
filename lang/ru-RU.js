@@ -12,6 +12,7 @@ export default {
             "кислородный отбеливатель",
         ],
         contactsSubMenuLink: "стать дилером",
+        contactsSubMenuLocation: "Туркменистан, Ахалалский велаят, Ак бугдай этрап, город Анев, улица Телекечилер, дом № 14"
     },
 
     mainPage: {

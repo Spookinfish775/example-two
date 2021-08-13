@@ -50,14 +50,28 @@
       font-size: 2em;
       color: $default-text-color;
       font-weight: 900;
-      padding-left: 6.2em;
+      padding-left: 10.47em;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: relative;
       .product-link {
+        font-size: 1.69em;
         text-transform: uppercase;
         color: $default-text-color;
+      }
+    }
+  }
+  @include max($small) {
+    .product-link-group {
+      width: 100%;
+      height: 46.3em;
+      .link-wrapper {
+        font-weight: 700;
+        padding-left: 1.14em;
+        .product-link {
+          font-size: 1em;
+        }
       }
     }
   }

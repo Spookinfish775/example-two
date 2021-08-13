@@ -80,9 +80,10 @@ export default {
   top: 0;
   left: 0;
   display: flex;
+  z-index: 100;
   justify-content: space-between;
   align-items: center;
-  font-size: 10px;
+  font-family: Montserrat;
   .link-group {
     width: 35%;
     height: 100%;
@@ -93,6 +94,10 @@ export default {
       font-size: 1.4em;
       font-weight: 700;
       text-transform: uppercase;
+      color: $main-color;
+    }
+    .lang-bar {
+      font-weight: 500;
     }
     .productSubMenu {
       display: none;
@@ -151,25 +156,25 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 3.3em;
-      height: 2.93em;
+      width: 5.6em;
+      height: 4.93em;
       z-index: 10;
       .line {
-        height: 0.3em;
+        height: 0.65em;
         background-color: $main-color;
         transition: 0.4s;
       }
       .top {
-        width: 2em;
+        width: 3.8em;
         align-self: flex-end;
-        margin-right: 0.37em;
+        margin-right: 0.4em;
       }
       .middle {
         opacity: 1;
       }
       .bottom {
-        width: 2em;
-        margin-left: 0.37em;
+        width: 3.8em;
+        margin-left: 0.4em;
       }
       &.active {
         .line {
@@ -180,10 +185,14 @@ export default {
           // position: absolute;
         }
         .top {
-          transform: rotate(-46deg) translate(-2.2em);
+          width: 4.5em;
+          height: 0.55em;
+          transform: rotate(-46deg) translate(-3.3em);
         }
         .bottom {
-          transform: rotate(46deg) translate(-1.5em);
+          width: 4.5em;
+          height: 0.55em;
+          transform: rotate(46deg) translate(-2.7em);
         }
       }
     }
@@ -193,6 +202,52 @@ export default {
       position: absolute;
       top: 0;
       left: 0;
+    }
+  }
+  @include max($small) {
+    padding: 0 2.3em;
+    .logo {
+      padding-top: 2em;
+      width: 3.5em;
+      img {
+        width: 100%;
+      }
+    }
+    .menu-button {
+      width: 2.56em;
+      height: 2.28em;
+      z-index: 10;
+      .line {
+        height: 0.45em;
+      }
+      .top {
+        width: 2em;
+        margin-right: 0.1em;
+      }
+      .middle {
+        opacity: 1;
+      }
+      .bottom {
+        width: 2em;
+        margin-left: 0.1em;
+      }
+      &.active {
+        .middle {
+          opacity: 0;
+        }
+        .top {
+          width: 2.4em;
+          height: 0.42em;
+          transform: rotate(-46deg) translate(-1.4em);
+          margin: 0;
+        }
+        .bottom {
+          width: 2.4em;
+          height: 0.42em;
+          transform: rotate(46deg) translate(-1.2em);
+          margin: 0;
+        }
+      }
     }
   }
 }

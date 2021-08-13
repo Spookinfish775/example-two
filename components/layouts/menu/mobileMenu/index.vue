@@ -110,8 +110,6 @@ export default {
   flex-direction: column;
   justify-content: space-evenly;
   .back-button {
-    width: 2em;
-    height: 2em;
     position: absolute;
     left: 5em;
     top: 6.2em;
@@ -121,16 +119,16 @@ export default {
       position: absolute;
       z-index: 11;
       .top {
-        width: 1.2em;
-        height: 0.3em;
+        width: 2.2em;
+        height: 0.45em;
         background-color: $default-text-color;
-        transform: rotate(-45deg) translateX(3px);
+        transform: rotate(-45deg) translateX(0.7em);
       }
       .bottom {
-        width: 1.2em;
-        height: 0.3em;
+        width: 2.2em;
+        height: 0.45em;
         background-color: $default-text-color;
-        transform: rotate(45deg) translateX(3px);
+        transform: rotate(45deg) translateX(0.7em);
       }
     }
   }
@@ -146,7 +144,7 @@ export default {
       font-size: 2em;
       color: $default-text-color;
       font-weight: 900;
-      padding-left: 6.2em;
+      padding-left: 10.47em;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -154,19 +152,20 @@ export default {
       .mobile-link {
         text-transform: uppercase;
         color: $default-text-color;
+        font-size: 1.69em;
       }
       .arrow {
         position: absolute;
         right: 0;
         .top {
-          width: 0.6em;
-          height: 0.15em;
+          width: 1em;
+          height: 0.23em;
           background-color: $default-text-color;
           transform: rotate(45deg) translateX(-3px);
         }
         .bottom {
-          width: 0.6em;
-          height: 0.15em;
+          width: 1em;
+          height: 0.23em;
           background-color: $default-text-color;
           transform: rotate(-45deg) translateX(-3px);
         }
@@ -174,12 +173,13 @@ export default {
     }
   }
   .language-panel {
-    padding-left: 12.4em;
+    padding-left: 20.9em;
     .lang {
       font-size: 1.8em;
       font-weight: 500;
       padding-right: 1.4em;
       color: $default-text-color !important;
+      font-size: 2.5em;
     }
   }
   .products-mobile-submenu {
@@ -188,6 +188,61 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
+  }
+  @include max($small) {
+    justify-content: center;
+    .back-button {
+      left: 2em;
+      top: 2.6em;
+      .arrow {
+        .top {
+          width: 1.6em;
+          height: 0.42em;
+          background-color: $default-text-color;
+          transform: rotate(-45deg) translateX(0.4em);
+        }
+        .bottom {
+          width: 1.6em;
+          height: 0.42em;
+          background-color: $default-text-color;
+          transform: rotate(45deg) translateX(0.4em);
+        }
+      }
+    }
+    .mobile-link-group {
+      width: 100%;
+      height: 36.3em;
+      .link-wrapper {
+        font-weight: 700;
+        padding-left: 2.42em;
+        .mobile-link {
+          font-size: 1.28em;
+        }
+        .arrow {
+          .top {
+            width: 0.8em;
+            height: 0.2em;
+            transform: rotate(45deg) translateX(-3px);
+          }
+          .bottom {
+            width: 0.8em;
+            height: 0.2em;
+            transform: rotate(-45deg) translateX(-3px);
+          }
+        }
+      }
+    }
+    .language-panel {
+      padding-left: 4.8em;
+      margin-top: 7.5em;
+      .lang {
+        font-size: 2em !important;
+        font-weight: 500;
+        padding-right: 1.4em;
+        color: $default-text-color !important;
+        font-size: 2.5em;
+      }
+    }
   }
 }
 </style>
