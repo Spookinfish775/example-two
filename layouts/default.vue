@@ -1,15 +1,16 @@
 <template>
-	<div class="default-layout">
-		<div class="menu">
-			menu
-		</div>
-		<div class="content">
-			<Nuxt />
-		</div>
-		<div class="footer">
-			footer
-		</div>
-	</div>
+  <div class="default-layout">
+    <div class="menu">
+      <MyMenu />
+    </div>
+    <div class="content">
+      <Nuxt />
+    </div>
+
+    <div class="footer">
+      <MyFooter />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -36,18 +37,26 @@ function fontSize() {
 }
 window.onresize = fontSize;
 fontSize();
-export default {};
+
+import MyMenu from "~/components/layouts/menu/index.vue";
+import MyFooter from "~/components/layouts/footer/index.vue";
+export default {
+  components: {
+    MyMenu,
+    MyFooter,
+  },
+};
 </script>
 
 <style lang="scss">
 .default-layout {
-	width: 100%;
-	min-height: 100vh;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	.content {
-		flex-grow: 1;
-	}
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .content {
+    flex-grow: 1;
+  }
 }
 </style>
