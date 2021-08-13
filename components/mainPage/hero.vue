@@ -36,6 +36,9 @@ export default {};
 		height: 100vh;
 		background: linear-gradient(180deg, #ffffff 0%, #85cbe9 17.33%);
 	}
+	@include max($small) {
+		height: 60em;
+	}
 	.tablet-text {
 		position: absolute;
 		top: 18em;
@@ -319,7 +322,7 @@ export default {};
 			@include max($small) {
 				width: 13.5em;
 				height: 25em;
-				left: 8.5em;
+				left: 7em;
 				top: 23em;
 			}
 		}
@@ -343,7 +346,7 @@ export default {};
 			@include max($small) {
 				width: 13.5em;
 				height: 25em;
-				left: 15.5em;
+				left: 14em;
 				top: 22em;
 			}
 		}

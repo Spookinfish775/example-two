@@ -30,10 +30,22 @@ export default {
 		};
 	},
 	computed: {
+		isTablet() {
+			return window.innerWidth <= 1200;
+		},
+		isMobile() {
+			return window.innerWidth <= 767;
+		},
+		perView() {
+			let per = 2;
+			if (this.isTablet) per = 1;
+			if (this.isMobile) per = 1;
+			return per;
+		},
 		slideOptions() {
 			return {
 				type: "carousel",
-				perView: 2,
+				perView: this.perView,
 				animationDuration: 100,
 				animationTimingFunc: "cubic-bezier(0, 0, 0, 0)"
 			};
@@ -50,6 +62,14 @@ export default {
 	position: relative;
 	display: flex;
 	align-items: flex-end;
+	@include max($large) {
+		margin: 0 0 0 0;
+	}
+
+	@include max($small) {
+		height: 65em;
+		margin: 0 0 0 0;
+	}
 	.cards {
 		display: flex;
 		justify-content: center;
@@ -61,12 +81,26 @@ export default {
 		bottom: 45em;
 		z-index: -1;
 		background: linear-gradient(180deg, #ffffff 0%, #85cbe9 100%);
+		@include max($large) {
+			display: none;
+		}
+
+		@include max($small) {
+			display: none;
+		}
 	}
 	.products-description {
 		width: 100%;
 		height: 70%;
 		position: relative;
 		background-color: $main-color;
+		@include max($large) {
+			height: 90%;
+		}
+
+		@include max($small) {
+			height: 90%;
+		}
 		.products-description-bg {
 			width: 100%;
 			height: 50em;
