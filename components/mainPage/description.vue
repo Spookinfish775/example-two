@@ -1,5 +1,6 @@
 <template>
 	<div class="description-wrapper">
+		<div class="description-bg" />
 		<div class="earth">
 			<div class="vector" />
 			<div class="text-wrapper">
@@ -36,12 +37,22 @@ export default {
 	display: flex;
 	align-items: center;
 	position: relative;
+	.description-bg {
+		width: 100%;
+		height: 50em;
+		position: absolute;
+		background: url("/img/main/description/vector.svg") center no-repeat;
+		background-size: cover;
+		left: 0;
+		top: -9em;
+	}
 	.earth {
 		width: 30em;
 		height: 30em;
 		border-radius: 50%;
 		background-color: $main-color;
 		position: relative;
+		z-index: 2;
 		.vector {
 			width: 15em;
 			height: 10em;
@@ -90,6 +101,7 @@ export default {
 	.description-content {
 		width: 65em;
 		margin: 0 0 0 12.6em;
+		z-index: 3;
 		@keyframes bubble {
 			0% {
 				transform: translateY(0%);

@@ -17,14 +17,15 @@ function fontSize() {
   let width = 1447; // ширина, от которой идет отсчет
   let fontSize; // минимальный размер шрифта
   let bodyWidth = document.documentElement.clientWidth;
-  if (bodyWidth <= 1024) {
-    fontSize = 70;
+
+  if (bodyWidth <= 1200) {
+    fontSize = 119;
   }
-  if (bodyWidth <= 550) {
-    fontSize = 160;
+  if (bodyWidth <= 576) {
+    fontSize = 245;
   }
-  if (bodyWidth <= 450) {
-    fontSize = 200;
+  if (bodyWidth <= 320) {
+    fontSize = 290;
   }
   if (bodyWidth > 1024) {
     fontSize = 62.5;

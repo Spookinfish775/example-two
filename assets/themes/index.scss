@@ -1,5 +1,6 @@
 @import '../fonts/Montserrat/stylesheet.css';
 @import '../fonts/TTHazelnuts/stylesheet.css';
+@import "./variables.scss";
 // @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap';
 
 @mixin max($media) {
@@ -20,6 +21,31 @@
   @media only screen and (min-width: $min) and (max-width: $max) {
     -webkit-min-device-pixel-ratio: 2;
     @content;
+  }
+}
+
+
+.mobile {
+  display: none;
+
+  @include max($medium) {
+    display: block;
+  }
+}
+
+.tablet {
+  display: none;
+
+  @include minmax($medium+1, $large) {
+    display: block;
+  }
+}
+
+.desctop {
+  display: none;
+
+  @include min($large) {
+    display: block;
   }
 }
 
@@ -48,7 +74,7 @@ a {
   text-decoration: none;
 }
 
-button{
+button {
   outline: none;
   border: none;
 }
