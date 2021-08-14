@@ -3,6 +3,9 @@
     <div class="menu">
       <MyMenu />
     </div>
+    <div class="dealer">
+      <MyDealer />
+    </div>
     <div class="content">
       <Nuxt />
     </div>
@@ -38,11 +41,12 @@ fontSize();
 
 import MyMenu from "~/components/layouts/menu/index.vue";
 import MyFooter from "~/components/layouts/footer/index.vue";
+import MyDealer from "~/components/layouts/dealerForm/index.vue";
 export default {
   components: {
     MyMenu,
     MyFooter,
-    s,
+    MyDealer,
   },
 };
 </script>

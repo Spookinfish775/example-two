@@ -27,6 +27,19 @@ export default {
         textPlaceholder: "Текст",
         agreePlaceholder: "Я согласен (согласна) на персональную обработку данных"
     },
+    dealer: {
+        title: "стать дилером",
+        description: "Для того, чтобы стать дилером, отправьте нам заявку, заполнив форму ниже.",
+        fullNamePlaceholder: "ФИО",
+        companyPlaceholder: "Компания",
+        emailPlaceholder: "E-mail",
+        numberPlaceholder: "Номер телефона",
+        countryPlaceholder: "Страна",
+        cityPlaceholder: "Город",
+        textPlaceholder: "Текст",
+        agreePlaceholder: "Я согласен (согласна) на персональную обработку данных",
+        submitPlaceholder: "Отправить",
+    },
     mainPage: {
         hero: {
             flawlessPurity: "Безупречная чистота",
