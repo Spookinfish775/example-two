@@ -42,7 +42,6 @@ fontSize();
 
 import MyMenu from "~/components/layouts/menu/index.vue";
 import MyFooter from "~/components/layouts/footer/index.vue";
-<<<<<<< HEAD
 export default {
 	components: {
 		MyMenu,
@@ -61,15 +60,6 @@ export default {
 			});
 		}
 	}
-=======
-import MyBlog from "~/components/layouts/blogPages/funds.vue";
-export default {
-  components: {
-    MyMenu,
-    MyFooter,
-    MyBlog,
-  },
->>>>>>> 77db4053f554fe080f12dfe490bb3e4ccd9cf91f
 };
 </script>
 
