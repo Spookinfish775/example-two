@@ -4,11 +4,11 @@
 			<img :src="`/img/main/articles/${data.image}`" :alt="data.title" />
 			<div class="articles-information">
 				<h2 class="card-title">{{ data.title }}</h2>
-				<a class="detail-button">
+				<router-link :to="data.link" class="detail-button">
 					<span>
 						{{ $t("products.more") }}
 					</span>
-				</a>
+				</router-link>
 			</div>
 		</div>
 	</div>
@@ -32,7 +32,7 @@ export default {
 <style lang="scss">
 .articles-card-wrapper {
 	width: 32em;
-	height: 37em;
+	height: 43em;
 	&.position-1 {
 		margin: 10em 0 0 0;
 		@include max($small) {
