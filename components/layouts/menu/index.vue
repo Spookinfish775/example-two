@@ -1,11 +1,13 @@
 <template>
   <div class="menu-wrapper">
     <div class="link-group">
-      <nuxt-link to="/" class="link product">{{
-        $t("menu.productLink")
-      }}</nuxt-link>
-      <div class="productSubMenu">
-        <ProductSubMenu />
+      <div class="product">
+        <nuxt-link to="/" class="link products">{{
+          $t("menu.productLink")
+        }}</nuxt-link>
+        <div class="productSubMenu">
+          <ProductSubMenu />
+        </div>
       </div>
       <nuxt-link to="/" class="link">{{ $t("menu.aboutLink") }}</nuxt-link>
     </div>
@@ -14,11 +16,18 @@
     </div>
     <div class="link-group">
       <nuxt-link to="/" class="link">{{ $t("menu.articlesLink") }}</nuxt-link>
-      <nuxt-link to="/" class="link">{{ $t("menu.contactLink") }}</nuxt-link>
-      <div class="contactSubMenu">
-        <ContactSubMenu />
+      <div class="contact">
+        <nuxt-link to="/" class="link">{{ $t("menu.contactLink") }}</nuxt-link>
+        <div class="contactSubMenu">
+          <ContactSubMenu />
+        </div>
       </div>
-      <span class="lang-bar link">{{ $t("menu.langBar") }}</span>
+      <div class="lang-bar">
+        <span class="lang-bar link">{{ $t("menu.langBar") }}</span>
+        <div class="langs">
+          <LanguageBar />
+        </div>
+      </div>
     </div>
     <div class="menu-button" @click="openMenu">
       <div class="top line"></div>
@@ -36,6 +45,7 @@
 <script>
 import ProductSubMenu from "./productsSubMenu.vue";
 import ContactSubMenu from "./contactsSubMenu.vue";
+import LanguageBar from "./languageBar.vue";
 import MobileMenu from "./mobileMenu/index.vue";
 export default {
   data() {
@@ -47,6 +57,7 @@ export default {
     ProductSubMenu,
     ContactSubMenu,
     MobileMenu,
+    LanguageBar,
   },
   methods: {
     openMenu() {
@@ -99,17 +110,50 @@ export default {
     .lang-bar {
       font-weight: 500;
     }
-    .productSubMenu {
-      display: none;
-      position: absolute;
-      top: 8.5em;
-      left: 17.8em;
+    .product {
+      position: relative;
+      .productSubMenu {
+        display: none;
+        position: absolute;
+        top: 1.5em;
+        left: 22%;
+        animation: AnimSubmenu 0.3s;
+      }
+      &:hover {
+        .productSubMenu {
+          display: block;
+        }
+      }
     }
-    .contactSubMenu {
-      display: none;
-      position: absolute;
-      top: 8.5em;
-      right: 17.8em;
+    .contact {
+      position: relative;
+      .contactSubMenu {
+        display: none;
+        position: absolute;
+        top: 1.5em;
+        left: -50%;
+        animation: AnimSubmenu 0.3s;
+      }
+      &:hover {
+        .contactSubMenu {
+          display: block;
+        }
+      }
+    }
+    .lang-bar {
+      position: relative;
+      .langs {
+        display: none;
+        position: absolute;
+        top: 1.5em;
+        left: -90%;
+        animation: AnimSubmenu 0.3s;
+      }
+      &:hover {
+        .langs {
+          display: block;
+        }
+      }
     }
   }
   .logo {
@@ -121,6 +165,22 @@ export default {
   }
   .menu-button {
     display: none;
+  }
+  @keyframes AnimSubmenu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes AnimSubmenuClose {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
   @include max($large) {
     width: 100%;
