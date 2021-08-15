@@ -155,7 +155,7 @@ export default {
 	.contacts-content {
 		width: 55em;
 		margin: 0 26em 0 0;
-		:nth-child(2) {
+		:nth-child(3) {
 			margin: 3.6em 0 0 0;
 		}
 		@include max($large) {
