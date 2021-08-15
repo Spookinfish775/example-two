@@ -36,12 +36,23 @@ export default {
 	width: 32em;
 	&.position-1 {
 		margin: 10em 0 0 0;
+		@include max($small) {
+			margin: 0;
+		}
 	}
 	.product-card {
 		width: 32em;
 		height: 47em;
 		border-radius: 12em;
 		position: relative;
+		@include max($large) {
+			// text-align: left;
+			// margin: 0 0 2em 1em;
+		}
+		@include max($small) {
+			width: 28em;
+			height: 40em;
+		}
 		img {
 			position: absolute;
 			left: 50%;
@@ -77,6 +88,10 @@ export default {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@include max($small) {
+			width: 90%;
+			margin: 1em;
+		}
 		span {
 			font-family: "TT Hazelnuts";
 			font-style: normal;

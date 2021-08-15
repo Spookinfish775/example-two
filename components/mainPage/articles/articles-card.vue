@@ -35,6 +35,9 @@ export default {
 	height: 45em;
 	&.position-1 {
 		margin: 10em 0 0 0;
+		@include max($small) {
+			margin: 0;
+		}
 	}
 	.articles-card {
 		width: 32em;
