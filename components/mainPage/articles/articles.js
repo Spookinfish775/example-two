@@ -1,26 +1,26 @@
 function Articles(context) {
   return [{
-      title: context.$t("arcticles.rightClear.title"),
+      title: context.$t("articles.rightClear.title"),
       image: "right-clear.jpg",
     },
     {
-      title: context.$t("arcticles.sheet.title"),
+      title: context.$t("articles.sheet.title"),
       image: "sheet.jpg",
     },
     {
-      title: context.$t("arcticles.lifehack.title"),
+      title: context.$t("articles.lifehack.title"),
       image: "lifehack.jpg",
     },
     {
-      title: context.$t("arcticles.deepClear.title"),
+      title: context.$t("articles.deepClear.title"),
       image: "deep-clear.jpg",
     },
     {
-      title: context.$t("arcticles.highClear.title"),
+      title: context.$t("articles.highClear.title"),
       image: "high-clear.jpg",
     },
     {
-      title: context.$t("arcticles.detergents.title"),
+      title: context.$t("articles.detergents.title"),
       image: "detergents.jpg",
     }
   ];

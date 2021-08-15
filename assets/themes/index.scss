@@ -128,6 +128,25 @@ p {
   }
 }
 
+.second-page-title {
+  color: $main-color;
+  font-family: "TT Hazelnuts";
+  font-size: 2.2em;
+  font-weight: 900;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  @include max($large) {
+    font-size: 2em;
+  }
+
+  @include max($small) {
+    font-size: 1.8em;
+  }
+}
+
+
 .card-title {
   color: $main-color;
   font-family: TT Hazelnuts;
