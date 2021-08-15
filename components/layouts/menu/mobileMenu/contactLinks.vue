@@ -2,7 +2,7 @@
 	<div class="contact-links-wrapper">
 		<div class="contact-link-group">
 			<div class="link-wrapper">
-				<a to="/" class="contact-link">{{ $t("menu.contactsSubMenuLink") }}</a>
+				<nuxt-link to="/dealership" class="contact-link">{{ $t("menu.contactsSubMenuLink") }}</nuxt-link>
 			</div>
 		</div>
 		<div class="contact-info">

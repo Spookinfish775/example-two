@@ -5,13 +5,15 @@
 		</div>
 		<div class="middle-group">
 			<div class="form">
-				<div class="submit-button">
-					<div class="top"></div>
-					<div class="bottom"></div>
-				</div>
-				<input type="text" placeholder="e-mail" id="email" />
-				<label for="email">{{ $t("menu.emailLabel") }}</label>
+				<form @submit.prevent="sendEmail">
+					<button type="submit" class="submit-button">
+						<div class="top"></div>
+						<div class="bottom"></div>
+					</button>
 
+					<input v-model="email" type="email" placeholder="e-mail" id="email" />
+					<label for="email">{{ $t("menu.emailLabel") }}</label>
+				</form>
 				<div class="our-socials">
 					<p class="header">{{ $t("menu.socialLink") }}</p>
 					<a target="_blank" href="https://www.instagram.com/bagtlyzamana"
@@ -45,7 +47,9 @@
 				<div class="inner-group">
 					<div class="products">
 						<p class="header">{{ $t("menu.contactLink") }}</p>
-						<a href="">{{ $t("menu.contactsSubMenuLink") }}</a>
+						<nuxt-link to="/dealership">{{
+							$t("menu.contactsSubMenuLink")
+						}}</nuxt-link>
 						<a href="tel:+99312 576239">+99312 576239</a>
 						<a href="tel:+99312 576240">+99312 576240</a>
 						<a href="mailto:info@bagtlyzamana.com">info@bagtlyzamana.com</a>
@@ -66,7 +70,29 @@
 </template>
 
 <script>
-export default {};
+export default {
+	data() {
+		return {
+			email: ""
+		};
+	},
+	methods: {
+		async sendEmail() {
+			let options = {
+				"Content-Type": "multipart/form-data"
+			};
+			let formData = new FormData();
+			formData.append(email, this.email);
+			try {
+				await this.$axios.post("/mailing", formData, options);
+				this.email = "";
+				alert(this.$t("successSended"));
+			} catch (error) {
+				console.log(error, { error });
+			}
+		}
+	}
+};
 </script>
 
 <style lang="scss">
@@ -107,6 +133,7 @@ export default {};
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				background-color: inherit;
 				.top {
 					width: 0.9em;
 					height: 0.2em;

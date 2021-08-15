@@ -7,7 +7,7 @@
 				<p class="card-text">{{ data.description }}</p>
 			</div>
 		</div>
-		<a :class="`detail-button ${data.color}`">
+		<a @click="goTo" :class="`detail-button ${data.color}`">
 			<span>
 				{{ $t("products.more") }}
 			</span>
@@ -25,6 +25,11 @@ export default {
 		position: {
 			type: Number,
 			default: 0
+		}
+	},
+	methods: {
+		goTo() {
+			this.$router.push(this.data.link);
 		}
 	}
 };

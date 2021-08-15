@@ -62,7 +62,7 @@ export default {
 	}
 	@include max($small) {
 		min-height: 60vh;
-		padding: 1em;
+		padding: 1em 1em 10em 1em;
 	}
 	h1 {
 		text-align: center;

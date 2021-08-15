@@ -7,9 +7,7 @@
 			</div>
 			<p class="page-text">{{ $t("mainPage.contacts.text") }}</p>
 			<p class="page-text">{{ $t("mainPage.contacts.text2") }}</p>
-			<button>
-				<span> {{ $t("mainPage.contacts.contact") }}</span>
-			</button>
+			<ContactBtn />
 		</div>
 		<div class="earth-wrapper desctop">
 			<div class="earth">
@@ -31,7 +29,11 @@
 </template>
 
 <script>
+import ContactBtn from "~/components/layouts/contact-btn.vue";
 export default {
+	components: {
+		ContactBtn
+	},
 	computed: {
 		lang() {
 			return this.$i18n.locale;
@@ -189,27 +191,6 @@ export default {
 
 			@include max($small) {
 				width: 100%;
-			}
-		}
-
-		button {
-			width: 15em;
-			margin: 3.2em 0 0 0;
-			padding: 2.2em 2em;
-			background: #89cdea;
-			border-radius: 11em;
-			@include max($small) {
-				width: 100%;
-			}
-			span {
-				color: $default-text-color;
-				font-family: "TT Hazelnuts";
-				font-style: normal;
-				font-weight: 900;
-				font-size: 1.3em;
-				line-height: 0.8em;
-				letter-spacing: 0.2em;
-				text-transform: uppercase;
 			}
 		}
 	}
