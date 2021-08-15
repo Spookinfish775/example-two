@@ -52,7 +52,7 @@ export default {
 .properties-wrapper {
 	width: 100%;
 	min-height: 50em;
-	padding: 11.4em 0 11em 19em;
+	padding: 11.4em 0 11em 12em;
 
 	position: relative;
 	@include max($large) {

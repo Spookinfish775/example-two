@@ -138,11 +138,11 @@ p {
   text-transform: uppercase;
 
   @include max($large) {
-    font-size: 2.8em;
+    font-size: 2em;
   }
 
   @include max($small) {
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
 }
 

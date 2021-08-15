@@ -5,7 +5,7 @@
 		<OurProduts />
 		<ProdutsDescription />
 		<Contacts />
-		<Articles />
+		<articles />
 	</div>
 </template>
 

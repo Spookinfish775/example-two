@@ -44,7 +44,7 @@ export default {
 .about-us-wrapper {
 	width: 100%;
 	min-height: 50em;
-	padding: 11.4em 0 0 19em;
+	padding: 11.4em 0 0 12em;
 
 	position: relative;
 	margin: 13em 0 0 0;

@@ -27,7 +27,9 @@
 				}}</nuxt-link>
 			</div>
 			<div class="link-wrapper">
-				<a to="/" class="mobile-link">{{ $t("menu.articlesLink") }}</a>
+				<nuxt-link to="/articles" class="mobile-link">{{
+					$t("menu.articlesLink")
+				}}</nuxt-link>
 			</div>
 			<div class="link-wrapper" @click="openContactSubmenu">
 				<a to="/" class="mobile-link">{{ $t("menu.contactLink") }}</a>
@@ -146,7 +148,7 @@ export default {
 			font-size: 2em;
 			color: $default-text-color;
 			font-weight: 900;
-			padding-left: 10.47em;
+			padding-left: 5em;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -175,7 +177,7 @@ export default {
 		}
 	}
 	.language-panel {
-		padding-left: 20.9em;
+		padding-left: 10em;
 		.lang {
 			font-size: 1.8em;
 			font-weight: 500;

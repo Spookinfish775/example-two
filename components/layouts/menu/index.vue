@@ -17,7 +17,7 @@
 			</nuxt-link>
 		</div>
 		<div class="link-group">
-			<nuxt-link to="/" class="link">{{ $t("menu.articlesLink") }}</nuxt-link>
+			<nuxt-link to="/articles" class="link">{{ $t("menu.articlesLink") }}</nuxt-link>
 			<nuxt-link to="/" class="link">{{ $t("menu.contactLink") }}</nuxt-link>
 			<div class="contactSubMenu">
 				<ContactSubMenu />

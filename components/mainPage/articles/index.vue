@@ -4,7 +4,7 @@
 		<vue-glide :options="slideOptions">
 			<vue-glide-slide v-for="(item, index) in articles" :key="index">
 				<div class="cards">
-					<ArticlesCard :data="item" :position="index % 2" />
+					<articlesCard :data="item" :position="index % 2" />
 				</div>
 			</vue-glide-slide>
 		</vue-glide>
@@ -13,13 +13,13 @@
 
 <script>
 import { Glide, GlideSlide } from "vue-glide-js";
-import ArticlesCard from "~/components/mainPage/articles/articles-card.vue";
-import { Articles } from "./Articles";
+import articlesCard from "~/components/mainPage/articles/articles-card.vue";
+import { Articles } from "./articles";
 export default {
 	components: {
 		[Glide.name]: Glide,
 		[GlideSlide.name]: GlideSlide,
-		ArticlesCard
+		articlesCard
 	},
 	data() {
 		return {

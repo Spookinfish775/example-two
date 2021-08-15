@@ -46,6 +46,19 @@ export default {
 	components: {
 		MyMenu,
 		MyFooter
+	},
+	computed: {
+		route() {
+			return this.$route.fullPath;
+		}
+	},
+	watch: {
+		route() {
+			window.scrollTo({
+				behavior: "smooth",
+				top: "0px"
+			});
+		}
 	}
 };
 </script>

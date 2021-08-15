@@ -133,7 +133,7 @@ export default {};
 				transform: translateY(0%);
 			}
 			50% {
-				transform: translateY(-10%);
+				transform: translateY(-5%);
 			}
 		}
 		.bubble {
