@@ -198,24 +198,25 @@
     margin-top: 16em;
     .title-block {
       .title {
-        font-size: 4.72em;
+        font-size: 2.77em;
         font-weight: 900;
         line-height: 3.6em;
       }
       .blog-img {
-        width: 118.92em;
+        width: 100%;
+        height: 37.5em;
       }
     }
     .description-block {
-      margin-top: 5em;
+      margin-top: 3em;
       width: 100%;
       .title {
         position: relative;
         display: flex;
         align-items: center;
         p {
-          font-size: 3.38em;
-          line-height: 2em;
+          font-size: 2em;
+          line-height: 2.2em;
         }
       }
       #big-title {
@@ -225,10 +226,8 @@
       }
       .description {
         p {
-          font-size: 2.7em;
-          font-weight: 400;
+          font-size: 1.6em;
           line-height: 1.6em;
-          color: $main-color;
         }
       }
       #big-description {
@@ -236,18 +235,37 @@
       }
     }
     .navigation-block {
-      margin-top: 18em;
+      margin: 18em 0 12em 0;
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-family: TT Hazelnuts;
       .left-buttons {
+        display: flex;
         .active-btn {
-          width: 3.23em;
-          height: 3.23em;
-          font-size: 3.37em;
+          width: 7.12em;
+          height: 3.26em;
+          font-size: 2.01em;
+          font-weight: 900;
+
+          border-radius: 2em;
+          color: $default-text-color;
+          background-color: $blue-sky;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         .next-btn {
-          width: 7.11em;
-          height: 3.23em;
-          font-size: 3.37em;
+          width: 3.26em;
+          height: 3.26em;
+          font-size: 2.01em;
+          font-weight: 900;
+          border: 1px solid $blue-sky;
+          border-radius: 2em;
+          color: $blue-sky;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           margin-left: 1em;
         }
       }
@@ -255,8 +273,16 @@
         .all-articles {
           width: 10.48em;
           height: 3.76em;
-          border-radius: 4em;
-          font-size: 3.37em;
+          font-size: 2.01em;
+          font-weight: 900;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          border-radius: 2em;
+          color: $default-text-color;
+          background-color: $blue-sky;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
@@ -266,36 +292,26 @@
     margin-top: 12em;
     .title-block {
       .title {
-        font-size: 3.12em;
+        font-size: 2.2em;
         font-weight: 900;
         line-height: 2.2em;
       }
       .blog-img {
-        background: url("/img/blog-img/fundsMobile.png");
+        background: url("/img/blog-img/fundsMobile.png") center no-repeat;
         background-size: contain;
-        width: 40.9em;
-        height: 42.04em;
+        width: 100%;
+        height: 34.5em;
       }
     }
     .description-block {
-      margin-top: 5em;
+      margin-top: 2em;
       width: 100%;
       .title {
         position: relative;
         display: flex;
         align-items: center;
-        .icon {
-          position: relative;
-          left: 0;
-          margin-right: 2em;
-          width: 3.41em;
-          height: 3.41em;
-          img {
-            width: 100%;
-          }
-        }
         p {
-          font-size: 2.56em;
+          font-size: 1.8em;
           line-height: 1.4em;
         }
       }
@@ -306,7 +322,7 @@
       }
       .description {
         p {
-          font-size: 1.99em;
+          font-size: 1.4em;
           margin-top: 1em;
           line-height: 1.6em;
         }
@@ -319,30 +335,35 @@
       }
     }
     .navigation-block {
-      margin-top: 16em;
+      margin: 6em 0 6em 0;
       width: 100%;
       flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       .left-buttons {
+        display: flex;
         justify-content: space-between;
+        width: 86%;
         .active-btn {
-          width: 2.99em;
-          height: 2.99em;
-          font-size: 2.85em;
+          width: 3em;
+          height: 3em;
+          font-size: 2.01em;
+          font-weight: 900;
         }
         .next-btn {
-          width: 6.78em;
-          height: 2.99em;
-          font-size: 2.85em;
-          margin-left: 0em;
+          width: 6.7em;
+          height: 3em;
+          font-size: 2.01em;
+          font-weight: 900;
+          margin-left: 1em;
         }
       }
       .right-button {
-        margin-top: 4em;
+        margin-top: 2em;
         .all-articles {
-          width: 100%;
-          height: 3.44em;
-          border-radius: 4em;
-          font-size: 2.85em;
+          width: 15.54em;
+          height: 3.8em;
+          font-size: 1.8em;
         }
       }
     }
