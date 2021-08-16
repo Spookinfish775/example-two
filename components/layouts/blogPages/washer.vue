@@ -34,8 +34,8 @@
 		</div>
 		<div class="navigation-block">
 			<div class="left-buttons">
-				<div class="active-btn">1</div>
-				<div class="next-btn">2</div>
+				<div class="active-btn">4</div>
+				<nuxt-link to="/blog/production" class="next-btn">5</nuxt-link>
 			</div>
 			<div class="right-button">
 				<div class="all-articles">

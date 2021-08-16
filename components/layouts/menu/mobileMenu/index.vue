@@ -40,9 +40,9 @@
 			</div>
 		</div>
 		<div class="language-panel">
-			<span class="lang">RU</span>
-			<span class="lang">EN</span>
-			<span class="lang">TM</span>
+			<span @click="changeLanguage('ru')" class="lang">RU</span>
+			<span @click="changeLanguage('en')" class="lang">EN</span>
+			<span @click="changeLanguage('tk')" class="lang">TM</span>
 		</div>
 		<transition name="slide-fade">
 			<div class="products-mobile-submenu" v-if="productMobileSubmenu">
@@ -69,6 +69,10 @@ export default {
 	},
 
 	methods: {
+		changeLanguage(lang) {
+			this.$i18n.setLocale(lang);
+			window.location.reload();
+		},
 		openProductsSubmenu() {
 			if (this.productMobileSubmenu == false) {
 				this.productMobileSubmenu = true;

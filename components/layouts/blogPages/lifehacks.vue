@@ -51,8 +51,8 @@
 		</div>
 		<div class="navigation-block">
 			<div class="left-buttons">
-				<div class="active-btn">1</div>
-				<div class="next-btn">2</div>
+				<div class="active-btn">3</div>
+				<nuxt-link to="/blog/washer" class="next-btn">4</nuxt-link>
 			</div>
 			<div class="right-button">
 				<div class="all-articles">

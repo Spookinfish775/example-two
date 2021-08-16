@@ -114,7 +114,7 @@
 		<div class="navigation-block">
 			<div class="left-buttons">
 				<div class="active-btn">1</div>
-				<div class="next-btn">2</div>
+				<nuxt-link to="/blog/washSheets" class="next-btn">2</nuxt-link>
 			</div>
 			<div class="right-button">
 				<div class="all-articles">

@@ -10,8 +10,8 @@
 		</div>
 		<div class="navigation-block">
 			<div class="left-buttons">
-				<div class="active-btn">1</div>
-				<div class="next-btn">2</div>
+				<div class="active-btn">5</div>
+				<nuxt-link to="/blog/funds" class="next-btn">6</nuxt-link>
 			</div>
 			<div class="right-button">
 				<div class="all-articles">

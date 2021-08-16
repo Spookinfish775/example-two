@@ -79,8 +79,8 @@
 		</div>
 		<div class="navigation-block">
 			<div class="left-buttons">
-				<div class="active-btn">1</div>
-				<div class="next-btn">2</div>
+				<div class="active-btn">2</div>
+				<nuxt-link to="/blog/lifehacks" class="next-btn">3</nuxt-link>
 			</div>
 			<div class="right-button">
 				<div class="all-articles">

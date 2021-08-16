@@ -14,18 +14,6 @@
 				</div>
 			</div>
 		</transition>
-		<!-- <vue-modaltor
-			:bg-overlay="'#043480'"
-			:visible="open"
-			@hideModal="open = false"
-			:show-close-button="false"
-			:show-title="false"
-		>
-			<template #header> <span></span></template>
-			<template #body>
-				<ContactFoem v-if="open" />
-			</template>
-		</vue-modaltor> -->
 	</div>
 </template>
 
@@ -40,31 +28,14 @@ export default {
 			open: false
 		};
 	},
-	computed: {
-		modalWidth() {
-			let width;
-			if (window.innerWidth <= 1200) {
-				width = window.innerWidth;
+	watch: {
+		open(val) {
+			if (val) {
+				document.body.style.overflow = "hidden";
 			} else {
-				width = 1200;
+				document.body.style.overflow = "auto";
 			}
-			return width;
-		},
-		modalHeight() {
-			let height;
-			if (window.innerWidth <= 1200) {
-				height = window.innerHeight;
-			} else {
-				height = 700;
-			}
-			return height;
-		},
-		isTablet() {
-			return window.innerWidth <= 1200;
 		}
-	},
-	methods: {
-		openForm() {}
 	}
 };
 </script>
@@ -116,9 +87,11 @@ export default {
 			font-size: 4em;
 			z-index: 100011;
 			@include max($large) {
+				font-size: 3em;
 				color: $main-color;
 			}
 			@include max($small) {
+				font-size: 2em;
 				top: -2em;
 				color: $main-color;
 			}
@@ -138,8 +111,7 @@ export default {
 				padding: 50em 0 0 0;
 			}
 			@include max($small) {
-						padding: 20em 0 0 0;
-
+				padding: 20em 0 0 0;
 			}
 		}
 	}
