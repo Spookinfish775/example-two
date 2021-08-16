@@ -1,17 +1,17 @@
 <template>
-  <div class="products-submenu-wrapper">
+  <div class="products-sub-menu-wrapper">
     <div class="arrow"></div>
     <div class="product-submenu">
-      <nuxt-link to="/" class="sublink">{{
+      <nuxt-link to="/production/ak-nur" class="sublink">{{
         $t("menu.productSubMenuLinks[0]")
       }}</nuxt-link>
-      <nuxt-link to="/" class="sublink">{{
+      <nuxt-link to="/production/ay-nur" class="sublink">{{
         $t("menu.productSubMenuLinks[1]")
       }}</nuxt-link>
-      <nuxt-link to="/" class="sublink">{{
+      <nuxt-link to="/production/pakize" class="sublink">{{
         $t("menu.productSubMenuLinks[2]")
       }}</nuxt-link>
-      <nuxt-link to="/" class="sublink">{{
+      <nuxt-link to="/production/ak-nur-oxy" class="sublink">{{
         $t("menu.productSubMenuLinks[3]")
       }}</nuxt-link>
     </div>
@@ -23,7 +23,7 @@ export default {};
 </script>
 
 <style lang="scss">
-.products-submenu-wrapper {
+.products-sub-menu-wrapper {
   position: relative;
   width: 38.4em;
   height: 25.6em;

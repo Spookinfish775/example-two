@@ -67,6 +67,7 @@ export default {
 			contactMobileSubmenu: false
 		};
 	},
+
 	methods: {
 		openProductsSubmenu() {
 			if (this.productMobileSubmenu == false) {

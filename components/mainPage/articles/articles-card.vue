@@ -32,7 +32,7 @@ export default {
 <style lang="scss">
 .articles-card-wrapper {
 	width: 32em;
-	height: 43em;
+	height: 46em;
 	&.position-1 {
 		margin: 10em 0 0 0;
 		@include max($small) {

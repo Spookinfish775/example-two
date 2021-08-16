@@ -2,21 +2,29 @@
 	<div class="contact-links-wrapper">
 		<div class="contact-link-group">
 			<div class="link-wrapper">
-				<nuxt-link to="/dealership" class="contact-link">{{ $t("menu.contactsSubMenuLink") }}</nuxt-link>
+				<nuxt-link to="/dealership" class="contact-link">{{
+					$t("menu.contactsSubMenuLink")
+				}}</nuxt-link>
 			</div>
 		</div>
 		<div class="contact-info">
 			<div class="info">
 				<img src="/img/phone.svg" alt="phone" />
 				<div class="text">
-					<p>+99312 576239</p>
-					<p>+99312 576240</p>
+					<p>
+						<a href="tel:+99312 576239">+99312 576239</a>
+					</p>
+					<p>
+						<a href="tel:+99312 576240">+99312 576240</a>
+					</p>
 				</div>
 			</div>
 			<div class="info">
 				<img src="/img/mail.svg" alt="mail" />
 				<div class="text">
-					<p>info@bagtlyzamana.com</p>
+					<p>
+						<a href="mailto:info@bagtlyzamana.com">info@bagtlyzamana.com</a>
+					</p>
 				</div>
 			</div>
 			<div class="info">
@@ -88,6 +96,10 @@
 				p {
 					font-size: 2.38em;
 					font-weight: 300;
+					color: $default-text-color;
+				}
+				a {
+					text-decoration: none;
 					color: $default-text-color;
 				}
 			}

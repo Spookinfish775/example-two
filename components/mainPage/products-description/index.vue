@@ -3,13 +3,22 @@
 		<div class="products-description-color-wrapper" />
 		<div class="products-description">
 			<div class="products-description-bg" />
-			<vue-glide :options="slideOptions">
+			<vue-glide v-model="active" :options="slideOptions">
 				<vue-glide-slide v-for="(item, index) in products" :key="index">
 					<div class="cards">
 						<ProductDescriptionCard :data="item" />
 					</div>
 				</vue-glide-slide>
 			</vue-glide>
+			<div class="slider-buttons">
+				<div
+					class="button"
+					v-for="(item, index) in products"
+					:key="index"
+					:class="{ active: index === active }"
+					@click="active = index"
+				></div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -26,7 +35,8 @@ export default {
 	},
 	data() {
 		return {
-			products: Products(this)
+			products: Products(this),
+			active: 0
 		};
 	},
 	computed: {
@@ -57,7 +67,7 @@ export default {
 <style lang="scss">
 .products-description-wrapper {
 	width: 100%;
-	height: 80em;
+	height: 90em;
 	margin: 20em 0 0 0;
 	position: relative;
 	display: flex;
@@ -67,12 +77,32 @@ export default {
 	}
 
 	@include max($small) {
-		height: 65em;
+		height: 70em;
 		margin: 0 0 0 0;
+	}
+	.slider-buttons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.button {
+			width: 2em;
+			height: 2em;
+			margin: 0 0.5em;
+			border-radius: 50%;
+			border: 1px solid $blue-sky;
+			cursor: pointer;
+			transition: 0.3s;
+			&.active {
+				border-radius: 1em;
+				width: 4em;
+				background-color: $blue-sky;
+			}
+		}
 	}
 	.cards {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 	.products-description-color-wrapper {
 		width: 100%;

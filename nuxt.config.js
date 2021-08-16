@@ -47,7 +47,7 @@ export default {
   plugins: [
     '~/plugins/axios',
     '~/plugins/slider',
-    "~/plugins/modal.js"
+    "~/plugins/modal.js",
   ],
   modules: [
     '@nuxtjs/axios',

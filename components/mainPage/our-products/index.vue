@@ -3,36 +3,35 @@
 		<h1 class="page-title">
 			{{ $t("mainPage.ourProducts.title") }}
 		</h1>
-		<div>
-			<vue-glide ref="slider" :options="slideOptions">
-				<vue-glide-slide v-for="(item, index) in products" :key="index">
-					<div
-						@mouseover="onMouseOver"
-						@mouseleave="onMouseLeave"
-						class="cards"
-					>
-						<ProductCard :data="item" :position="index % 2" />
-					</div>
-				</vue-glide-slide>
-			</vue-glide>
-		</div>
+		<carousel
+			:autoplay="!isTablet && !isMobile"
+			:dots="false"
+			:nav="false"
+			:autoplaySpeed="autoplayTimeoutSpeed"
+			:autoplayTimeout="autoplayTimeout"
+			:items="perView"
+			:autoplayHoverPause="true"
+			:loop="true"
+		>
+			<div v-for="(item, index) in products" :key="index" class="cards">
+				<ProductCard :data="item" :position="index % 2" />
+			</div>
+		</carousel>
 	</div>
 </template>
 
 <script>
-import { Glide, GlideSlide } from "vue-glide-js";
+import carousel from "vue-owl-carousel";
 import ProductCard from "~/components/mainPage/our-products/product-card.vue";
 import { Products } from "./products";
 export default {
 	components: {
-		[Glide.name]: Glide,
-		[GlideSlide.name]: GlideSlide,
+		carousel,
 		ProductCard
 	},
 	data() {
 		return {
-			products: Products(this),
-			autoplay: true
+			products: Products(this)
 		};
 	},
 	computed: {
@@ -42,33 +41,30 @@ export default {
 		isMobile() {
 			return window.innerWidth <= 767;
 		},
+		autoplayTimeoutSpeed() {
+			let timeout;
+			if (!this.isTablet && !this.isMobile) {
+				timeout = 3000;
+			} else {
+				timeout = true;
+			}
+			return timeout;
+		},
+		autoplayTimeout() {
+			let timeout;
+			if (!this.isTablet && !this.isMobile) {
+				timeout = 3000;
+			} else {
+				timeout = 100000;
+			}
+			return timeout;
+		},
 		perView() {
 			let per = 3;
 			if (this.isTablet) per = 2;
 			if (this.isMobile) per = 1;
 			return per;
-		},
-		slideOptions() {
-			return {
-				type: "carousel",
-				autoplay: !this.isTablet && !this.isMobile,
-				perView: this.perView,
-				hoverpause: true,
-				animationDuration: 3000
-				// animationTimingFunc: "cubic-bezier(0, 0, 0, 0)"
-			};
 		}
-	},
-	methods: {
-		onMouseOver(e) {
-			// this.$refs["slider"].glide.pause();
-		},
-		onMouseLeave(e) {
-			// this.autoplay = true;
-		}
-	},
-	mounted() {
-		this.$refs["slider"].glide.play();
 	}
 };
 </script>
@@ -95,7 +91,7 @@ export default {
 	}
 	.cards {
 		display: flex;
-		justify-content: center;
+		margin: 0 5em;
 	}
 }
 </style>

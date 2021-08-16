@@ -1,24 +1,30 @@
 <template>
 	<div class="our-produts-wrapper">
 		<h1 class="page-title">{{ $t("mainPage.articles.title") }}</h1>
-		<vue-glide :options="slideOptions">
-			<vue-glide-slide v-for="(item, index) in articles" :key="index">
-				<div class="cards">
-					<articlesCard :data="item" :position="index % 2" />
-				</div>
-			</vue-glide-slide>
-		</vue-glide>
+		<carousel
+			:autoplay="!isTablet && !isMobile"
+			:dots="false"
+			:nav="false"
+			:autoplaySpeed="autoplayTimeoutSpeed"
+			:autoplayTimeout="autoplayTimeout"
+			:items="perView"
+			:autoplayHoverPause="true"
+			:loop="true"
+		>
+			<div v-for="(item, index) in articles" :key="index" class="cards">
+				<articlesCard :data="item" :position="index % 2" />
+			</div>
+		</carousel>
 	</div>
 </template>
 
 <script>
-import { Glide, GlideSlide } from "vue-glide-js";
+import carousel from "vue-owl-carousel";
 import articlesCard from "~/components/mainPage/articles/articles-card.vue";
 import { Articles } from "./articles";
 export default {
 	components: {
-		[Glide.name]: Glide,
-		[GlideSlide.name]: GlideSlide,
+		carousel,
 		articlesCard
 	},
 	data() {
@@ -33,21 +39,29 @@ export default {
 		isMobile() {
 			return window.innerWidth <= 767;
 		},
+		autoplayTimeoutSpeed() {
+			let timeout;
+			if (!this.isTablet && !this.isMobile) {
+				timeout = 3000;
+			} else {
+				timeout = true;
+			}
+			return timeout;
+		},
+		autoplayTimeout() {
+			let timeout;
+			if (!this.isTablet && !this.isMobile) {
+				timeout = 2000;
+			} else {
+				timeout = 100000;
+			}
+			return timeout;
+		},
 		perView() {
 			let per = 3;
 			if (this.isTablet) per = 2;
 			if (this.isMobile) per = 1;
 			return per;
-		},
-		slideOptions() {
-			return {
-				type: "carousel",
-				autoplay: !this.isTablet && !this.isMobile,
-				perView: this.perView,
-				hoverpause: true,
-				animationDuration: 3000
-				// animationTimingFunc: "cubic-bezier(0, 0, 0, 0)"
-			};
 		}
 	}
 };

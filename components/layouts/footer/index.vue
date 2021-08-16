@@ -1,7 +1,9 @@
 <template>
 	<div class="footer-wrapper">
 		<div class="logo">
-			<img src="/img/logo-white.svg" alt="logo" />
+			<nuxt-link to="/">
+				<img src="/img/logo-white.svg" alt="logo" />
+			</nuxt-link>
 		</div>
 		<div class="middle-group">
 			<div class="form">
@@ -17,7 +19,7 @@
 				<div class="our-socials">
 					<p class="header">{{ $t("menu.socialLink") }}</p>
 					<a target="_blank" href="https://www.instagram.com/bagtlyzamana"
-						><img src="/img/instagram.svg" alt=""
+						><img src="/img/instagram.svg" alt="instagramm"
 					/></a>
 				</div>
 			</div>
