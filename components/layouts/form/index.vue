@@ -1,9 +1,6 @@
 <template>
 	<div class="form-wrapper">
 		<form @submit.prevent="submitForm" class="main-form">
-			<div class="close-button">
-				<img src="/img/cross.svg" alt="close" />
-			</div>
 			<input
 				v-model="contactData.firstName"
 				type="text"
@@ -262,8 +259,8 @@ export default {
 	}
 	@include max($large) {
 		.main-form {
-			width: 100vw;
-			height: 100vh;
+			width: 100%;
+			height: 150vh;
 			position: relative;
 			justify-content: center;
 			.close-button {
@@ -344,8 +341,9 @@ export default {
 	}
 	@include max($small) {
 		.main-form {
-			width: 100vw;
-			height: 100vh;
+			width: 100%;
+			height: 170vh;
+			padding: 5em 1em;
 			.close-button {
 				display: block;
 				position: absolute;
@@ -404,8 +402,9 @@ export default {
 				}
 			}
 			.submit {
-				width: 20.46em;
-				height: 4.91em;
+				width: 100%;
+				margin: 1em 0;
+				height: 4em;
 				font-size: 2em;
 				border-radius: 4em;
 				letter-spacing: 0.2em;

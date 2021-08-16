@@ -73,6 +73,7 @@ export default {
 	display: flex;
 	align-items: flex-end;
 	@include max($large) {
+		height: 75em;
 		margin: 0 0 0 0;
 	}
 

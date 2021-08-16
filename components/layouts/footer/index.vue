@@ -256,7 +256,7 @@ export default {
 	@include max($large) {
 		width: 100%;
 		height: 89em;
-		padding: 0 0 0 5.41em;
+		padding: 0 5em 0 5em;
 		.logo {
 			width: 11.4em;
 			img {
@@ -327,7 +327,7 @@ export default {
 	@include max($small) {
 		width: 100%;
 		height: 62em;
-		padding: 0 0 0 2.28em;
+		padding: 0 2em 0 2em;
 		align-items: center;
 		.logo {
 			width: 7em;

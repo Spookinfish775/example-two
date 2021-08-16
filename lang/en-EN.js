@@ -145,192 +145,206 @@ export default {
   },
   mainPage: {
     hero: {
-      flawlessPurity: "Безупречная чистота",
-      gentleCare: "Бережный уход "
+      flawlessPurity: "PERFECT CLEANLINESS",
+      gentleCare: "PRECIOUS CARE"
     },
     description: {
-      title: "Формула чистоты и здоровья",
-      text: "Уникальная формула стиральных порошков, производимых Хозяйственным обществом «Багтлы замана» обеспечивает высокий результат стирки даже при низких температурных режимах.",
-      text2: "Вся линейка порошков содержит компоненты, защищающие структуру ткани и вымывания цвета. Легко растворяется в воде любой жесткости."
+      title: "CLEANLINESS AND HEALTH FORMULA",
+      text: "Unique formula of laundry detergents produced by the Economic Society “Bagtly zamana” provides high washing results even at low temperatures.",
+      text2: "The entire line of detergents contains components that protect the structure of fabrics from color washout. Easily soluble in water of any hardness."
     },
     ourProducts: {
-      title: "Наша продукция",
+      title: "OUR PRODUCTS",
     },
     contacts: {
-      title: "Доставка по миру",
-      text: "Хозяйственное общество «Багтлы замана» осуществляет оптовую продажу продукции по всему миру.",
-      text2: " По условиям минимальной партии для заказа оптом и стоимости свяжитесь с нами.",
-      contact: "Связаться"
+      title: "WORLDWIDE DELIVERY",
+      text: `Economic society "Bagtly zamana" carries out
+      wholesale sales of products all over the world.`,
+      text2: `For the terms of the minimum batch for ordering in
+      bulk and cost, please contact us.`,
+      contact: "contact us"
     },
     articles: {
-      title: "Полезно знать",
+      title: "GOOD TO KNOW",
     },
   },
   aboutUs: {
     hero: {
-      title: "Мы заботимся о чистоте",
-      text: `Хозяйственное общество «Багтлы замана» было основано в 2013 году и начало производство различных видов синтетических моющих средств и туалетного мыла в 2019 году.
-      В настоящее время предприятие является одним из ведущих производителей синтетических моющих средств в Туркменистане.`,
-      text2: "Основным направлением деятельности предприятия является производство высококачественных стиральных порошков, отбеливателей и косметического мыла."
+      title: "we care about cleanliness",
+      text: `Economic Society “Bagtly zamana” founded in 2013 and started production of synthetic detergents and beauty soap in 2019.
+      At the present time the enterprise is one of the leading manufacturers of household chemicals in Turkmenistan.`,
+      text2: "The main activity of the enterprise is the production of detergents, bleaching agents and beauty soaps."
     },
     blueSpaceOne: {
-      title: "Предприятие является единственным производителем в стране, использующим при производстве стиральных порошков «башенный метод» по итальянской технологии.",
-      text: "Наш завод, выпускающий продукцию, оснащен производственным оборудованием ведущих производителей Италии и обладает мощностью 40 000 тонн стирального порошка и 2 400 тонн туалетного мыла в год."
+      title: `THE ENTERPRIsE IS THE ONLY MANUFACTURER IN THE COUNTRY THAT USES THE "TOWER METHOD" IN THE PRODUCTION OF WASHING DETERGENTS ACCORDING TO ITALIAN TECHNOLOGY.`,
+      text: `Our production plant is equipped with the production
+      equipment from leading Italian manufacturers and has a
+      capacity of 40000 tons of detergents and 2400 tons of beauty soap per year.`
     },
     blueSpace2: {
-      title: "Предприятие выпускаеT более 20 наименований продукции, пользующейся высоким спросом у населения.",
-      text: "Весь технологический процесс производства полностью автоматизирован, что обеспечивает увеличение производительности и повышение качества продукции.",
-      text2: "Предприятие выпускает продукцию, которая пользуется высоким спросом у населения на рынке аналогичных товаров и отличается высоким качеством и надежностью."
+      title: `ENTERPRIsE PRODUCES MORE THAN 20 TYPES OF PRODUCTS THAT ARE IN HIGH DEMAND AMONG THE POPULATION.`,
+      text: `The entire production process is fully automatic, which
+      ensures an increase in productivity and product quality.`,
+      text2: `The enterprise manufactures products that are in high
+      demand among the population in the market of similar
+      goods and are of high quality and reliability.`
     },
     properties: {
-      title: "Свойства наших порошков",
-      prop1: "Хорошая сыпучесть",
-      prop2: "Однородный состав",
-      prop3: "Отсутствие синтетической пыли",
-      prop4: "Быстрорастворимы в воде",
-      prop5: " Высококонцентрированный",
-      prop6: "Сохраняет структуру и цвет изделий",
-      prop7: "Имеет свежий и приятный аромат",
-      prop8: "Легко справляется с трудновыводимыми пятнами",
-      prop9: "Равномерное распределение компонентов в гранулах",
-      prop10: "Эффективен при низких температурах и любой жесткости воды",
+      title: "CHARACTERISTICS OF OUR DETERGENTS",
+      prop1: "High flowability",
+      prop2: "Homogeneous composition",
+      prop3: "No synthetic dust",
+      prop4: "Quickly soluble in water",
+      prop5: " Highly concentrated",
+      prop6: "Preserves the structure and color of the garment",
+      prop7: "Has a fresh and pleasant fragrance",
+      prop8: "Easily removes stubborn stains",
+      prop9: "Evenly dispersed components in granules",
+      prop10: "Effective at low temperatures and all water hardness",
     }
   },
   products: {
-    washingPowder: "Стиральный порошок",
-    oxygen: "Кислородный отбеливатель",
-    soap: "Туалетное мыло",
-    more: "Подробнее",
-    gr400: "400гр.",
-    kg3: "3кг.",
-    kg6: "6кг.",
-    kg9: "6кг.",
+    washingPowder: "Washing powder",
+    oxygen: "Oxygen bleach",
+    soap: "Beauty soap",
+    more: "Details",
+    gr400: "400gr.",
+    kg3: "3kg.",
+    kg6: "6kg.",
+    kg9: "6kg.",
     aynur: {
-      index: "Ай нур",
+      index: "Ay nur",
       automat: {
-        title: "Ай нур автомат",
-        description: "Серия экономичных стиральных порошков «Ай Нур Автомат» предназначена для стирки в автоматических стиральных машинах и ручной стирки белого и цветного  белья."
+        title: "Ay nur automat",
+        description: `A series of economical laundry detergents "Ay Nur Automat" is designed for machine and hand washing of white and colored clothes. `
       },
       hand: {
-        title: "Ай нур для ручной стирки",
-        description: "Серия экономичных стиральных порошков «Ай Нур для ручной стирки» предназначена для стирки в стиральных машинах активаторного типа и ручной стирки белого и цветного белья."
+        title: "Ay Nur FOR HAND WASH",
+        description: `A series of economical laundry detergents “Ay Nur for hand wash” is designed for activator-type washing machines and hand washing of white and colored clothes. `
       },
     },
     aknur: {
-      index: "Ак нур",
+      index: "Ak nur",
       color: {
-        title: "Ак нур колор",
-        description: "Серия стиральных порошков «Ак Нур Колор» предназначена для стирки в автоматических стиральных машинах и ручной стирки цветного белья."
+        title: "ak nur COLOR",
+        description: "A series of laundry detergents “Ak Nur Color” are intendet for automatic washing machine and hand washing of colored linen."
       },
       automat: {
-        title: "Ак нур автомат",
-        description: "Серия стиральных порошков «Ак Нур Автомат» премиум сегмента предназначена для стирки в автоматических стиральных машинах и ручной стирки белого и цветного белья."
+        title: "ak nur Automat  ",
+        description: `A series of laundry detergent "Ak Nur Automat" the premium segment are intended for automatic  washing machine and hand washing of white and colored linen. `
       },
       oxygen: {
-        title: 'Кислородный отбеливатель',
-        description: 'Кислородный отбеливатель и пятновыводитель «Ак Нур Oxi Action» предназначен для удаления сложных загрязнений и пятен, с которыми могут не справиться стиральные порошки. Не содержит хлор.',
+        title: 'oxygen bleach',
+        description: `Oxygen bleach and stain remover “Ak nur Oxi Action” is designed to remove difficult dirt and stains that detergents cannot cope with. It does not contain chlorine.`
       }
     },
     pakize: {
-      index: "Пякизе",
+      index: "Pakize",
       soap: {
-        title: 'Туалетное мыло пякизе',
-        description: 'Идеально подходит для кожи любого типа. Бережная формула средства деликатно очищает.',
+        title: 'Beauty soap pakize',
+        description: 'Ideal for all skin types. The gentle formula of the product gently cleanses the skin. ',
         type: {
-          peach: 'Персик',
-          mint: 'Мята',
-          garnet: 'Гранат',
-          lavender: 'Лаванда',
+          peach: 'Peach',
+          mint: 'Mint',
+          garnet: 'Garnet',
+          lavender: 'Lavender',
         }
       }
     }
   },
   articles: {
-    title: "Полезно знать",
+    title: "GOOD TO KNOW",
     rightClear: {
-      title: 'Всё о том, как правильно стирать',
+      title: 'All about proper laundry',
     },
     sheet: {
-      title: 'Как стирать простыни',
+      title: 'How to wash the bed sheets',
     },
     lifehack: {
-      title: 'Лайфхаки стирки',
+      title: 'Laundry lifehacks',
     },
     deepClear: {
-      title: 'Глубокая чистка стиральной машины',
+      title: 'Laundry lifehacks',
     },
     highClear: {
-      title: 'Высокая эффективность продукции «Багтлы замана»',
+      title: 'High efficiency of “Bagtly zamana” products',
     },
     detergents: {
-      title: 'Средства для стирки',
+      title: 'Laundry detergents',
     },
   },
   production: {
-    compount: "Состав",
-    precautionaryMeasures: "Меры предосторожности",
-    storageConditions: "Условия хранения",
+    compount: "ingredients",
+    precautionaryMeasures: "PRECAUTIONS",
+    storageConditions: "STORAGE CONDITIONS",
     aknur: {
       automat: {
-        title: "Ак нур автомат",
-        subTitle: "Предназначен для стирки белого и  цветного белья, одежды из хлопчатобумажных, льняных, искусственных, синтетических и смешанных тканей в автоматических стиральных машинах любого типа и для ручной стирки. Средство подходит для быстрой и регулярной стирки и легко справляется со сложными загрязнениями.",
-        compount: "5-15% анионные ПАВ (поверхностно-активные вещества), фосфаты, кислородосодержащий отбеливатель, менее 5% неионогенные ПАВ (поверхностно-активные вещества), мыло, энзимы, пеногаситель, оптические отбеливатели, ароматизирующая добавка.",
-        precautionaryMeasures: `Хранить в недоступных для детей местах. Хранить отдельно от пищевых продуктов. При попадании в глаза немедленно промыть большим количеством проточной воды.`,
-        precautionaryMeasures2: `При повышенной чувствительности и повреждениях кожи избегать длительного контакта со средством, при ручной стирке использовать резиновые перчатки. `,
-        precautionaryMeasures3: `После полного использования средства упаковку утилизировать как бытовой мусор.`,
-        storageConditions: `Порошок в упакованном виде хранить в сухих помещениях, защищая от прямых солнечных лучей, с относительной влажностью воздуха не более 95%. Беречь от влаги.`,
+        title: "AK NUR AUTOMAT",
+        subTitle: `Intended for washing white and colored linen, clothing made of cotton
+        and linen, artificial, synthetic and mixed fabrics in any type of
+        automatic washing machines and for hand washing. The product is suitable for quick and regular washing and easily copes with difficult dirt.`,
+        compount: `5-15% anionic surfactants, phosphates, oxygenated
+        bleach, less than 5% non-ionic surfactants, soap,enzymes,
+        defoamer, optical brighteners, fragrance additive.`,
+        precautionaryMeasures: `Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water.`,
+        precautionaryMeasures2: ` Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand. `,
+        precautionaryMeasures3: `After complete use, dispose of packaging as household waste.`,
+        storageConditions: `Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture. `,
       },
       automatColor: {
-        title: "Ак нур автомат колор",
-        subTitle: "Предназначен для автоматических стиральных машин и ручной стирки цветного, а так же белого белья, одежды из хлопчатобумажных, льняных, искусственных, синтетических и смешанных тканей. Средство легко справится со сложными загрязнениями не разрушая структуру ткани и сохраняя цвет вашей одежде.",
-        compount: "5-15% анионные ПАВ (поверхностно-активные вещества), силикаты, менее 5% неионогенные ПАВ (поверхностно-активные вещества), фосфаты, поликарбоксилаты, энзимы, пеногаситель, оптические отбеливатели, ароматизирующая добавка.",
-        precautionaryMeasures: `Хранить в недоступных для детей местах. Хранить отдельно от пищевых продуктов. При попадании в глаза немедленно промыть большим количеством проточной воды.`,
-        precautionaryMeasures2: `При повышенной чувствительности и повреждениях кожи избегать длительного контакта со средством, при ручной стирке использовать резиновые перчатки.`,
-        precautionaryMeasures3: `После полного использования средства упаковку утилизировать как бытовой мусор.`,
-        storageConditions: `Порошок в упакованном виде хранить в сухих помещениях, защищая от прямых солнечных лучей, с относительной влажностью воздуха не более 95%. Беречь от влаги.`,
+        title: "AK NUR Color",
+        subTitle: `Intended for automatic washing machines and hand washing of colored and white linen, clothes made of cotton and linen, artificial, synthetic and mixed fabrics. The product easily copes with stubborn stains without destroying the fabric structure and preserves the color of your clothes.`,
+        compount: `5-15% anionic surfactants, silicates, less than 5% non-ionic surfactants, phosphates, polycarboxylates, enzymes, defoamer, optical brighteners, fragrance additive.`,
+        precautionaryMeasures: `Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water.`,
+        precautionaryMeasures2: ` Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.`,
+        precautionaryMeasures3: `After complete use, dispose of packaging as household waste.`,
+        storageConditions: `Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture.`,
       },
       oxy: {
-        title: "Кислородный отбеливатель АкНур Oxi Action 500 г.",
-        subTitle: "Предназначен для удаления сложных загрязнений и пятен, с которыми могут не справиться стиральные порошки. Не содержит хлор. Соблюдайте инструкцию по стирке, указанной на ярлыке одежды.",
-        compount: "32% и более кислородосодержащий отбеливатель, не менее 5% неионогенные и анионные ПАВ, ТПФ, оптический отбеливатель, 2% энзим и прочие добавки.",
-        precautionaryMeasures: `Беречь от детей, опасно при попадании в глаза и проглатывании. Не использовать вместе с хлорсодержащими средствами. Тщательно мыть руки после использования.`,
-        precautionaryMeasures2: `При попадании в глаза немедленно промыть большим количеством воды и немедленно обратиться к врачу.`,
-        precautionaryMeasures3: `При случайном проглатывании запить большим количеством воды и немедленно обратиться к врачу, показав упаковку.`,
-        precautionaryMeasures4: `При попадании на кожу может вызвать временное осветление. Людям с чувствительной кожей рекомендуется использовать резиновые перчатки.`,
-        storageConditions: `Соблюдайте инструкцию по стирке, указанной на ярлыке одежды. Храните в закрытом и прохладном месте. Не используйте для шерсти, шелка и кожи.`,
+        title: "OXYGEN BLEACH AK NUR OXI ACTION 500 G.",
+        subTitle: `Intended for removing stubborn stains that detergents cannot cope with. 
+        It does not contain chlorine. Follow the washing instructions on the garmet label. `,
+        compount: `32% or more oxygenated bleach, not less than 5% non-ionic and anionic surfactants, TPF, optical brightener, 2% enzyme and other additives.`,
+        precautionaryMeasures: `
+        Keep away from children, hazardous in the eyes and if swallowed. Do not use with chlorine-containing products. Wash hands thoroughly after use.`,
+        precautionaryMeasures2: `In case of contact with eyes, rinse immediately with plenty of water and seek medical advice immediately.`,
+        precautionaryMeasures3: `In case of accidental ingestion, drink plenty of water and seek medical advice immediately, showing the container.`,
+        precautionaryMeasures4: `May cause temporary lightening of the skin. Persons with sensitive skin are advised to wear rubber gloves.`,
+        storageConditions: `Store in a covered and cool place. Do not use on wool, silk or leather.`,
       }
     },
     aynur: {
       hand: {
-        title: "Ай нур для ручной стирки",
-        subTitle: "Предназначен для ручной стирки и стирки в стиральных машинах активаторного типа, белого и цветного белья, одежды из хлопчатобумажных, льняных, искусственных, синтетических и смешанных тканей. Средство идеально подходит для повседневной стирки одежды.",
-        compount: "5-15% анионные ПАВ (поверхностно-активные вещества), силикаты, менее 5% фосфаты, энзимы, оптический отбеливатель, ароматизирующая добавка.",
-        precautionaryMeasures: ` Хранить в недоступных для детей местах. Хранить отдельно от пищевых продуктов. При попадании в глаза немедленно промыть большим количеством проточной воды.`,
-        precautionaryMeasures2: `При повышенной чувствительности и повреждениях кожи избегать длительного контакта со средством, при ручной стирке использовать резиновые перчатки.`,
-        precautionaryMeasures3: `После полного использования средства упаковку утилизировать как бытовой мусор.`,
-        storageConditions: `Порошок в упакованном виде хранить в сухих помещениях, защищая от прямых солнечных лучей, с относительной влажностью воздуха не более 95%. Беречь от влаги.`,
+        title: "AY NUR for HAND WASHING ",
+        subTitle: `Intended for hand washing and laundering in washing machines of activator type, white and colored linen, clothes of cotton, linen artificial, synthetic and mixed fabrics.
+        The product is ideal for everyday washing of clothes.`,
+        compount: "5-15% anionic surfactants, silicates, less than 5% phosphates, enzymes, optical brighteners, fragrance additive. ",
+        precautionaryMeasures: `Keep out of the reach of children. Keep away from foodstuffs. Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.`,
+        precautionaryMeasures2: ` In case of contact with eyes, rinse immediately with plenty of running water. `,
+        precautionaryMeasures3: `After complete use, dispose of packaging as household waste.`,
+        storageConditions: `Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture.  `,
       },
       automat: {
-        title: "Ай нур автомат",
-        subTitle: "Предназначен для стирки белого и цветного белья, одежды из хлопчатобумажных, льняных, искусственных, синтетических и смешанных тканей в автоматических стиральных машинах любого типа и ручной стирки. Средство идеально подходит для повседневной стирки одежды.",
-        compount: "5-15% анионные ПАВ (поверхностно-активные вещества), фосфаты, фотокаталитический отбеливатель, менее 5% неионогенные ПАВ (поверхностно-активные вещества), энзимы, пеногаситель, оптические отбеливатели, ароматизирующая добавка.",
-        precautionaryMeasures: `Хранить в недоступных для детей местах. Хранить отдельно от пищевых продуктов. При попадании в глаза немедленно промыть большим количеством проточной воды.`,
-        precautionaryMeasures2: `При повышенной чувствительности и повреждениях кожи избегать длительного контакта со средством, при ручной стирке использовать резиновые перчатки.`,
-        precautionaryMeasures3: `После полного использования средства упаковку утилизировать как бытовой мусор.`,
-        storageConditions: `Порошок в упакованном виде хранить в сухих помещениях, защищая от прямых солнечных лучей, относительной влажностью воздуха не более 95%. Беречь от влаги.`,
+        title: "AY NUR AUTOMAT",
+        subTitle: `Intended for washing white and colored linen, clothes made of cotton and linen, artificial, synthetic and mixed fabrics in any type of automatic washing machine and hand wash. The product is ideal for everyday washing of clothes.`,
+        compount: "5-15% anionic surfactants, phosphates, photocatalytic bleach, less than 5% non-ionic surfactants, enzymes, defoamer, optical brighteners, fragrance additive.",
+        precautionaryMeasures: `Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water.`,
+        precautionaryMeasures2: `Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.`,
+        precautionaryMeasures3: `After complete use, dispose of packaging as household waste.`,
+        storageConditions: `Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%.Keep away from moisture.`,
       },
     },
     pakize: {
       soap: {
-        title: "Туалетное мыло Пякизе 100 г.",
-        subTitle: "Бережная формула средства гигиенической косметики деликатно очищает, дезинфицирует и идеально подходит для кожи любого типа. Туалетное мыло «Пякизе» обладает повышенным пенообразованием, хорошо растворяется в холодной и горячей воде, обладает хорошим запахом что станет дополнением к косметическим средствам, которыми вы пользуетесь ежедневно.",
-        compount: "Пальмовое масло, кокосовое масло, вода, парфюмерная композиция, масло виноградной косточки, хлорид натрия, диоксид титана, силикат натрия, лимонная кислота, красители, ЭДТА, БХТ, оптический отбеливатель.",
-        precautionaryMeasures: `Использовать только для наружного применения. При попадании мыльной пены в глаза - промыть их чистой водой. При попадании мыльной пены в рот – прополоскать водой.`,
-        storageConditions: `Хранить при температуре  не ниже  -50 С и влажности не более 75%`,
-        lavender: "Лаванда",
-        mint: "Мята",
-        garnet: "Гранат",
-        peach: "Персик",
+        title: "PAKIZE BEAUTY SOAP 100 G.",
+        subTitle: "The gental formula of hygienic cosmetics delicately cleanses, disinfects and is ideal for all skin types. Toilet soap “Pakize” has an increased foaming, dissolves well in cold and hot water, has a good smell that will be in addition to the cosmetics that you use daily.",
+        compount: "Palm oil, coconut oil, water, perfume composition, grape seed oil, sodium chloride, titanium dioxide, sodium silicate, citric acid, dyes, EDTA,BHT, optical brightener.",
+        precautionaryMeasures: `Use for external use only; In case of contact with eyes, rinse generously with water. In case of contact with the mouth - rinse thoroughly with running water.`,
+        storageConditions: `Store at a temperature not lower than -5°С and humidity not more than 75%.`,
+        lavender: "Lavender",
+        mint: "Mint",
+        garnet: "Garnet",
+        peach: "Peach",
       },
     }
   }

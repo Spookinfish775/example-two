@@ -322,7 +322,8 @@ export default {};
 			@include max($small) {
 				width: 13.5em;
 				height: 25em;
-				left: 7em;
+				left: 40%;
+				transform: translateX(-40%);
 				top: 23em;
 			}
 		}
@@ -346,7 +347,8 @@ export default {};
 			@include max($small) {
 				width: 13.5em;
 				height: 25em;
-				left: 14em;
+				left: 70%;
+				transform: translateX(-70%);
 				top: 22em;
 			}
 		}

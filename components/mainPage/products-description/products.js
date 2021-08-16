@@ -5,7 +5,7 @@ function Products(context) {
       image: "powder.svg",
     },
     {
-      title: context.$t("products.aknur.index"),
+      title: context.$t("products.aknur.oxygen.title"),
       description: context.$t("products.aknur.oxygen.description"),
       image: "oxygen.svg",
     },

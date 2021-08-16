@@ -144,7 +144,7 @@
 		}
 	}
 	.navigation-block {
-		margin-top: 18em;
+		margin: 18em 0 12em 0;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;

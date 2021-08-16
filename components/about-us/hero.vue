@@ -162,6 +162,8 @@ export default {
 		}
 
 		@include max($small) {
+			margin: 0;
+			padding: 5em 1em 3em 1em;
 			width: 100%;
 		}
 	}

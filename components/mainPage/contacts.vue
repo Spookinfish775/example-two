@@ -161,7 +161,7 @@ export default {
 			margin: 3.6em 0 0 0;
 		}
 		@include max($large) {
-			margin: 0 0 0 3em;
+			margin: 0 2em 0 3em;
 			:nth-child(3) {
 				margin: 3em 0 0 0;
 			}
