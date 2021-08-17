@@ -1,12 +1,12 @@
 <template>
-	<div class="main-page-wrapper">
-		<Hero />
-		<Description />
-		<OurProduts />
-		<ProdutsDescription />
-		<Contacts />
-		<articles />
-	</div>
+  <div class="main-page-wrapper">
+    <Hero />
+    <Description />
+    <OurProduts />
+    <ProdutsDescription />
+    <Contacts />
+    <articles />
+  </div>
 </template>
 
 <script>
@@ -17,21 +17,21 @@ import ProdutsDescription from "~/components/mainPage/products-description/index
 import Contacts from "~/components/mainPage/contacts.vue";
 import Articles from "~/components/mainPage/articles/index.vue";
 export default {
-	components: {
-		Hero,
-		Description,
-		OurProduts,
-		ProdutsDescription,
-		Contacts,
-		Articles
-	}
+  components: {
+    Hero,
+    Description,
+    OurProduts,
+    ProdutsDescription,
+    Contacts,
+    Articles,
+  },
 };
 </script>
 
 <style lang="scss">
 .main-page-wrapper {
-	width: 100%;
-	min-height: 100vh;
-	position: relative;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 </style>
