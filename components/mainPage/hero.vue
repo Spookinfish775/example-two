@@ -119,23 +119,8 @@ export default {};
 			align-items: center;
 			justify-content: center;
 		}
-		@keyframes bubble1 {
-			0% {
-				transform: translateY(0%);
-			}
-			50% {
-				transform: translateY(-40%);
-			}
-		}
 
-		@keyframes anim2 {
-			0% {
-				transform: translateY(0%);
-			}
-			50% {
-				transform: translateY(-5%);
-			}
-		}
+
 		.bubble {
 			position: absolute;
 			background: url("/img/main/bubble.png") center no-repeat;

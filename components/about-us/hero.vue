@@ -148,8 +148,8 @@ export default {
 					background: url("/img/about-us/hero/enText.png") center no-repeat;
 					background-size: cover;
 				}
-				&.tk {
-					background: url("/img/about-us/hero/tkText.png") center no-repeat;
+				&.tm {
+					background: url("/img/about-us/hero/tmText.png") center no-repeat;
 					background-size: cover;
 				}
 			}

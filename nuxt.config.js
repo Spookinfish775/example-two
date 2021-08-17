@@ -74,7 +74,7 @@ export default {
         },
         {
           name: 'Turkmen',
-          code: 'tk',
+          code: 'tm',
           iso: 'tk-TK',
           file: 'tk-TK.js'
         },

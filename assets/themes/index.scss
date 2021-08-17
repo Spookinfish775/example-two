@@ -155,6 +155,13 @@ p {
   font-size: 2em;
   line-height: 1.4em;
   text-transform: uppercase;
+  @include max($large) {
+    font-size: 2em;
+  }
+
+  @include max($small) {
+    font-size: 1.6em;
+  }
 }
 
 .card-text {
@@ -165,4 +172,30 @@ p {
   font-size: 1.6em;
   line-height: 2.6em;
   text-transform: lowercase;
+  @include max($large) {
+    font-size: 2em;
+  }
+
+  @include max($small) {
+    font-size: 1.6em;
+  }
+}
+
+
+@keyframes bubble1 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
 }

@@ -106,6 +106,23 @@ export default {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	#email {
+		&::placeholder {
+			/* Chrome, Firefox, Opera, Safari 10.1+ */
+			color: $default-text-color;
+			opacity: 1; /* Firefox */
+		}
+
+		&:-ms-input-placeholder {
+			/* Internet Explorer 10-11 */
+			color: $default-text-color;
+		}
+
+		&::-ms-input-placeholder {
+			/* Microsoft Edge */
+			color: $default-text-color;
+		}
+	}
 	.logo {
 		width: 10.1em;
 		img {

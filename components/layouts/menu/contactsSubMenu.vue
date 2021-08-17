@@ -15,8 +15,8 @@ export default {};
 
 <style lang="scss">
 .contacts-submenu-wrapper {
-	width: 22.4em;
-	height: 10.4em;
+	width: 18em;
+	height: 8em;
 	position: relative;
 	.arrow {
 		position: relative;

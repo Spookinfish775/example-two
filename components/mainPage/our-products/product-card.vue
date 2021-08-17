@@ -95,7 +95,7 @@ export default {
 		justify-content: center;
 		@include max($small) {
 			width: 90%;
-			margin: 1em;
+			margin: 3em 1em 1em 1em ;
 		}
 		span {
 			font-family: "TT Hazelnuts";
@@ -106,6 +106,12 @@ export default {
 			letter-spacing: 0.2em;
 			text-transform: uppercase;
 			color: #ffffff;
+			@include max($large) {
+				font-size: 1.8em;
+			}
+			@include max($small) {
+				font-size: 1.6em;
+			}
 		}
 		&.blue-sky {
 			background-color: $blue-sky;

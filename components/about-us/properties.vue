@@ -132,14 +132,6 @@ export default {
 		}
 	}
 	.powder-wrapper {
-		@keyframes bubble1 {
-			0% {
-				transform: translateY(0%);
-			}
-			50% {
-				transform: translateY(-40%);
-			}
-		}
 		.bubble {
 			position: absolute;
 			background: url("/img/main/bubble.png") center no-repeat;

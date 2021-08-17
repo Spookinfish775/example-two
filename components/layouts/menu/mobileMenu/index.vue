@@ -42,7 +42,7 @@
 		<div class="language-panel">
 			<span @click="changeLanguage('ru')" class="lang">RU</span>
 			<span @click="changeLanguage('en')" class="lang">EN</span>
-			<span @click="changeLanguage('tk')" class="lang">TM</span>
+			<span @click="changeLanguage('tm')" class="lang">TM</span>
 		</div>
 		<transition name="slide-fade">
 			<div class="products-mobile-submenu" v-if="productMobileSubmenu">

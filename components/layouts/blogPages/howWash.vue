@@ -135,7 +135,7 @@
 
 	.title-block {
 		.page-title {
-			line-height: 4.6em;
+			margin-bottom: 2em;
 		}
 		.blog-img {
 			width: 115.03em;
@@ -236,7 +236,6 @@
 		}
 		.title-block {
 			.page-title {
-				line-height: 1.6em;
 				margin-bottom: 2em;
 			}
 			.blog-img {
@@ -316,7 +315,6 @@
 		margin-top: 10em;
 		.title-block {
 			.page-title {
-				line-height: 1.6em;
 				margin-bottom: 2em;
 			}
 			.blog-img {

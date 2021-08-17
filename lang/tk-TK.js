@@ -14,7 +14,7 @@ export default {
       "Ak nur kir ýuwujy serişdesi",
       "Aý nur kir ýuwujy serişdesi",
       "Päkize gözellik sabyny",
-      "Kislorodly agardyjysy",
+      "Kislorodly agardyjy",
     ],
     contactsSubMenuLink: "Diler bolmaklyk",
     contactsSubMenuLocation: "Türkmenistan, Ahal welaýaty, Ak bugdaý etraby Änew şäheri, Telekeçiler köçesi, 14-nji jaý."
@@ -227,18 +227,18 @@ export default {
         description: "Nah, kendir, emeli, sintetiki we garyşyk matalardan tikilen ak we reňkli egin-eşikleri awtomatiki kir ýuwujy maşynlarda we elde ýuwmak üçin niýetlenendir. Bu serişde çalt we yzygiderli ýuwmak üçin amatlydyr. Şeýle-de ol çylşyrymly hapalaryň hem hötdesinden gelýär."
       },
       oxygen: {
-        title: '"Ak Nur Oxi Action" kislorodly agardyjysy 500 g',
+        title: 'kislorodly agardyjy 500 g',
         description: 'Kir ýuwujy serişdeleriň aýryp bilmedik kyn, çylşyrymly  hapalary we tegmilleri aýyrmak üçin niýetlenendir. Düzüminde hlor ýokdur. Agartmak üçin egin-eşiklerdäki bellikleriň gözükdirijilerine eýermeli.',
       }
     },
     pakize: {
-      index: "“Päkize”",
+      index: "Päkize",
       soap: {
         title: 'gözellik sabyny',
         description: 'Gigiýeniki kosmetiki serişdäniň ýumşak formulasy deriniň ähli görnüşleri üçin ýaramlydyr we ol derini näziklik bilen arassalaýar, zyýansyzlandyrýar. “Päkize” gözellik sabyny ýumşak köpürjik emele getirýär, sowuk we ýyly suwda aňsatlyk bilen ereýär, ýakymly ysa eýe bolan bu gözellik sabyny gündelik ulanýan kosmetiki serişdeleriňiziň üstüni ýetirer.',
         type: {
-          peach: 'Şetdaly',
-          mint: 'Nana',
+          peach: 'Erik',
+          mint: 'Narpyz',
           garnet: 'Nar',
           lavender: 'Lawanda',
         }
@@ -290,7 +290,8 @@ export default {
         storageConditions: `Gaplanan serişdäni  gury otaglarda, göni gün şöhlesinden goragly, çyglylygy 95% -den ýokary bolmadyk ýerde saklamaly. Çyglylykdan goraň.`,
       },
       oxy: {
-        title: "'Ak Nur Oxi Action' kislorodly agardyjysy 500 g",
+
+        title: "“Ak Nur Oxi Action” kislorodly agardyjy 500 g",
         subTitle: "Kir ýuwujy serişdeleriň aýryp bilmedik kyn, çylşyrymly  hapalary we tegmilleri aýyrmak üçin niýetlenendir. Düzüminde hlor ýokdur. Agartmak üçin egin-eşiklerdäki bellikleriň gözükdirijilerine eýermeli.",
         compount: "32% ýa-da ondan köp mukdarda düzüminde kislorodly agardyjy, iň az 5% ionogen däl we anion ÝIM (ýüzleý işjeň maddalar); TPF; optiki agardyjylar, 2% enzim we beýleki goşundylar.",
         precautionaryMeasures: `Çagalardan daşda saklamaly. Göze galtaşanda we ýuwdulanda howpludyr. Düzüminde hlor bolan serişdeler bilen bilelikde ulanmaly däl. Ulanylandan soňra eliňizi gowy edip ýuwmaly.`,
@@ -322,15 +323,15 @@ export default {
     },
     pakize: {
       soap: {
-        title: "“Päkize” gözellik sabyny 100 g",
+        title: "Päkize gözellik sabyny 100 g",
         subTitle: "Gigiýeniki kosmetiki serişdäniň ýumşak formulasy deriniň ähli görnüşleri üçin ýaramlydyr we ol derini näziklik bilen arassalaýar, zyýansyzlandyrýar. “Päkize” gözellik sabyny ýumşak köpürjik emele getirýär, sowuk we ýyly suwda aňsatlyk bilen ereýär, ýakymly ysa eýe bolan bu gözellik sabyny gündelik ulanýan kosmetiki serişdeleriňiziň üstüni ýetirer.",
         compount: "Palma ýagy, kokos ýagy, suw, hoşboý ys berijiler, üzüm dänesiniň ýagy, natriý hloridi, titan dioksidi, natriý silikaty, limon turşusy, reňk berijiler, EDTA, BHT, optiki agardyjy.",
         precautionaryMeasures: `Diňe daşky ulanyş üçin niýetlenendir. Sabyn köpürjigi gözüňize düşen ýagdaýynda - gözüňizi arassa suw bilen ýuwuň. Agzyňyza düşen ýagdaýynda - agzyňyzy suw bilen çaýkaň.`,
         storageConditions: `-50С-den pes bolmadyk temperaturada we çyglylyk 75% -den köp bolmadyk ýerde saklamaly.`,
         lavender: "Lawanda",
-        mint: "Nana",
+        mint: "Narpyz",
         garnet: "Nar",
-        peach: "Şetdaly",
+        peach: "Erik",
       },
     }
   }

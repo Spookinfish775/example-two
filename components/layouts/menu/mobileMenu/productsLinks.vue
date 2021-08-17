@@ -28,7 +28,7 @@
 
 <style lang="scss">
 .product-links-wrapper {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -40,14 +40,13 @@
 	align-items: center;
 	.product-link-group {
 		width: 100%;
-		height: 46.3em;
+		height: 20em;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
 		.link-wrapper {
 			width: 92%;
-			font-size: 2em;
 			color: $default-text-color;
 			font-weight: 900;
 			padding-left: 5em;
@@ -65,12 +64,12 @@
 	@include max($small) {
 		.product-link-group {
 			width: 100%;
-			height: 46.3em;
+			height: 30em;
 			.link-wrapper {
 				font-weight: 700;
-				padding-left: 1.14em;
+				padding-left: 2em;
 				.product-link {
-					font-size: 1em;
+					font-size: 1.4em;
 				}
 			}
 		}

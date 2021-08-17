@@ -4,7 +4,7 @@
 		<div class="product-submenu">
 			<span @click="changeLanguage('ru')" class="sublink">RU</span>
 			<span @click="changeLanguage('en')" class="sublink">EN</span>
-			<span @click="changeLanguage('tk')" class="sublink">TM</span>
+			<span @click="changeLanguage('tm')" class="sublink">TM</span>
 		</div>
 	</div>
 </template>

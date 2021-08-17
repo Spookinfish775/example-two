@@ -59,7 +59,9 @@
 				<input v-model="agree" type="checkbox" id="agree" />
 				<label for="agree">{{ $t("form.agreePlaceholder") }}</label>
 			</div>
-			<input :disabled="!agree" type="submit" class="submit" />
+			<button :disabled="!agree" type="submit" class="submit">
+				{{ $t("dealer.submitPlaceholder") }}
+			</button>
 		</form>
 	</div>
 </template>
@@ -153,13 +155,48 @@ export default {
 		}
 	}
 	form {
-		width: 55em;
+		width: 85em;
 		height: 60em;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
 		font-family: Montserrat;
+		input {
+			&::placeholder {
+				/* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $blue-sky;
+				opacity: 1; /* Firefox */
+			}
+
+			&:-ms-input-placeholder {
+				/* Internet Explorer 10-11 */
+				color: $blue-sky;
+			}
+
+			&::-ms-input-placeholder {
+				/* Microsoft Edge */
+				color: $blue-sky;
+			}
+		}
+		textarea {
+			&::placeholder {
+				/* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $blue-sky;
+				opacity: 1; /* Firefox */
+			}
+
+			&:-ms-input-placeholder {
+				/* Internet Explorer 10-11 */
+				color: $blue-sky;
+			}
+
+			&::-ms-input-placeholder {
+				/* Microsoft Edge */
+				color: $blue-sky;
+			}
+		}
+
 		input {
 			outline: none;
 			width: 80%;
@@ -259,14 +296,14 @@ export default {
 			}
 		}
 		.submit {
-			width: 10em;
-			height: 3.2em;
+			width: 11em;
+			height: 4em;
 			background-color: $blue-sky;
 			border: none !important;
 			padding: 0 !important;
 			border-radius: 2em;
 			color: $default-text-color;
-			font-size: 1.2em;
+			font-size: 1.8em;
 			text-transform: uppercase;
 			font-weight: 900;
 			letter-spacing: 0.1em;

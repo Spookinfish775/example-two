@@ -66,6 +66,9 @@ export default {
 		display: none;
 		@include max($small) {
 			display: flex;
+			img{
+				width: 50%;
+			}
 		}
 	}
 	.earth-wrapper {
@@ -147,8 +150,8 @@ export default {
 					background: url("/img/main/contacts/enText.png") center no-repeat;
 					background-size: cover;
 				}
-				&.tk {
-					background: url("/img/main/contacts/tkText.png") center no-repeat;
+				&.tm {
+					background: url("/img/main/contacts/tmText.png") center no-repeat;
 					background-size: cover;
 				}
 			}

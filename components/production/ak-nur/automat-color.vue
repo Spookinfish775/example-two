@@ -148,14 +148,6 @@ export default {
 		@include max($large) {
 			justify-content: flex-start;
 		}
-		@keyframes bubble {
-			0% {
-				transform: translateY(0%);
-			}
-			50% {
-				transform: translateY(-40%);
-			}
-		}
 		.bubble {
 			position: absolute;
 			background: url("/img/main/bubble.png") center no-repeat;
@@ -165,7 +157,7 @@ export default {
 				height: 10em;
 				left: 5em;
 				top: 20em;
-				animation: bubble linear infinite 4s;
+				animation: bubble1 linear infinite 4s;
 				@include max($large) {
 					display: none;
 				}
@@ -175,7 +167,7 @@ export default {
 				height: 15em;
 				left: 15em;
 				top: 15em;
-				animation: bubble linear infinite 6s;
+				animation: bubble1 linear infinite 6s;
 				@include max($large) {
 					display: none;
 				}
@@ -185,7 +177,7 @@ export default {
 				height: 10em;
 				left: 25em;
 				top: 10em;
-				animation: bubble linear infinite 4s;
+				animation: bubble1 linear infinite 4s;
 				@include max($large) {
 					display: none;
 				}
@@ -195,7 +187,7 @@ export default {
 				height: 5em;
 				left: 25em;
 				top: 0;
-				animation: bubble linear infinite 6s;
+				animation: bubble1 linear infinite 6s;
 				@include max($large) {
 					display: none;
 				}

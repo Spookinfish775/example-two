@@ -93,15 +93,5 @@ export default {
 		display: flex;
 		justify-content: center;
 	}
-	@keyframes bubble {
-		0% {
-			transition: 0.3s;
-			transform: translateX(0%);
-		}
-		50% {
-			transition: 0.3s;
-			transform: translateX(-40%);
-		}
-	}
 }
 </style>

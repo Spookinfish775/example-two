@@ -53,7 +53,9 @@
 				<input v-model="agree" type="checkbox" id="agree" />
 				<label for="agree">{{ $t("form.agreePlaceholder") }}</label>
 			</div>
-			<input :disabled="!agree" type="submit" class="submit" />
+			<button :disabled="!agree" type="submit" class="submit">
+				{{ $t("dealer.submitPlaceholder") }}
+			</button>
 		</form>
 	</div>
 </template>
@@ -142,6 +144,40 @@ export default {
 		border: 1px solid $main-color;
 		.close-button {
 			display: none;
+		}
+		input {
+			&::placeholder {
+				/* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $blue-sky;
+				opacity: 1; /* Firefox */
+			}
+
+			&:-ms-input-placeholder {
+				/* Internet Explorer 10-11 */
+				color: $blue-sky;
+			}
+
+			&::-ms-input-placeholder {
+				/* Microsoft Edge */
+				color: $blue-sky;
+			}
+		}
+		textarea {
+			&::placeholder {
+				/* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $blue-sky;
+				opacity: 1; /* Firefox */
+			}
+
+			&:-ms-input-placeholder {
+				/* Internet Explorer 10-11 */
+				color: $blue-sky;
+			}
+
+			&::-ms-input-placeholder {
+				/* Microsoft Edge */
+				color: $blue-sky;
+			}
 		}
 		input {
 			outline: none;
