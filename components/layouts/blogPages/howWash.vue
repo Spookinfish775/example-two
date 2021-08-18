@@ -1,376 +1,292 @@
 <template>
-	<div class="blog-wrapper">
-		<div class="title-block">
-			<h1 class="page-title">{{ $t("blog.howWash.title") }}</h1>
-			<div class="blog-img"></div>
-			<p class="page-text">{{ $t("blog.howWash.description") }}</p>
-		</div>
-		<div class="description-block">
-			<div class="second-page-title">
-				<p>{{ $t("blog.howWash.sortByColorTitle") }}</p>
-			</div>
-			<div class="page-text">
-				<p>{{ $t("blog.howWash.sortByColorDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="second-page-title">
-				<p>{{ $t("blog.howWash.sortByCompounTitle") }}</p>
-			</div>
-			<div class="page-text">
-				<p>{{ $t("blog.howWash.sortByCompounDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="second-page-title">
-				<p>{{ $t("blog.howWash.sortByDirtTitle") }}</p>
-			</div>
-			<div class="page-text">
-				<p>{{ $t("blog.howWash.sortByDirtDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="second-page-title">
-				<p>{{ $t("blog.howWash.choiceWashModeTitle") }}</p>
-			</div>
-			<div class="page-text">
-				<p>{{ $t("blog.howWash.choiceWashModeDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="tit second-page-title">
-				<div class="icon">
-					<img src="/img/blog-img/washMode.svg" alt="" />
-				</div>
-				<p>{{ $t("blog.howWash.washModeTitle") }}</p>
-			</div>
-			<div class="page-text paddleft">
-				<p>{{ $t("blog.howWash.washModeDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="second-page-title" id="big-title">
-				<p>{{ $t("blog.howWash.washTempTitle") }}</p>
-			</div>
-			<div class="page-text" id="big-description">
-				<p>{{ $t("blog.howWash.washTempDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="tit second-page-title">
-				<div class="icon">
-					<img src="/img/blog-img/naturDry.svg" alt="" />
-				</div>
-				<p>{{ $t("blog.howWash.dryTitle") }}</p>
-			</div>
-			<div class="page-text paddleft">
-				<p>{{ $t("blog.howWash.dryDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="tit second-page-title">
-				<div class="icon">
-					<img src="/img/blog-img/drySpnin.svg" alt="" />
-				</div>
-				<p>{{ $t("blog.howWash.spinningTitle") }}</p>
-			</div>
-			<div class="page-text paddleft">
-				<p>{{ $t("blog.howWash.spinningDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="tit second-page-title">
-				<div class="icon">
-					<img src="/img/blog-img/ironing.svg" alt="" />
-				</div>
-				<p>{{ $t("blog.howWash.ironingTitle") }}</p>
-			</div>
-			<div class="page-text paddleft">
-				<p>{{ $t("blog.howWash.ironingDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="tit second-page-title">
-				<div class="icon">
-					<img src="/img/blog-img/dryClean.svg" alt="" />
-				</div>
-				<p>{{ $t("blog.howWash.dryСleaningTitle") }}</p>
-			</div>
-			<div class="page-text paddleft">
-				<p>{{ $t("blog.howWash.dryСleaningDescription") }}</p>
-			</div>
-		</div>
-		<div class="description-block">
-			<div class="tit second-page-title">
-				<div class="icon">
-					<img src="/img/blog-img/dontWash.svg" alt="" />
-				</div>
-				<p>{{ $t("blog.howWash.dontWashTitle") }}</p>
-			</div>
-			<div class="page-text paddleft">
-				<p>{{ $t("blog.howWash.dontWashDescription") }}</p>
-			</div>
-		</div>
-		<div class="navigation-block">
-			<div class="left-buttons">
-				<div class="active-btn">1</div>
-				<nuxt-link to="/blog/washSheets" class="next-btn">2</nuxt-link>
-			</div>
-			<div class="right-button">
-				<div class="all-articles">
-					<nuxt-link to="/articles">
-						{{ $t("blog.howWash.allButton") }}
-					</nuxt-link>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="blog-wrapper">
+    <div class="title-block">
+      <h1 class="page-title">{{ $t("blog.howWash.title") }}</h1>
+      <div class="blog-img"></div>
+      <p class="page-text">{{ $t("blog.howWash.description") }}</p>
+    </div>
+
+    <div
+      class="description-block"
+      v-for="(item, index) in content"
+      :key="index"
+    >
+      <div class="icon" v-if="item.icon">
+        <img :src="item.icon" />
+      </div>
+      <div>
+        <h2 class="second-page-title">
+          <img class="mobile-icon" v-if="item.icon" :src="item.icon" />
+          {{ item.title }}
+        </h2>
+        <p class="page-text">{{ item.text }}</p>
+      </div>
+    </div>
+    <div class="navigation-block">
+      <div class="left-buttons">
+        <div class="active-btn">1</div>
+        <nuxt-link to="/blog/washSheets" class="next-btn">2</nuxt-link>
+      </div>
+      <div class="right-button">
+        <div class="all-articles">
+          <nuxt-link to="/articles">
+            {{ $t("blog.howWash.allButton") }}
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      content: [
+        {
+          title: this.$t("blog.howWash.sortByColorTitle"),
+          text: this.$t("blog.howWash.sortByColorDescription"),
+        },
+        {
+          title: this.$t("blog.howWash.sortByCompounTitle"),
+          text: this.$t("blog.howWash.sortByCompounDescription"),
+        },
+        {
+          title: this.$t("blog.howWash.sortByDirtTitle"),
+          text: this.$t("blog.howWash.sortByDirtDescription"),
+        },
+        {
+          title: this.$t("blog.howWash.choiceWashModeTitle"),
+          text: this.$t("blog.howWash.choiceWashModeDescription"),
+        },
+        {
+          title: this.$t("blog.howWash.washModeTitle"),
+          text: this.$t("blog.howWash.washModeDescription"),
+          icon: "/img/blog-img/washMode.svg",
+        },
+        {
+          title: this.$t("blog.howWash.washTempTitle"),
+          text: this.$t("blog.howWash.washTempDescription"),
+        },
+        {
+          title: this.$t("blog.howWash.dryTitle"),
+          text: this.$t("blog.howWash.dryDescription"),
+          icon: "/img/blog-img/naturDry.svg",
+        },
+        {
+          title: this.$t("blog.howWash.spinningTitle"),
+          text: this.$t("blog.howWash.spinningDescription"),
+          icon: "/img/blog-img/drySpnin.svg",
+        },
+        {
+          title: this.$t("blog.howWash.ironingTitle"),
+          text: this.$t("blog.howWash.ironingDescription"),
+          icon: "/img/blog-img/ironing.svg",
+        },
+        {
+          title: this.$t("blog.howWash.dryСleaningTitle"),
+          text: this.$t("blog.howWash.dryСleaningDescription"),
+          icon: "/img/blog-img/dryClean.svg",
+        },
+        {
+          title: this.$t("blog.howWash.dontWashTitle"),
+          text: this.$t("blog.howWash.dontWashDescription"),
+          icon: "/img/blog-img/dontWash.svg",
+        },
+      ],
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .blog-wrapper {
-	width: 100%;
-	padding: 0 12em;
-	margin-top: 20em;
+  width: 100%;
+  padding: 27.8em 15em 12.7em 15em;
+  @include max($large) {
+    padding: 17.1em 3.2em 7em 3.2em;
+  }
+  @include max($small) {
+    padding: 9.72em 1.6em 6em 1.6em;
+  }
+  .title-block {
+    .page-title {
+      margin-bottom: 2.42em;
+      @include max($large) {
+        margin-bottom: 2.2em;
+      }
+      @include max($large) {
+        margin-bottom: 1.35em;
+      }
+    }
+    .blog-img {
+      width: 115.03em;
+      height: 61.7em;
+      background: url("/img/blog-img/howWashBlog.png") center no-repeat;
+      background-size: cover;
+      @include max($large) {
+        width: 69.84em;
+        height: 37.5em;
+      }
+      @include max($small) {
+        background: url("/img/blog-img/howWashBlogMobile.png") center no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 29.5em;
+      }
+    }
+    .page-text {
+      margin-top: 8.63em;
+      width: 70%;
+      @include max($large) {
+        margin-top: 1.9em;
+        width: 100%;
+      }
+      @include max($small) {
+        margin-top: 2.09em;
+        width: 100%;
+      }
+    }
+  }
+  .description-block {
+    padding-top: 6em;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 70%;
+    @include max($large) {
+      padding-top: 3em;
+      width: 100%;
+    }
+    .second-page-title {
+      display: flex;
+      align-items: center;
+      .mobile-icon {
+        display: none;
+        width: 1.3em;
+        height: 1.3em;
+        margin: 0 0.5em 0 0;
+        @include max($small) {
+          display: inline;
+          position: relative;
+        }
+      }
+    }
+    .icon {
+      position: relative;
+      @include max($large) {
+        width: 4em;
+        height: 4em;
+        margin: 0 4.5em 0 0;
+      }
+      @include max($small) {
+        display: none;
+      }
+      img {
+        position: absolute;
+        left: -7em;
+        width: 4em;
+        height: 4em;
+        @include max($large) {
+          position: static;
+        }
+        @include max($small) {
+          width: 2.5em;
+          height: 2.5em;
+        }
+      }
+    }
+    .page-text {
+      padding-top: 0.73em;
+      @include max($large) {
+        padding-top: 0.5em;
+      }
+    }
+  }
+  .navigation-block {
+    margin: 16.75em 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: TT Hazelnuts;
+    .left-buttons {
+      display: flex;
+      .active-btn {
+        width: 7.12em;
+        height: 3.26em;
+        font-size: 2.01em;
+        font-weight: 900;
+        cursor: pointer;
 
-	.title-block {
-		.page-title {
-			margin-bottom: 2em;
-		}
-		.blog-img {
-			width: 115.03em;
-			height: 61.7em;
-			background: url("/img/blog-img/howWashBlog.png") center no-repeat;
-			background-size: cover;
-		}
-		.page-text {
-			margin-top: 3em;
-			width: 70%;
-		}
-	}
-	.description-block {
-		width: 70%;
-		margin-top: 6em;
-		.tit {
-			display: flex;
-			align-items: center;
-			.icon {
-				margin: 0 1em 0 0;
-				width: 1.32em;
-				height: 1.32em;
-				img {
-					width: 100%;
-				}
-			}
-		}
-		.page-text {
-			margin-top: 1.3em;
-		}
-	}
-	.navigation-block {
-		margin: 18em 0 12em 0;
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		font-family: TT Hazelnuts;
-		.left-buttons {
-			display: flex;
-			.active-btn {
-				width: 7.12em;
-				height: 3.26em;
-				font-size: 2.01em;
-				font-weight: 900;
-				cursor: pointer;
-
-				border-radius: 2em;
-				color: $default-text-color;
-				background-color: $blue-sky;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			.next-btn {
-				cursor: pointer;
-				width: 3.26em;
-				height: 3.26em;
-				font-size: 2.01em;
-				font-weight: 900;
-				border: 1px solid $blue-sky;
-				border-radius: 2em;
-				color: $blue-sky;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				margin-left: 1em;
-			}
-		}
-		.right-button {
-			.all-articles {
-				width: 10.48em;
-				height: 3.76em;
-				cursor: pointer;
-				font-size: 2.01em;
-				font-weight: 900;
-				letter-spacing: 0.1em;
-				text-transform: uppercase;
-				border-radius: 2em;
-				a {
-					color: $default-text-color;
-				}
-				background-color: $blue-sky;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-		}
-	}
-	@include max($large) {
-		padding: 0 3.4em;
-		margin-top: 20em;
-		.tit {
-			display: flex;
-			align-items: center;
-			.icon {
-				margin: 0 1em 0 0;
-			}
-		}
-		.title-block {
-			.page-title {
-				margin-bottom: 2em;
-			}
-			.blog-img {
-				width: 100%;
-				height: 37.5em;
-			}
-			.page-text {
-				margin-top: 2em;
-				width: 96%;
-			}
-		}
-		.description-block {
-			width: 96%;
-			margin-top: 6em;
-			.page-text {
-				margin-top: 1.3em;
-			}
-			.paddleft {
-				padding-left: 7%;
-			}
-		}
-		.navigation-block {
-			margin: 18em 0 12em 0;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			font-family: TT Hazelnuts;
-			.left-buttons {
-				display: flex;
-				.active-btn {
-					width: 7.12em;
-					height: 3.26em;
-					font-size: 2.01em;
-					font-weight: 900;
-
-					border-radius: 2em;
-					color: $default-text-color;
-					background-color: $blue-sky;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
-				.next-btn {
-					width: 3.26em;
-					height: 3.26em;
-					font-size: 2.01em;
-					font-weight: 900;
-					border: 1px solid $blue-sky;
-					border-radius: 2em;
-					color: $blue-sky;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					margin-left: 1em;
-				}
-			}
-			.right-button {
-				.all-articles {
-					width: 10.48em;
-					height: 3.76em;
-					font-size: 2.01em;
-					font-weight: 900;
-					letter-spacing: 0.1em;
-					text-transform: uppercase;
-					border-radius: 2em;
-					color: $default-text-color;
-					background-color: $blue-sky;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
-			}
-		}
-	}
-	@include max($small) {
-		padding: 0 2em;
-		margin-top: 10em;
-		.title-block {
-			.page-title {
-				margin-bottom: 2em;
-			}
-			.blog-img {
-				width: 100%;
-				height: 34.5em;
-				background: url("/img/blog-img/howWashBlogMobile.png") center no-repeat;
-				background-size: cover;
-			}
-			.page-text {
-				margin-top: 2em;
-				width: 96%;
-			}
-		}
-		.description-block {
-			width: 96%;
-			margin-top: 3em;
-			.page-text {
-				margin-top: 1em;
-			}
-			.paddleft {
-				padding-left: 0%;
-			}
-		}
-		.navigation-block {
-			margin: 6em 0 6em 0;
-			width: 100%;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: center;
-			.left-buttons {
-				display: flex;
-				justify-content: space-between;
-				width: 86%;
-				.active-btn {
-					width: 3em;
-					height: 3em;
-					font-size: 2.01em;
-					font-weight: 900;
-				}
-				.next-btn {
-					width: 6.7em;
-					height: 3em;
-					font-size: 2.01em;
-					font-weight: 900;
-					margin-left: 1em;
-				}
-			}
-			.right-button {
-				margin-top: 2em;
-				.all-articles {
-					width: 15.54em;
-					height: 3.8em;
-					font-size: 1.8em;
-				}
-			}
-		}
-	}
+        border-radius: 2em;
+        color: $default-text-color;
+        background-color: $blue-sky;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .next-btn {
+        cursor: pointer;
+        width: 3.26em;
+        height: 3.26em;
+        font-size: 2.01em;
+        font-weight: 900;
+        border: 1px solid $blue-sky;
+        border-radius: 2em;
+        color: $blue-sky;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+      }
+    }
+    .right-button {
+      .all-articles {
+        width: 10.48em;
+        height: 3.76em;
+        cursor: pointer;
+        font-size: 2.01em;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border-radius: 2em;
+        a {
+          color: $default-text-color;
+        }
+        background-color: $blue-sky;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    @include max($large) {
+      margin: 6em 0 0 0;
+    }
+    @include max($small) {
+      margin: 3em 0 0 0;
+      flex-direction: column;
+      width: 100%;
+      .left-buttons {
+        display: flex;
+        justify-content: space-between;
+        .active-btn {
+          width: 2.92em;
+          height: 2.92em;
+        }
+        .next-btn {
+          margin: 0;
+          width: 6.6em;
+          height: 2.92em;
+        }
+      }
+      .right-button {
+        .all-articles {
+          width: 100%;
+          height: 3.35em;
+          margin-top: 9.8%;
+        }
+      }
+    }
+  }
 }
 </style>
