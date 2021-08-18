@@ -142,6 +142,7 @@ export default {
 		justify-content: space-evenly;
 		align-items: center;
 		border: 1px solid $main-color;
+		color: $main-color;
 		.close-button {
 			display: none;
 		}

@@ -66,8 +66,8 @@ export default {
 		display: none;
 		@include max($small) {
 			display: flex;
-			img{
-				width: 50%;
+			img {
+				width: 14em;
 			}
 		}
 	}

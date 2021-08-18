@@ -6,6 +6,12 @@
 			<p class="tablet mobile">{{ $t("mainPage.hero.gentleCare") }}</p>
 			<p class=" mobile">{{ $t("mainPage.hero.flawlessPurity") }}</p>
 			<p class=" mobile">{{ $t("mainPage.hero.gentleCare") }}</p>
+			<div class="instagram-contact">
+				<div class="line"></div>
+				<a target="_blank" href="https://www.instagram.com/bagtlyzamana"
+					><img src="/img/instagramblue.svg" alt="instagramm"
+				/></a>
+			</div>
 		</div>
 		<div class="images-wrapper">
 			<div class="images">
@@ -38,6 +44,28 @@ export default {};
 	}
 	@include max($small) {
 		height: 60em;
+	}
+	.instagram-contact {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 18em;
+		right: 3em;
+		@include max($large) {
+			display: none;
+		}
+		.line {
+			height: 9em;
+			width: 2px;
+			background-color: $main-color;
+		}
+		img {
+			margin: 4em 0 0 0;
+			width: 2em;
+			height: 2em;
+		}
 	}
 	.tablet-text {
 		position: absolute;
@@ -119,7 +147,6 @@ export default {};
 			align-items: center;
 			justify-content: center;
 		}
-
 
 		.bubble {
 			position: absolute;

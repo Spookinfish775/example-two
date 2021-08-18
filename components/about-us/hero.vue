@@ -67,6 +67,9 @@ export default {
 		display: none;
 		@include max($small) {
 			display: flex;
+			img {
+				width: 14em;
+			}
 		}
 	}
 	.earth-wrapper {

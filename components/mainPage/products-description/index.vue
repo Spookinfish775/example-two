@@ -11,13 +11,13 @@
 				</vue-glide-slide>
 			</vue-glide>
 			<div class="slider-buttons">
-				<div
-					class="button"
-					v-for="(item, index) in products"
-					:key="index"
-					:class="{ active: index === active }"
-					@click="active = index"
-				></div>
+				<div v-for="(item, index) in products" :key="index">
+					<div
+						class="button"
+						:class="{ active: index === active }"
+						@click="active = index"
+					></div>
+				</div>
 			</div>
 		</div>
 	</div>

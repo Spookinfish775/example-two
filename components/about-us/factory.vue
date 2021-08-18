@@ -14,9 +14,15 @@ export default {};
 	margin: 11em 0 0 0;
 	background: url("/img/about-us/factory.png") center no-repeat;
 	background-size: cover;
-
+	@include max($large) {
+		height: 45em;
+		margin: 8em 0 0 0;
+		background-position: bottom;
+	}
 	@include max($small) {
-		margin: 0 0 0 0;
+		height: 35em;
+		margin: 3em 0 0 0;
+		background: url("/img/about-us/factory-small.png") bottom no-repeat;
 	}
 }
 </style>

@@ -5,7 +5,7 @@ export default {
   mode: 'spa',
   target: 'server',
   head: {
-    title: "Aknur",
+    title:"Bagtly zamana",
     meta: [{
         charset: 'utf-8'
       },
