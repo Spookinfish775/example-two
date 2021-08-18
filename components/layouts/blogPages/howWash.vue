@@ -140,6 +140,7 @@ export default {
       width: 70%;
       @include max($large) {
         margin-top: 1.9em;
+        width: 100%;
       }
       @include max($small) {
         margin-top: 2.09em;
@@ -152,8 +153,10 @@ export default {
     display: flex;
     align-items: flex-start;
     position: relative;
+    width: 70%;
     @include max($large) {
       padding-top: 3em;
+      width: 100%;
     }
     .second-page-title {
       display: flex;

@@ -202,7 +202,7 @@ export default {
     justify-content: center;
     .back-button {
       left: 1.6em;
-      top: 2.3em;
+      top: 2.7em;
       .arrow {
         .top {
           width: 1.1em;

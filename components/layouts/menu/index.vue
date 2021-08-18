@@ -323,15 +323,17 @@ export default {
         .top {
           width: 1.6em;
           height: 0.25em;
-          transform: rotate(-45deg) translate(-0.7em);
+          transform: rotate(-45deg) translate(-1.4em);
           position: absolute;
+          left: 1em;
           margin: 0;
         }
         .bottom {
           width: 1.6em;
           height: 0.25em;
-          transform: rotate(45deg) translate(0.7em);
+          transform: rotate(45deg) translate(1.4em);
           position: absolute;
+          left: -1em;
           margin: 0;
         }
       }
