@@ -34,13 +34,13 @@ export default {};
 <style lang="scss">
 .hero-wrapper {
 	width: 100%;
-	height: 120vh;
+	height: 85em;
 	display: flex;
 	position: relative;
 	background: linear-gradient(180deg, #ffffff 0%, #85cbe9 43.69%);
 	@include max($large) {
-		height: 100vh;
-		background: linear-gradient(180deg, #ffffff 0%, #85cbe9 17.33%);
+		height: 80em;
+		background: linear-gradient(180deg, 	#ffffff 0%, #85cbe9 17.33%);
 	}
 	@include max($small) {
 		height: 60em;

@@ -15,12 +15,11 @@ export default {};
 	background-size: cover;
 	@include max($large) {
 		height: 45em;
-		background-size: cover;
 	}
 	@include max($small) {
 		height: 32em;
 		background: url("/img/about-us/factory2-small.png") center no-repeat;
-		background-size: cover;
+		background-size: 100% 100%;
 	}
 }
 </style>

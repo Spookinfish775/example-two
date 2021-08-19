@@ -1,11 +1,11 @@
 <template>
   <div class="main-page-wrapper">
     <Hero />
-    <Description />
+    <!-- <Description />
     <OurProduts />
     <ProdutsDescription />
     <Contacts />
-    <articles />
+    <articles /> -->
   </div>
 </template>
 

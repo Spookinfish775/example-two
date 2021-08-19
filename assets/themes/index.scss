@@ -53,12 +53,14 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-style: normal;
-
   ::-webkit-scrollbar {
     display: none;
   }
+}
+
+body {
+  overflow-x: hidden;
 }
 
 *,
@@ -155,6 +157,7 @@ p {
   font-size: 2em;
   line-height: 1.4em;
   text-transform: uppercase;
+
   @include max($large) {
     font-size: 2em;
   }
@@ -172,6 +175,7 @@ p {
   font-size: 1.6em;
   line-height: 2.6em;
   text-transform: lowercase;
+
   @include max($large) {
     font-size: 2em;
   }
@@ -186,6 +190,7 @@ p {
   0% {
     transform: translateY(0%);
   }
+
   50% {
     transform: translateY(-5%);
   }
@@ -195,6 +200,7 @@ p {
   0% {
     transform: translateY(0%);
   }
+
   50% {
     transform: translateY(-3%);
   }

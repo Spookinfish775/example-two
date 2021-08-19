@@ -73,7 +73,7 @@ export default {
 		}
 		@include max($small) {
 			grid-template-columns: repeat(1, 1fr);
-			grid-row-gap: 15em;
+			grid-row-gap: 5em;
 			:nth-child(1) {
 				&.articles-card-wrapper {
 					margin: 10em 0 0 0;

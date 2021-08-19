@@ -97,15 +97,15 @@ export default {
 			return [
 				{
 					image: "bubble3kg.png",
-					activeImage: "active3kg.png",
+					activeImage: "active3kg.png"
 				},
 				{
 					image: "bubble6kg.png",
-					activeImage: "active6kg.png",
+					activeImage: "active6kg.png"
 				},
 				{
 					image: "bubble9kg.png",
-					activeImage: "active9kg.png",
+					activeImage: "active9kg.png"
 				}
 			];
 		}
@@ -240,6 +240,7 @@ export default {
 				@include max($small) {
 					width: 15em;
 					height: 35em;
+					background-size: 100%;
 				}
 			}
 		}

@@ -240,6 +240,7 @@ export default {
 				@include max($small) {
 					width: 15em;
 					height: 35em;
+					background-size: 100%;
 				}
 			}
 		}

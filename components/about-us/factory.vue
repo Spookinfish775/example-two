@@ -23,6 +23,7 @@ export default {};
 		height: 35em;
 		margin: 3em 0 0 0;
 		background: url("/img/about-us/factory-small.png") bottom no-repeat;
+		background-size: 100%;
 	}
 }
 </style>

@@ -128,7 +128,7 @@ export default {
 	padding: 11.4em 0 0 12em;
 	position: relative;
 	margin: 13em 0 15em 0;
- 
+
 	.bubble {
 		position: absolute;
 		background: url("/img/main/bubble.png") center no-repeat;
@@ -286,6 +286,7 @@ export default {
 				@include max($small) {
 					width: 15em;
 					height: 35em;
+					background-size: 100%;
 				}
 			}
 		}

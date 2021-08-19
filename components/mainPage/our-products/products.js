@@ -30,7 +30,7 @@ function Products(context) {
     {
       title: context.$t("products.aynur.hand.title"),
       description: `${context.$t("products.washingPowder")} - ${context.$t("products.kg6")}`,
-      image: "aynur-6k.png",
+      image: "aynur-6kg.png",
       color: "blue-sky",
       link: "/production/ay-nur"
     },
@@ -43,7 +43,7 @@ function Products(context) {
     },
     {
       title: context.$t("products.aynur.automat.title"),
-      description: `${context.$t("products.washingPowder")} - ${context.$t("products.kg9")}`,
+      description: `${context.$t("products.washingPowder")} - ${context.$t("products.kg6")}`,
       image: "aynur-automat-6kg.png",
       color: "blue-sky",
       link: "/production/ay-nur"

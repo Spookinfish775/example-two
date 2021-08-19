@@ -50,6 +50,9 @@ export default {
 		h2 {
 			width: 12.5em;
 		}
+		.card-title {
+			font-family: "Montserrat";
+		}
 	}
 	.detail-button {
 		display: block;
