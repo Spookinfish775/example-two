@@ -8,7 +8,7 @@ export default {
     contactLink: "Contacts",
     socialLink: "We are in social media",
     emailLabel: "subscribe for news and promotions",
-    rightsLabel: "© 2021 ES “Bagtly zamana”. All rights reserved.",
+    rightsLabel: "© 2021 ES \"Bagtly zamana\". All rights reserved.",
     langBar: "RU",
     productSubMenuLinks: [
       "Detergents powder Ak nur",
@@ -115,8 +115,8 @@ export default {
       stepThreeDescription: "Idle washing. Turn on the washing machine normally and the washing machine cleaner takes care of the rest.",
     },
     production: {
-      title: "High efficiency of “Bagtly zamana” products",
-      descriptionOne: "The policy of Economic Society “Bagtli zamana” is to provide consumers with high- quality household chemistry products, and that is why all production lines at our plant are furnished with equipment from leading Italian manufacturers with many years of experience in this field and the latest technology that meets all modern environmental requirements, quality standards and health and safety requirements.",
+      title: "High efficiency of \"Bagtly zamana\" products",
+      descriptionOne: "The policy of Economic Society \"Bagtli zamana\" is to provide consumers with high- quality household chemistry products, and that is why all production lines at our plant are furnished with equipment from leading Italian manufacturers with many years of experience in this field and the latest technology that meets all modern environmental requirements, quality standards and health and safety requirements.",
       descriptionTwo: "All raw materials used in our production only high quality products from leading manufacturers with a worldwide reputation, which have been carefully selected according to a recipe specially developed by leading experts of the Research Institute of Household Chemistry of Russia for our enterprise.",
       descriptionThree: "Products of our manufacture effectively purify at low temperatures and at any water hardness.",
       descriptionFour: "Our plant is continuously upgraded according to the latest environmental protection requirements, so our production are environmentally friendly and we save as much as possible on valuable resources such as water, gas and electricity.",
@@ -124,11 +124,11 @@ export default {
     funds: {
       title: "Laundry detergents",
       choiseTitle: "CHOOSING A DETERGENT",
-      choiseDescription: "The first thing you should pay attention to when choosing a detergent for automatic washing machines - it should be labeled 'Automat'. Compounds for hand washing are not suitable, because they foam a lot. This reduces the effectiveness of washing and can even lead to machine damage.",
+      choiseDescription: "The first thing you should pay attention to when choosing a detergent for automatic washing machines - it should be labeled \"Automat\". Compounds for hand washing are not suitable, because they foam a lot. This reduces the effectiveness of washing and can even lead to machine damage.",
       parameters: "LAUNDRY DETERGENTS DIFFER IN SEVERAL OTHER PARAMETERS:",
       byAppointmentTitle: "BY DESIGNATION:",
-      byAppointmentDescriptionOne: "Universal laundry detergents, such as “Ak Nur Automat” and “Ay Nur Automat”, are designed for washing white and colored garments made of various fabrics at all temperatures. They are not suitable for wool and silk.For colored fabrics - intended washing powder for colored fabrics 'Ak nur color'. It contains dye fixers that prevent them from being washed out.",
-      byAppointmentDescriptionTwo: "For giving dazzling whiteness to white garments use oxygen bleach and stain remover 'Ak nur OxiAction'. It contains mild bleaching agents that do not contain chlorine. For hand washing and washing in activator-type washing machines, the “Ay Nur for hand wash” washing powder is intended, which uses the most gentle reagents, bleaching agents and enzymes.",
+      byAppointmentDescriptionOne: "Universal laundry detergents, such as \"Ak Nur Automat\" and \"Ay Nur Automat\", are designed for washing white and colored garments made of various fabrics at all temperatures. They are not suitable for wool and silk.For colored fabrics - intended washing powder for colored fabrics \"Ak nur color\". It contains dye fixers that prevent them from being washed out.",
+      byAppointmentDescriptionTwo: "For giving dazzling whiteness to white garments use oxygen bleach and stain remover \"Ak nur OxiAction\". It contains mild bleaching agents that do not contain chlorine. For hand washing and washing in activator-type washing machines, the \"Ay Nur for hand wash\" washing powder is intended, which uses the most gentle reagents, bleaching agents and enzymes.",
       byAppointmentDescriptionThree: "Suitable for wool, silk, delicate lace fabrics and baby clothes. The composition of the washing powder is hypoallergenic, contains fragrances, phosphates, bleaches, enzymes. Dissolves and rinses out well. Suitable for washing sports clothes and does not clog fabric pores (especially important for membranes).",
       byForm: "BY PRODUCT TYPE:",
       powdersTitle: "DETERGENT",
@@ -140,7 +140,7 @@ export default {
       bleachTitle: "OXYGEN BLEACH",
       bleachDescription: "Concentrated active oxygen - based product that bleaches and removes stubborn stains from white clothing.",
       conditionersTitle: "CONDITIONERS",
-      conditionersDescription: "Removes static electricity and softens fabric. This makes items wrinkle less and iron better. Most conditioners give your clothes a long-lasting pleasant fragrance, which is part of our laundry detergents 'Ak Nur Automatic' and 'Ay Nur Automat'.",
+      conditionersDescription: "Removes static electricity and softens fabric. This makes items wrinkle less and iron better. Most conditioners give your clothes a long-lasting pleasant fragrance, which is part of our laundry detergents \"Ak Nur Automatic\" and \"Ay Nur Automat\".",
     },
   },
   mainPage: {
@@ -150,7 +150,7 @@ export default {
     },
     description: {
       title: "CLEANLINESS AND HEALTH FORMULA",
-      text: "Unique formula of laundry detergents produced by the Economic Society “Bagtly zamana” provides high washing results even at low temperatures.",
+      text: "Unique formula of laundry detergents produced by the Economic Society \"Bagtly zamana\" provides high washing results even at low temperatures.",
       text2: "The entire line of detergents contains components that protect the structure of fabrics from color washout. Easily soluble in water of any hardness."
     },
     ourProducts: {
@@ -158,10 +158,8 @@ export default {
     },
     contacts: {
       title: "WORLDWIDE DELIVERY",
-      text: `Economic society "Bagtly zamana" carries out
-      wholesale sales of products all over the world.`,
-      text2: `For the terms of the minimum batch for ordering in
-      bulk and cost, please contact us.`,
+      text: "Economic society \"Bagtly zamana\" carries out wholesale sales of products all over the world.",
+      text2: "For the terms of the minimum batch for ordering in bulk and cost, please contact us.",
       contact: "contact us"
     },
     articles: {
@@ -171,23 +169,17 @@ export default {
   aboutUs: {
     hero: {
       title: "we care about cleanliness",
-      text: `Economic Society “Bagtly zamana” founded in 2013 and started production of synthetic detergents and beauty soap in 2019.
-      At the present time the enterprise is one of the leading manufacturers of household chemicals in Turkmenistan.`,
+      text: "Economic Society \"Bagtly zamana\" founded in 2013 and started production of synthetic detergents and beauty soap in 2019.At the present time the enterprise is one of the leading manufacturers of household chemicals in Turkmenistan.",
       text2: "The main activity of the enterprise is the production of detergents, bleaching agents and beauty soaps."
     },
     blueSpaceOne: {
-      title: `THE ENTERPRIsE IS THE ONLY MANUFACTURER IN THE COUNTRY THAT USES THE "TOWER METHOD" IN THE PRODUCTION OF WASHING DETERGENTS ACCORDING TO ITALIAN TECHNOLOGY.`,
-      text: `Our production plant is equipped with the production
-      equipment from leading Italian manufacturers and has a
-      capacity of 40000 tons of detergents and 2400 tons of beauty soap per year.`
+      title: "THE ENTERPRIsE IS THE ONLY MANUFACTURER IN THE COUNTRY THAT USES THE \"TOWER METHOD\" IN THE PRODUCTION OF WASHING DETERGENTS ACCORDING TO ITALIAN TECHNOLOGY.",
+      text: "Our production plant is equipped with the production equipment from leading Italian manufacturers and has a capacity of 40000 tons of detergents and 2400 tons of beauty soap per year."
     },
     blueSpace2: {
-      title: `ENTERPRIsE PRODUCES MORE THAN 20 TYPES OF PRODUCTS THAT ARE IN HIGH DEMAND AMONG THE POPULATION.`,
-      text: `The entire production process is fully automatic, which
-      ensures an increase in productivity and product quality.`,
-      text2: `The enterprise manufactures products that are in high
-      demand among the population in the market of similar
-      goods and are of high quality and reliability.`
+      title: "ENTERPRIsE PRODUCES MORE THAN 20 TYPES OF PRODUCTS THAT ARE IN HIGH DEMAND AMONG THE POPULATION.",
+      text: "The entire production process is fully automatic, which ensures an increase in productivity and product quality.",
+      text2: "The enterprise manufactures products that are in high demand among the population in the market of similar goods and are of high quality and reliability."
     },
     properties: {
       title: "CHARACTERISTICS OF OUR DETERGENTS",
@@ -216,38 +208,38 @@ export default {
       index: "Ay nur",
       automat: {
         title: "Ay nur automat",
-        description: `A series of economical laundry detergents "Ay Nur Automat" is designed for machine and hand washing of white and colored clothes. `
+        description: "A series of economical laundry detergents \"Ay Nur Automat\" is designed for machine and hand washing of white and colored clothes. "
       },
       hand: {
         title: "Ay Nur FOR HAND WASH",
-        description: `A series of economical laundry detergents “Ay Nur for hand wash” is designed for activator-type washing machines and hand washing of white and colored clothes. `
+        description: "A series of economical laundry detergents \"Ay Nur for hand wash\" is designed for activator-type washing machines and hand washing of white and colored clothes. "
       },
     },
     aknur: {
       index: "Ak nur",
       color: {
         title: "ak nur COLOR",
-        description: "A series of laundry detergents “Ak Nur Color” are intendet for automatic washing machine and hand washing of colored linen."
+        description: "A series of laundry detergents \"Ak Nur Color\" are intendet for automatic washing machine and hand washing of colored linen."
       },
       automat: {
         title: "ak nur Automat  ",
-        description: `A series of laundry detergent "Ak Nur Automat" the premium segment are intended for automatic  washing machine and hand washing of white and colored linen. `
+        description: "A series of laundry detergent \"Ak Nur Automat\" the premium segment are intended for automatic  washing machine and hand washing of white and colored linen. "
       },
       oxygen: {
-        title: 'oxygen bleach',
-        description: `Oxygen bleach and stain remover “Ak nur Oxi Action” is designed to remove difficult dirt and stains that detergents cannot cope with. It does not contain chlorine.`
+        title: "oxygen bleach",
+        description: "Oxygen bleach and stain remover \"Ak nur Oxi Action\" is designed to remove difficult dirt and stains that detergents cannot cope with. It does not contain chlorine."
       }
     },
     pakize: {
       index: "Pakize",
       soap: {
-        title: 'Beauty soap pakize',
-        description: 'Ideal for all skin types. The gentle formula of the product gently cleanses the skin. ',
+        title: "Beauty soap pakize",
+        description: "Ideal for all skin types. The gentle formula of the product gently cleanses the skin.",
         type: {
-          peach: 'Peach',
-          mint: 'Mint',
-          garnet: 'Garnet',
-          lavender: 'Lavender',
+          peach: "Peach",
+          mint: "Mint",
+          garnet: "Garnet",
+          lavender: "Lavender",
         }
       }
     }
@@ -255,23 +247,53 @@ export default {
   articles: {
     title: "GOOD TO KNOW",
     rightClear: {
-      title: 'All about proper laundry',
+      title: "All about proper laundry",
     },
     sheet: {
-      title: 'How to wash the bed sheets',
+      title: "How to wash the bed sheets",
     },
     lifehack: {
-      title: 'Laundry lifehacks',
+      title: "Laundry lifehacks",
     },
     deepClear: {
-      title: 'Laundry lifehacks',
+      title: "Laundry lifehacks",
     },
     highClear: {
-      title: 'High efficiency of “Bagtly zamana” products',
+      title: "High efficiency of \"Bagtly zamana\" products",
     },
     detergents: {
-      title: 'Laundry detergents',
+      title: "Laundry detergents",
     },
+  },
+  productDescription: {
+    aknur: {
+      automat: {
+        title: "ak nur Automat",
+        subTitle: "A series of laundry detergent \"Ak Nur Automat\" the premium segment are intended for automatic  washing machine and hand washing of white and colored linen. "
+      },
+      color: {
+        title: "ak nur COLOR",
+        subTitle: "A series of laundry detergents \"Ak Nur Color\" are intendet for automatic washing machine and hand washing of colored linen."
+      },
+      oxygen: {
+        title: "oxygen bleach",
+        subTitle: "Oxygen bleach and stain remover \"Ak nur Oxi Action\" is designed to remove difficult dirt and stains that detergents cannot cope with. It does not contain chlorine."
+      }
+    },
+    aynur: {
+      hand: {
+        title: "Ay Nur FOR HAND WASH",
+        subTitle: "A series of economical laundry detergents \"Ay Nur for hand wash\" is designed for activator-type washing machines and hand washing of white and colored clothes. "
+      },
+      automat: {
+        title: "ay nur Automat",
+        subTitle: "A series of economical laundry detergents \"Ay Nur Automat\" is designed for machine and hand washing of white and colored clothes. "
+      },
+    },
+    pakize: {
+      title: "Beauty soap pakize",
+      subTitle: "Ideal for all skin types. The gentle formula of the product gently cleanses the skin."
+    }
   },
   production: {
     compount: "ingredients",
@@ -280,67 +302,60 @@ export default {
     aknur: {
       automat: {
         title: "AK NUR AUTOMAT",
-        subTitle: `Intended for washing white and colored linen, clothing made of cotton
-        and linen, artificial, synthetic and mixed fabrics in any type of
-        automatic washing machines and for hand washing. The product is suitable for quick and regular washing and easily copes with difficult dirt.`,
-        compount: `5-15% anionic surfactants, phosphates, oxygenated
-        bleach, less than 5% non-ionic surfactants, soap,enzymes,
-        defoamer, optical brighteners, fragrance additive.`,
-        precautionaryMeasures: `Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water.`,
-        precautionaryMeasures2: ` Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand. `,
-        precautionaryMeasures3: `After complete use, dispose of packaging as household waste.`,
-        storageConditions: `Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture. `,
+        subTitle: "Intended for washing white and colored linen, clothing made of cotton and linen, artificial, synthetic and mixed fabrics in any type of automatic washing machines and for hand washing. The product is suitable for quick and regular washing and easily copes with difficult dirt.",
+        compount: "5-15% anionic surfactants, phosphates, oxygenated bleach, less than 5% non-ionic surfactants, soap,enzymes, defoamer, optical brighteners, fragrance additive.",
+        precautionaryMeasures: "Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water.",
+        precautionaryMeasures2: " Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand. ",
+        precautionaryMeasures3: "After complete use, dispose of packaging as household waste.",
+        storageConditions: "Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture. ",
       },
       automatColor: {
         title: "AK NUR Color",
-        subTitle: `Intended for automatic washing machines and hand washing of colored and white linen, clothes made of cotton and linen, artificial, synthetic and mixed fabrics. The product easily copes with stubborn stains without destroying the fabric structure and preserves the color of your clothes.`,
-        compount: `5-15% anionic surfactants, silicates, less than 5% non-ionic surfactants, phosphates, polycarboxylates, enzymes, defoamer, optical brighteners, fragrance additive.`,
-        precautionaryMeasures: `Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water.`,
-        precautionaryMeasures2: ` Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.`,
-        precautionaryMeasures3: `After complete use, dispose of packaging as household waste.`,
-        storageConditions: `Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture.`,
+        subTitle: "Intended for automatic washing machines and hand washing of colored and white linen, clothes made of cotton and linen, artificial, synthetic and mixed fabrics. The product easily copes with stubborn stains without destroying the fabric structure and preserves the color of your clothes.",
+        compount: "5-15% anionic surfactants, silicates, less than 5% non-ionic surfactants, phosphates, polycarboxylates, enzymes, defoamer, optical brighteners, fragrance additive.",
+        precautionaryMeasures: "Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water.",
+        precautionaryMeasures2: " Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.",
+        precautionaryMeasures3: "After complete use, dispose of packaging as household waste.",
+        storageConditions: "Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture.",
       },
       oxy: {
         title: "OXYGEN BLEACH AK NUR OXI ACTION 500 G.",
-        subTitle: `Intended for removing stubborn stains that detergents cannot cope with. 
-        It does not contain chlorine. Follow the washing instructions on the garmet label. `,
-        compount: `32% or more oxygenated bleach, not less than 5% non-ionic and anionic surfactants, TPF, optical brightener, 2% enzyme and other additives.`,
-        precautionaryMeasures: `
-        Keep away from children, hazardous in the eyes and if swallowed. Do not use with chlorine-containing products. Wash hands thoroughly after use.`,
-        precautionaryMeasures2: `In case of contact with eyes, rinse immediately with plenty of water and seek medical advice immediately.`,
-        precautionaryMeasures3: `In case of accidental ingestion, drink plenty of water and seek medical advice immediately, showing the container.`,
-        precautionaryMeasures4: `May cause temporary lightening of the skin. Persons with sensitive skin are advised to wear rubber gloves.`,
-        storageConditions: `Store in a covered and cool place. Do not use on wool, silk or leather.`,
+        subTitle: "Intended for removing stubborn stains that detergents cannot cope with. It does not contain chlorine. Follow the washing instructions on the garmet label. ",
+        compount: "32% or more oxygenated bleach, not less than 5% non-ionic and anionic surfactants, TPF, optical brightener, 2% enzyme and other additives.",
+        precautionaryMeasures: " Keep away from children, hazardous in the eyes and if swallowed. Do not use with chlorine-containing products. Wash hands thoroughly after use.",
+        precautionaryMeasures2: "In case of contact with eyes, rinse immediately with plenty of water and seek medical advice immediately.",
+        precautionaryMeasures3: "In case of accidental ingestion, drink plenty of water and seek medical advice immediately, showing the container.",
+        precautionaryMeasures4: "May cause temporary lightening of the skin. Persons with sensitive skin are advised to wear rubber gloves.",
+        storageConditions: "Store in a covered and cool place. Do not use on wool, silk or leather.",
       }
     },
     aynur: {
       hand: {
         title: "AY NUR for HAND WASHING ",
-        subTitle: `Intended for hand washing and laundering in washing machines of activator type, white and colored linen, clothes of cotton, linen artificial, synthetic and mixed fabrics.
-        The product is ideal for everyday washing of clothes.`,
+        subTitle: "Intended for hand washing and laundering in washing machines of activator type, white and colored linen, clothes of cotton, linen artificial, synthetic and mixed fabrics. The product is ideal for everyday washing of clothes.",
         compount: "5-15% anionic surfactants, silicates, less than 5% phosphates, enzymes, optical brighteners, fragrance additive. ",
-        precautionaryMeasures: `Keep out of the reach of children. Keep away from foodstuffs. Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.`,
-        precautionaryMeasures2: ` In case of contact with eyes, rinse immediately with plenty of running water. `,
-        precautionaryMeasures3: `After complete use, dispose of packaging as household waste.`,
-        storageConditions: `Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture.  `,
+        precautionaryMeasures: "Keep out of the reach of children. Keep away from foodstuffs. Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.",
+        precautionaryMeasures2: " In case of contact with eyes, rinse immediately with plenty of running water. ",
+        precautionaryMeasures3: "After complete use, dispose of packaging as household waste.",
+        storageConditions: "Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture.  ",
       },
       automat: {
         title: "AY NUR AUTOMAT",
-        subTitle: `Intended for washing white and colored linen, clothes made of cotton and linen, artificial, synthetic and mixed fabrics in any type of automatic washing machine and hand wash. The product is ideal for everyday washing of clothes.`,
+        subTitle: "Intended for washing white and colored linen, clothes made of cotton and linen, artificial, synthetic and mixed fabrics in any type of automatic washing machine and hand wash. The product is ideal for everyday washing of clothes.",
         compount: "5-15% anionic surfactants, phosphates, photocatalytic bleach, less than 5% non-ionic surfactants, enzymes, defoamer, optical brighteners, fragrance additive.",
-        precautionaryMeasures: `Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water.`,
-        precautionaryMeasures2: `Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.`,
-        precautionaryMeasures3: `After complete use, dispose of packaging as household waste.`,
-        storageConditions: `Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%.Keep away from moisture.`,
+        precautionaryMeasures: "Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water.",
+        precautionaryMeasures2: "Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.",
+        precautionaryMeasures3: "After complete use, dispose of packaging as household waste.",
+        storageConditions: "Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%.Keep away from moisture.",
       },
     },
     pakize: {
       soap: {
         title: "PAKIZE BEAUTY SOAP 100 G.",
-        subTitle: "The gental formula of hygienic cosmetics delicately cleanses, disinfects and is ideal for all skin types. Toilet soap “Pakize” has an increased foaming, dissolves well in cold and hot water, has a good smell that will be in addition to the cosmetics that you use daily.",
+        subTitle: "The gental formula of hygienic cosmetics delicately cleanses, disinfects and is ideal for all skin types. Toilet soap \"Pakize\" has an increased foaming, dissolves well in cold and hot water, has a good smell that will be in addition to the cosmetics that you use daily.",
         compount: "Palm oil, coconut oil, water, perfume composition, grape seed oil, sodium chloride, titanium dioxide, sodium silicate, citric acid, dyes, EDTA,BHT, optical brightener.",
-        precautionaryMeasures: `Use for external use only; In case of contact with eyes, rinse generously with water. In case of contact with the mouth - rinse thoroughly with running water.`,
-        storageConditions: `Store at a temperature not lower than -5°С and humidity not more than 75%.`,
+        precautionaryMeasures: "Use for external use only; In case of contact with eyes, rinse generously with water. In case of contact with the mouth - rinse thoroughly with running water.",
+        storageConditions: "Store at a temperature not lower than -5°С and humidity not more than 75%.",
         lavender: "Lavender",
         mint: "Mint",
         garnet: "Garnet",

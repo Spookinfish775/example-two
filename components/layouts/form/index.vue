@@ -124,6 +124,7 @@ export default {
             this.contactData[key] = "";
           }
           this.agree = false;
+          this.$emit("successSended")
           alert(this.$t("successSended"));
         } catch (error) {
           console.log(error, { error });

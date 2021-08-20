@@ -79,7 +79,7 @@ export default {};
 				width: 7.5em;
 				height: 9em;
 				right: 2em;
-				bottom: 50em;
+				bottom: 48em;
 				animation: none;
 			}
 

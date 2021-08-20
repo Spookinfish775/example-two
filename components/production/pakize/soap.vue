@@ -128,7 +128,14 @@ export default {
 	padding: 11.4em 0 0 12em;
 	position: relative;
 	margin: 13em 0 15em 0;
+	@include max($large) {
+		padding: 1em 4em 0 1em;
+	}
 
+	@include max($small) {
+		margin: 0 0 0 0;
+		padding: 1em;
+	}
 	.bubble {
 		position: absolute;
 		background: url("/img/main/bubble.png") center no-repeat;
@@ -174,14 +181,7 @@ export default {
 			}
 		}
 	}
-	@include max($large) {
-		padding: 1em 4em 0 1em;
-	}
 
-	@include max($small) {
-		margin: 0 0 0 0;
-		padding: 1em;
-	}
 	.subtitle {
 		width: 44.4em;
 		margin: 2.7em 0 0 0;
@@ -284,7 +284,7 @@ export default {
 				background-repeat: no-repeat;
 				background-size: cover;
 				@include max($small) {
-					width: 15em;
+					width: 20em;
 					height: 35em;
 					background-size: 100%;
 				}

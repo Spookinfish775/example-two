@@ -64,10 +64,11 @@ export default {
 		width: 30em;
 		height: 30em;
 		position: relative;
-		padding: 3em 0 0 0;
+		padding: 8em 0 0 0;
 		@include max($large) {
 			width: 14em;
 			height: 14em;
+			padding: 4em 0 0 0;
 		}
 		@include max($small) {
 			padding: 0 0 0 0;

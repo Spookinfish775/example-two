@@ -59,7 +59,7 @@ export default {
 
 	position: relative;
 	@include max($large) {
-		padding: 11em 4em 9em 1em;
+		padding: 11em 5em 9em 5em;
 	}
 
 	@include max($small) {
@@ -146,7 +146,7 @@ export default {
 					width: 4.5em;
 					height: 5.5em;
 					left: 30em;
-					top: 2em;
+					top: 5em;
 					animation: none;
 				}
 				@include max($small) {
@@ -163,7 +163,7 @@ export default {
 					width: 9em;
 					height: 10em;
 					left: 33em;
-					top: -5em;
+					top: 0;
 					animation: none;
 				}
 				@include max($small) {
@@ -258,9 +258,6 @@ export default {
 	.contacts-content {
 		// width: 55em;
 		margin: 7em 26em 0 0;
-		@include max($large) {
-			margin: 0 0 0 3em;
-		}
 		p {
 			margin: 1.2em 0 0 0;
 		}

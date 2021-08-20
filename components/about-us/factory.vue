@@ -18,6 +18,7 @@ export default {};
 		height: 45em;
 		margin: 8em 0 0 0;
 		background-position: bottom;
+		background-size: 100% 100%;
 	}
 	@include max($small) {
 		height: 35em;

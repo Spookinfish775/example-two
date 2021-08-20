@@ -6,11 +6,11 @@
 
 		<transition name="popup">
 			<div v-if="open" class="dialog">
-				<div class="popup-content">
-					<div class="close-btn" @click="open = false">
-						<span>&#10006;</span>
-					</div>
-					<ContactFoem v-if="open" />
+				<div class="dialog-content">
+					<ContactForm @successSended="open = false" v-if="open" />
+				</div>
+				<div class="close-btn" @click="open = false">
+					<span>&#10006;</span>
 				</div>
 			</div>
 		</transition>
@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import ContactFoem from "~/components/layouts/form/index.vue";
+import ContactForm from "~/components/layouts/form/index.vue";
 export default {
 	components: {
-		ContactFoem
+		ContactForm
 	},
 	data() {
 		return {
@@ -31,9 +31,9 @@ export default {
 	watch: {
 		open(val) {
 			if (val) {
-				document.body.style.overflow = "hidden";
+				document.body.style.overflowY = "hidden";
 			} else {
-				document.body.style.overflow = "auto";
+				document.body.style.overflowY = "auto";
 			}
 		}
 	}
@@ -47,7 +47,7 @@ export default {
 }
 .popup-enter,
 .popup-leave-to {
-	transform: scale(0);
+	opacity: 0;
 }
 .contact-btn-wrapper {
 	button {
@@ -75,13 +75,28 @@ export default {
 		}
 	}
 	.dialog {
+		height: 100vh;
+		width: 100vw;
 		position: fixed;
+		z-index: 1000;
 		left: 0;
 		top: 0;
-		height: 100vh;
-		width: 100%;
-		margin: 0 !important;
-		z-index: 1000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba($color: $main-color, $alpha: 0.7);
+		.dialog-content {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow-y: scroll;
+			@include max($small) {
+				align-items: flex-start;
+			}
+		}
 		.close-btn {
 			position: absolute;
 			right: 0.5em;
@@ -92,29 +107,13 @@ export default {
 			@include max($large) {
 				font-size: 3em;
 				color: $main-color;
+				text-shadow: 0 0 3px #fff; /* horizontal-offset vertical-offset 'blur' colour */
+				-moz-text-shadow: 0 0 3px #fff;
+				-webkit-text-shadow: 0 0 3px #fff;
 			}
 			@include max($small) {
 				font-size: 2em;
-				top: -2em;
-				color: $main-color;
-			}
-		}
-		.popup-content {
-			background-color: rgba($color: $main-color, $alpha: 0.7);
-			margin: 0 auto !important;
-			display: flex;
-			height: 100%;
-			position: relative;
-			align-items: center;
-			justify-content: center;
-			overflow: hidden;
-			overflow-y: scroll;
-			z-index: 1000;
-			@include max($large) {
-				padding: 50em 0 0 0;
-			}
-			@include max($small) {
-				padding: 20em 0 0 0;
+				right: 1em;
 			}
 		}
 	}
