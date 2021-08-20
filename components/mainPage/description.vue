@@ -58,10 +58,10 @@ export default {
 		justify-content: center;
 		display: none;
 		@include max($small) {
-			img {
-				width: 50%;
-			}
 			display: flex;
+			img {
+				width: 14em;
+			}
 		}
 	}
 	@include max($large) {

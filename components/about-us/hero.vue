@@ -52,31 +52,34 @@ export default {
     padding: 1em 4em 0 1em;
   }
 
-  @include max($small) {
-    margin: 0 0 0 0;
-    padding: 1em;
-  }
-  .about-us-flex {
-    display: flex;
-    align-items: center;
-  }
-  .mobile-earth-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    @include max($small) {
-      display: flex;
-    }
-  }
-  .earth-wrapper {
-    width: 33em;
-    height: 33em;
-    position: relative;
-    @include max($large) {
-      width: 18em;
-      height: 18em;
-    }
+	@include max($small) {
+		margin: 0 0 0 0;
+		padding: 1em;
+	}
+	.about-us-flex {
+		display: flex;
+		align-items: center;
+	}
+	.mobile-earth-image {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: none;
+		@include max($small) {
+			display: flex;
+			img {
+				width: 14em;
+			}
+		}
+	}
+	.earth-wrapper {
+		width: 33em;
+		height: 33em;
+		position: relative;
+		@include max($large) {
+			width: 18em;
+			height: 18em;
+		}
 
     @include max($small) {
       width: 100%;

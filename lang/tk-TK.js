@@ -56,7 +56,7 @@ export default {
       choiceWashModeTitle: "Laýyk bolan kir ýuwuş düzgünini saýlamak",
       choiceWashModeDescription: "Ilki bilen önümleriňizi öndürijiniň maslahatlaryna eýeriň. Her önümde kir ýuwmagyň we sykmagyň düzgünlerini beýan edýän nyşanlary görkezilen belliklenmeler bolmaly: olaryň käbirine şu bölümde serederis.",
       washModeTitle: "Kir ýuwmagyň düzgüni",
-      washModeDescription: "Iň amatly temperatura derejeler ýa-da nokatlar bilen görkezilip bilner. Ikinji ýagdaýda bir nokat 30 ° C, iki nokat 40 ° C, üç nokat 60 ° C diýmegi aňladýar.",
+      washModeDescription: "Iň amatly temperatura derejeler ýa-da nokatlar bilen görkezilip bilner. Ikinji ýagdaýda bir nokat 30°C, iki nokat 40°C, üç nokat 60°C diýmegi aňladýar.",
       washTempTitle: "Belliklenme ýitirilen bolsa önümleri haýsy gyzgynlykda ýuwmaly?",
       washTempDescription: "Aşakdaky düzgünlere eýeriň. 60 ° C-den ýokary temperaturalarda diňe berk, açyk reňkli nah we kendir matalary ýuwmak bolýar. Reňkli nah we kendir matalar üçin iň amatly temperatura 40-60 ° C-dyr. Sintetik üçin  40-50 ° C temperatura we aýlaw tizligi minutda 900 aýlawdan ýokary bolmaly däl. Näzik matalar minutda 600  aýlaw tizliginde 30-40 ° C gyzgynlykda ýuwulmaly. Ýuwmak üçin gyzgynlygy saýlanyňyzda, eşikleriň ýazgylaryndaky maslahatlara eýeriň. Bu makalada öň hem aýdylyşy ýaly, matanyň durkunyň üýtgemezligi we solmazlygy üçin eşikleriň belliklenmelerinde görkezilen nyşanlara eýermegiňizi maslahat berýäris.",
       dryTitle: "Tebigy guratmak",

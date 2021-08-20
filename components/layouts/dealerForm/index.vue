@@ -162,6 +162,7 @@ export default {
 		justify-content: space-between;
 		align-items: flex-start;
 		font-family: Montserrat;
+		color: $main-color;
 		input {
 			&::placeholder {
 				/* Chrome, Firefox, Opera, Safari 10.1+ */
