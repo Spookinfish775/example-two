@@ -1,35 +1,45 @@
 <template>
-	<div class="our-produts-wrapper">
-		<h1 class="page-title">{{ $t("mainPage.articles.title") }}</h1>
-		<carousel
-			:autoplay="!isTablet && !isMobile"
-			:dots="false"
-			:nav="false"
-			:autoplaySpeed="autoplayTimeoutSpeed"
-			:autoplayTimeout="autoplayTimeout"
-			:items="perView"
-			:autoplayHoverPause="true"
-			:loop="true"
-		>
-			<div v-for="(item, index) in articles" :key="index" class="cards">
-				<articlesCard :data="item" :position="index % 2" />
-			</div>
-		</carousel>
+	<div class="our-articles-wrapper">
+		<h1 class="page-title">
+			{{ $t("mainPage.articles.title") }}
+		</h1>
+		<div class="cards-wrapper">
+			<carousel
+				:margin="stagePadding"
+				:stagePadding="stagePadding"
+				:autoplay="!isTablet && !isMobile"
+				:dots="false"
+				:nav="false"
+				:autoplaySpeed="autoplayTimeoutSpeed"
+				:autoplayTimeout="autoplayTimeout"
+				:items="perView"
+				:autoplayHoverPause="true"
+				:loop="true"
+			>
+				<ArticlesCard
+					v-for="(item, index) in products"
+					:key="index"
+					:data="item"
+					:position="index % 2"
+				/>
+			</carousel>
+		</div>
 	</div>
 </template>
 
 <script>
 import carousel from "vue-owl-carousel";
-import articlesCard from "~/components/mainPage/articles/articles-card.vue";
+import ArticlesCard from "~/components/mainPage/articles/articles-card.vue";
 import { Articles } from "./articles";
 export default {
 	components: {
 		carousel,
-		articlesCard
+		ArticlesCard
 	},
 	data() {
 		return {
-			articles: Articles(this)
+			active: 0,
+			products: Articles(this)
 		};
 	},
 	computed: {
@@ -38,6 +48,19 @@ export default {
 		},
 		isMobile() {
 			return window.innerWidth <= 767;
+		},
+		stagePadding() {
+			let stagePadding;
+			if (!this.isTablet && !this.isMobile) {
+				stagePadding = 150;
+			}
+			if (this.isTablet) {
+				stagePadding = 30;
+			}
+			if (this.isMobile) {
+				stagePadding = 15;
+			}
+			return stagePadding;
 		},
 		autoplayTimeoutSpeed() {
 			let timeout;
@@ -51,7 +74,7 @@ export default {
 		autoplayTimeout() {
 			let timeout;
 			if (!this.isTablet && !this.isMobile) {
-				timeout = 2000;
+				timeout = 3000;
 			} else {
 				timeout = 100000;
 			}
@@ -67,31 +90,37 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.our-produts-wrapper {
+<style lang="scss" scoped>
+.our-articles-wrapper {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 90em;
+	padding: 5em 0 5em 0;
+	position: relative;
+	overflow: hidden;
 	@include max($large) {
-		min-height: 60vh;
+		min-height: 70em;
 	}
 	@include max($small) {
-		min-height: 60vh;
-		padding: 1em 1em 10em 1em;
+		min-height: 60em;
+		padding: 1.5em 0;
 	}
-	h1 {
+	.page-title {
 		text-align: center;
-		margin: 3.6em 0 2.3em 4em;
-		@include max($large) {
-			margin: 0 0 2em 1em;
-		}
 		@include max($small) {
 			text-align: left;
-			margin: 1em 0 2em 0.5em;
+			padding: 0 0 0 0.8em;
 		}
 	}
-	.cards {
-		display: flex;
-		justify-content: center;
+	.cards-wrapper {
+		margin: 9em 0 0 0;
+		@include max($large) {
+			margin: 5em 0 0 0;
+		}
+		@include max($small) {
+			// .articles-card {
+			// 	padding: 0 1.5em;
+			// }
+		}
 	}
 }
 </style>

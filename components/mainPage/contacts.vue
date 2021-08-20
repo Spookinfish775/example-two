@@ -1,16 +1,21 @@
 <template>
 	<div class="contacts-wrapper">
-		<div class="contacts-content">
+		<div class="description-content">
 			<h1 class="page-title">{{ $t("mainPage.contacts.title") }}</h1>
-			<div class="mobile-earth-image mobile">
-				<img :src="`/img/main/contact${lang}.svg`" :alt="lang" />
+			<div class="earth-wrapper mobile">
+				<div class="earth ">
+					<div class="vector" />
+					<div class="text-wrapper">
+						<div :class="`text ${lang}`" />
+					</div>
+				</div>
 			</div>
-			<p class="page-text">{{ $t("mainPage.contacts.text") }}</p>
+			<p class="page-text text-page">{{ $t("mainPage.contacts.text") }}</p>
 			<p class="page-text">{{ $t("mainPage.contacts.text2") }}</p>
 			<ContactBtn />
 		</div>
 		<div class="earth-wrapper desctop">
-			<div class="earth">
+			<div class="earth ">
 				<div class="vector" />
 				<div class="text-wrapper">
 					<div :class="`text ${lang}`" />
@@ -18,7 +23,7 @@
 			</div>
 		</div>
 		<div class="earth-wrapper tablet">
-			<div class="earth">
+			<div class="earth ">
 				<div class="vector" />
 				<div class="text-wrapper">
 					<div :class="`text ${lang}`" />
@@ -38,162 +43,122 @@ export default {
 		lang() {
 			return this.$i18n.locale;
 		}
-	},
-	created() {}
+	}
 };
 </script>
 
 <style lang="scss">
 .contacts-wrapper {
 	width: 100%;
-	min-height: 50em;
-	padding: 11.4em 0 0 19em;
+	min-height: 60em;
+	padding: 11.4em 17em 7em 19em;
 	display: flex;
 	align-items: center;
 	position: relative;
 	@include max($large) {
-		padding: 1em 4em 0 1em;
+		padding: 5em;
+		min-height: 50em;
 	}
-
 	@include max($small) {
-		// display: block;
-		padding: 1em;
+		padding: 6em 1.5em 1.5em 1.5em;
+		align-items: flex-start;
+		min-height: 55em;
 	}
-	.mobile-earth-image {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		display: none;
-		@include max($small) {
-			display: flex;
-			img {
-				width: 14em;
-			}
-		}
-	}
-	.earth-wrapper {
-		width: 33em;
-		height: 33em;
-		position: relative;
-		@include max($large) {
-			width: 18em;
-			height: 18em;
-		}
 
-		@include max($small) {
-			width: 100%;
-			height: 100%;
-			margin: 0 auto;
-		}
-	}
-	.earth {
+	.earth-wrapper {
 		width: 30em;
 		height: 30em;
-		border-radius: 50%;
-		background-color: $main-color;
 		position: relative;
 		@include max($large) {
-			width: 15em;
-			height: 15em;
+			width: 14em;
+			height: 14em;
 		}
-
-		.vector {
-			width: 20em;
-			height: 20em;
-			position: absolute;
-			z-index: 1;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			background: url("/img/main/contacts/vector.svg") center no-repeat;
-			background-size: cover;
-			@include max($large) {
-				width: 7em;
-				height: 5em;
-			}
+		@include max($small) {
+			margin: 3em auto;
 		}
-		@keyframes rotate {
-			0% {
-				transform: rotate(0%);
-			}
-			100% {
-				transform: rotate(360deg);
-			}
-		}
-		.text-wrapper {
-			position: absolute;
+		.earth {
+			width: 30em;
+			height: 30em;
+			border-radius: 50%;
+			background-color: $main-color;
+			position: relative;
 			z-index: 2;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			.text {
-				width: 27em;
-				height: 27em;
-				translate: -50%, -50%;
-				animation: rotate linear 15s infinite;
+			@include max($large) {
+				width: 14em;
+				height: 14em;
+			}
+			.vector {
+				width: 20em;
+				height: 20em;
+				position: absolute;
+				z-index: 1;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background: url("/img/main/contacts/vector.svg") center no-repeat;
+				background-size: cover;
 				@include max($large) {
-					width: 13em;
-					height: 13em;
-					animation: none;
+					width: 10em;
+					height: 10em;
 				}
-
-				@include max($small) {
-					width: 13em;
-					height: 13em;
-					margin: 0;
-				}
-				&.ru {
-					background: url("/img/main/contacts/ruText.png") center no-repeat;
-					background-size: cover;
-				}
-				&.en {
-					background: url("/img/main/contacts/enText.png") center no-repeat;
-					background-size: cover;
-				}
-				&.tm {
-					background: url("/img/main/contacts/tmText.png") center no-repeat;
-					background-size: cover;
+			}
+			.text-wrapper {
+				position: absolute;
+				z-index: 2;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				.text {
+					width: 27em;
+					height: 27em;
+					animation: rotate linear 15s infinite;
+					@include max($large) {
+						width: 12em;
+						height: 12em;
+						animation: none;
+					}
+					@include max($small) {
+						width: 13em;
+						height: 13em;
+					}
+					&.ru {
+						background: url("/img/main/contacts/ruText.png") center no-repeat;
+						background-size: cover;
+					}
+					&.en {
+						background: url("/img/main/contacts/enText.png") center no-repeat;
+						background-size: cover;
+					}
+					&.tm {
+						background: url("/img/main/contacts/tmText.png") center no-repeat;
+						background-size: cover;
+					}
 				}
 			}
 		}
 	}
-	.contacts-content {
-		width: 55em;
+	.description-content {
+		width: 54em;
 		margin: 0 26em 0 0;
-		:nth-child(3) {
-			margin: 3.6em 0 0 0;
-		}
 		@include max($large) {
-			margin: 0 2em 0 3em;
-			:nth-child(3) {
-				margin: 3em 0 0 0;
-			}
-			:nth-child(4) {
-				margin: 2em 0 0 0;
-			}
+			margin: 0 3em 0 0;
 		}
-
 		@include max($small) {
-			width: 100%;
 			margin: 0;
-			:nth-child(1) {
-				margin: 2em 0 0 0;
-			}
-			:nth-child(2) {
-				margin: 3.6em 0 0 0;
-			}
-			:nth-child(3) {
-				margin: 3.6em 0 0 0;
-			}
 		}
-		h1 {
+		.page-title {
 			width: 15em;
-			@include max($large) {
-				width: 100%;
-			}
-
 			@include max($small) {
 				width: 100%;
+			}
+		}
+		.text-page {
+			margin: 3.6em 0 0 0;
+			@include max($large) {
+				margin: 1.5em 0 0 0;
+			}
+			@include max($small) {
+				margin: 0;
 			}
 		}
 	}

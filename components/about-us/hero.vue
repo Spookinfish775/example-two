@@ -1,28 +1,31 @@
 <template>
 	<div class="about-us-wrapper">
-		<h1 class="page-title">{{ $t("aboutUs.hero.title") }}</h1>
-		<div class="about-us-flex">
-			<div class="contacts-content">
-				<div class="mobile-earth-image mobile">
-					<img :src="`/img/about-us/hero/${lang}.svg`" :alt="lang" />
-				</div>
-				<p class="page-text">{{ $t("aboutUs.hero.text") }}</p>
-				<p class="page-text">{{ $t("aboutUs.hero.text2") }}</p>
-			</div>
-			<div class="earth-wrapper desctop">
-				<div class="earth">
+		<div class="description-content">
+			<h1 class="page-title">{{ $t("aboutUs.hero.title") }}</h1>
+			<div class="earth-wrapper mobile">
+				<div class="earth ">
 					<div class="vector" />
 					<div class="text-wrapper">
 						<div :class="`text ${lang}`" />
 					</div>
 				</div>
 			</div>
-			<div class="earth-wrapper tablet">
-				<div class="earth">
-					<div class="vector" />
-					<div class="text-wrapper">
-						<div :class="`text ${lang}`" />
-					</div>
+			<p class="page-text text-page">{{ $t("aboutUs.hero.text") }}</p>
+			<p class="page-text">{{ $t("aboutUs.hero.text2") }}</p>
+		</div>
+		<div class="earth-wrapper desctop">
+			<div class="earth ">
+				<div class="vector" />
+				<div class="text-wrapper">
+					<div :class="`text ${lang}`" />
+				</div>
+			</div>
+		</div>
+		<div class="earth-wrapper tablet">
+			<div class="earth ">
+				<div class="vector" />
+				<div class="text-wrapper">
+					<div :class="`text ${lang}`" />
 				</div>
 			</div>
 		</div>
@@ -35,172 +38,125 @@ export default {
 		lang() {
 			return this.$i18n.locale;
 		}
-	},
-	created() {}
+	}
 };
 </script>
 
 <style lang="scss">
 .about-us-wrapper {
 	width: 100%;
-	min-height: 50em;
-	padding: 11.4em 0 0 12em;
-
+	min-height: 60em;
+	padding: 27.5em 17em 7em 19em;
+	display: flex;
+	align-items: center;
 	position: relative;
-	margin: 13em 0 0 0;
 	@include max($large) {
-		padding: 1em 4em 0 1em;
+		padding: 18em 5em 5em 5em;
+		min-height: 50em;
 	}
-
 	@include max($small) {
-		margin: 0 0 0 0;
-		padding: 1em;
+		padding: 10em 1.5em 1.5em 1.5em;
+		align-items: flex-start;
+		min-height: 55em;
 	}
-	.about-us-flex {
-		display: flex;
-		align-items: center;
-	}
-	.mobile-earth-image {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		display: none;
-		@include max($small) {
-			display: flex;
-			img {
-				width: 14em;
-			}
-		}
-	}
-	.earth-wrapper {
-		width: 33em;
-		height: 33em;
-		position: relative;
-		@include max($large) {
-			width: 18em;
-			height: 18em;
-		}
 
-		@include max($small) {
-			width: 100%;
-			height: 100%;
-			margin: 0 auto;
-		}
-	}
-	.earth {
+	.earth-wrapper {
 		width: 30em;
 		height: 30em;
-		border-radius: 50%;
-		background-color: $main-color;
 		position: relative;
+		padding: 3em 0 0 0;
 		@include max($large) {
-			width: 15em;
-			height: 15em;
+			width: 14em;
+			height: 14em;
 		}
-
-		.vector {
-			width: 15em;
-			height: 15em;
-			position: absolute;
-			z-index: 1;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			background: url("/img/about-us/hero/vector.svg") center no-repeat;
-			background-size: cover;
-			@include max($large) {
-				width: 7em;
-				height: 5em;
-			}
+		@include max($small) {
+			padding: 0 0 0 0;
+			margin: 3em auto;
 		}
-		@keyframes rotate {
-			0% {
-				transform: rotate(0%);
-			}
-			100% {
-				transform: rotate(360deg);
-			}
-		}
-		.text-wrapper {
-			position: absolute;
+		.earth {
+			width: 30em;
+			height: 30em;
+			border-radius: 50%;
+			background-color: $main-color;
+			position: relative;
 			z-index: 2;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			.text {
-				width: 27em;
-				height: 27em;
-				translate: -50%, -50%;
-				animation: rotate linear 15s infinite;
+			@include max($large) {
+				width: 14em;
+				height: 14em;
+			}
+			.vector {
+				width: 15em;
+				height: 15em;
+				position: absolute;
+				z-index: 1;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background: url("/img/about-us/hero/vector.svg") center no-repeat;
+				background-size: cover;
 				@include max($large) {
-					width: 13em;
-					height: 13em;
-					animation: none;
+					width: 8em;
+					height: 8em;
 				}
-
-				@include max($small) {
-					width: 13em;
-					height: 13em;
-					margin: 0;
-				}
-				&.ru {
-					background: url("/img/about-us/hero/ruText.png") center no-repeat;
-					background-size: cover;
-				}
-				&.en {
-					background: url("/img/about-us/hero/enText.png") center no-repeat;
-					background-size: cover;
-				}
-				&.tm {
-					background: url("/img/about-us/hero/tmText.png") center no-repeat;
-					background-size: cover;
+			}
+			.text-wrapper {
+				position: absolute;
+				z-index: 4;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				.text {
+					width: 27em;
+					height: 27em;
+					animation: rotate linear 15s infinite;
+					@include max($large) {
+						width: 13em;
+						height: 13em;
+						animation: none;
+					}
+					@include max($small) {
+						width: 13em;
+						height: 13em;
+					}
+					&.ru {
+						background: url("/img/about-us/hero/ruText.png") center no-repeat;
+						background-size: cover;
+					}
+					&.en {
+						background: url("/img/about-us/hero/enText.png") center no-repeat;
+						background-size: cover;
+					}
+					&.tm {
+						background: url("/img/about-us/hero/tmText.png") center no-repeat;
+						background-size: cover;
+					}
 				}
 			}
 		}
 	}
-	h1 {
-		@include max($large) {
-			width: 100%;
-			margin: 5em 0 3em 1em;
-		}
-
-		@include max($small) {
-			margin: 0;
-			padding: 5em 1em 3em 1em;
-			width: 100%;
-		}
-	}
-	.contacts-content {
-		width: 55em;
+	.description-content {
+		width: 54em;
 		margin: 0 26em 0 0;
-		:nth-child(3) {
-			margin: 2em 0 0 0;
-		}
-		:nth-child(4) {
-			margin: 1em 0 0 0;
-		}
 		@include max($large) {
-			margin: 0 5em 0 3em;
-			width: 45em;
-			:nth-child(3) {
-				margin: 3em 0 0 0;
-			}
-			:nth-child(4) {
-				margin: 2em 0 0 0;
+			margin: 0 3em 0 0;
+		}
+		@include max($small) {
+			margin: 0;
+		}
+		.page-title {
+			white-space: pre;
+			@include max($large) {
+				white-space: normal;
+				width: 100%;
 			}
 		}
-
-		@include max($small) {
-			width: 100%;
-			margin: 0;
-			:nth-child(1) {
-				margin: 2em 0 0 0;
+		.text-page {
+			margin: 3.6em 0 1.5em 0;
+			@include max($large) {
+				margin: 1.5em 0 1em 0;
 			}
-			:nth-child(2) {
-				margin: 3.6em 0 0 0;
-			}
-			:nth-child(3) {
-				margin: 3.6em 0 0 0;
+			@include max($small) {
+				margin: 0;
 			}
 		}
 	}

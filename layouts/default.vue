@@ -8,7 +8,6 @@
 				<Nuxt />
 			</transition>
 		</div>
-
 		<div class="footer">
 			<MyFooter />
 		</div>
@@ -17,21 +16,29 @@
 
 <script>
 function fontSize() {
-	let width = 1447; // ширина, от которой идет отсчет
+	let width = 1440; // ширина, от которой идет отсчет
 	let fontSize; // минимальный размер шрифта
 	let bodyWidth = document.documentElement.clientWidth;
-
-	if (bodyWidth <= 1200) {
+	if (bodyWidth < 320) {
+		fontSize = 285;
+	}
+	if (bodyWidth >= 320) {
+		fontSize = 285;
+	}
+	if (bodyWidth >= 576) {
+		fontSize = 159;
+	}
+	if (bodyWidth >= 768) {
 		fontSize = 119;
 	}
-	if (bodyWidth <= 576) {
-		fontSize = 245;
+	if (bodyWidth >= 992) {
+		fontSize = 92;
 	}
-	if (bodyWidth <= 320) {
-		fontSize = 290;
+	if (bodyWidth >= 1200) {
+		fontSize = 76;
 	}
-	if (bodyWidth > 1024) {
-		fontSize = 62.5;
+	if (bodyWidth >= 1400) {
+		fontSize = 63;
 	}
 	let multiplier = bodyWidth / width; // проверку убрал, пусть шрифт уменьшается если разрешение меньше 1000
 	fontSize = Math.floor(fontSize * multiplier);

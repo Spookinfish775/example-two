@@ -66,7 +66,7 @@ export default {
 		// display: block;
 		padding: 6em 1em 6em 1em;
 	}
-	h1 {
+	page-title {
 		@include max($large) {
 			padding: 0 0 1em 1em;
 		}

@@ -3,20 +3,27 @@
 		<h1 class="page-title">
 			{{ $t("mainPage.ourProducts.title") }}
 		</h1>
-		<carousel
-			:autoplay="!isTablet && !isMobile"
-			:dots="false"
-			:nav="false"
-			:autoplaySpeed="autoplayTimeoutSpeed"
-			:autoplayTimeout="autoplayTimeout"
-			:items="perView"
-			:autoplayHoverPause="true"
-			:loop="true"
-		>
-			<div v-for="(item, index) in products" :key="index" class="cards">
-				<ProductCard :data="item" :position="index % 2" />
-			</div>
-		</carousel>
+		<div class="cards-wrapper">
+			<carousel
+				:margin="stagePadding"
+				:stagePadding="stagePadding"
+				:autoplay="!isTablet && !isMobile"
+				:dots="false"
+				:nav="false"
+				:autoplaySpeed="autoplayTimeoutSpeed"
+				:autoplayTimeout="autoplayTimeout"
+				:items="perView"
+				:autoplayHoverPause="true"
+				:loop="true"
+			>
+				<ProductCard
+					v-for="(item, index) in products"
+					:key="index"
+					:data="item"
+					:position="index % 2"
+				/>
+			</carousel>
+		</div>
 	</div>
 </template>
 
@@ -31,6 +38,7 @@ export default {
 	},
 	data() {
 		return {
+			active: 0,
 			products: Products(this)
 		};
 	},
@@ -40,6 +48,19 @@ export default {
 		},
 		isMobile() {
 			return window.innerWidth <= 767;
+		},
+		stagePadding() {
+			let stagePadding;
+			if (!this.isTablet && !this.isMobile) {
+				stagePadding = 150;
+			}
+			if (this.isTablet) {
+				stagePadding = 30;
+			}
+			if (this.isMobile) {
+				stagePadding = 15;
+			}
+			return stagePadding;
 		},
 		autoplayTimeoutSpeed() {
 			let timeout;
@@ -72,26 +93,33 @@ export default {
 <style lang="scss" scoped>
 .our-produts-wrapper {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 105em;
+	padding: 5em 0 5em 0;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(180deg, #ffffff 0%, #85cbe9 100%);
 	@include max($large) {
 		background: linear-gradient(180deg, #ffffff 0%, #85cbe9 100%);
 	}
 	@include max($small) {
-		padding: 1em;
+		background: linear-gradient(180deg, #ffffff 43.25%, #85cbe9 100%);
+		min-height: 75em;
+		padding: 1.5em 0;
 	}
-	h1 {
-		margin: 3.6em 0 2.3em 3.9em;
+	.page-title {
+		margin: 0 0 0 4em;
 		@include max($large) {
-			text-align: left;
-			margin: 0 0 2em 1em;
+			margin: 0 0 0 1em;
 		}
 		@include max($small) {
-			margin: 1em 0 2em 0.5em;
+			margin: 0 0 0 0.6em;
 		}
 	}
-	.cards {
-		display: flex;
-		margin: 0 5em;
+	.cards-wrapper {
+		margin: 9em 0 0 0;
+		@include max($large) {
+			margin: 5em 0 0 0;
+		}
 	}
 }
 </style>

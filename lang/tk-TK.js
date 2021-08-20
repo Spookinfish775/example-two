@@ -200,7 +200,7 @@ export default {
     washingPowder: "kir ýuwujy serişdesi",
     oxygen: "Kislorodly agardyjy",
     soap: "gözellik sabyny",
-    more: "Maglumat",
+    more: "Has giňişleýin",
     gr400: "400gr.",
     kg3: "3kg.",
     kg6: "6kg.",

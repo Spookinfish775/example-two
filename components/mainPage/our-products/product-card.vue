@@ -7,11 +7,11 @@
 				<p class="card-text">{{ data.description }}</p>
 			</div>
 		</div>
-		<a @click="goTo" :class="`detail-button ${data.color}`">
+		<nuxt-link :to="data.link" :class="`detail-button ${data.color}`">
 			<span>
 				{{ $t("products.more") }}
 			</span>
-		</a>
+		</nuxt-link>
 	</div>
 </template>
 
@@ -37,8 +37,6 @@ export default {
 
 <style lang="scss">
 .product-card-wrapper {
-	height: 60em;
-	width: 32em;
 	&.position-1 {
 		margin: 10em 0 0 0;
 		@include max($small) {
@@ -50,10 +48,6 @@ export default {
 		height: 47em;
 		border-radius: 12em;
 		position: relative;
-		@include max($large) {
-			// text-align: left;
-			// margin: 0 0 2em 1em;
-		}
 		@include max($small) {
 			width: 28em;
 			height: 40em;
@@ -71,22 +65,10 @@ export default {
 			left: 0;
 			bottom: -1em;
 		}
-		&.blue-sky {
-			background-color: $blue-sky;
-		}
-		&.pink {
-			background-color: $pink;
-		}
-		&.purple {
-			background-color: $purple;
-		}
-		&.green {
-			background-color: $green;
-		}
 	}
 	.detail-button {
 		display: block;
-		width: 20em;
+		max-width: 23em;
 		height: 8em;
 		margin: 2.2em 0 0 0;
 		border-radius: 11.1em;
@@ -94,8 +76,8 @@ export default {
 		align-items: center;
 		justify-content: center;
 		@include max($small) {
-			width: 90%;
-			margin: 3em 1em 1em 1em ;
+			max-width: 90%;
+			margin: 3em 1em 1em 1em;
 		}
 		span {
 			font-family: "TT Hazelnuts";
@@ -113,18 +95,18 @@ export default {
 				font-size: 1.6em;
 			}
 		}
-		&.blue-sky {
-			background-color: $blue-sky;
-		}
-		&.pink {
-			background-color: $pink;
-		}
-		&.purple {
-			background-color: $purple;
-		}
-		&.green {
-			background-color: $green;
-		}
+	}
+	.blue-sky {
+		background-color: $blue-sky;
+	}
+	.pink {
+		background-color: $pink;
+	}
+	.purple {
+		background-color: $purple;
+	}
+	.green {
+		background-color: $green;
 	}
 }
 </style>

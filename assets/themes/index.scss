@@ -1,7 +1,6 @@
 @import '../fonts/Montserrat/stylesheet.css';
 @import '../fonts/TTHazelnuts/stylesheet.css';
 @import "./variables.scss";
-// @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap';
 
 @mixin max($media) {
   @media only screen and (max-width: $media) {
@@ -27,7 +26,6 @@
 
 .mobile {
   display: none;
-
   @include max($medium - 1) {
     display: block;
   }
@@ -35,7 +33,6 @@
 
 .tablet {
   display: none;
-
   @include minmax($medium, $large) {
     display: block;
   }
@@ -43,7 +40,6 @@
 
 .desctop {
   display: none;
-
   @include min($large) {
     display: block;
   }
@@ -54,6 +50,7 @@ body {
   margin: 0;
   padding: 0;
   font-style: normal;
+
   ::-webkit-scrollbar {
     display: none;
   }
@@ -97,9 +94,9 @@ p {
 .page-title {
   color: $main-color;
   font-family: "TT Hazelnuts";
-  font-size: 4em;
+  font-size: 3.8em;
   font-weight: 900;
-  line-height: 1.4em;
+  line-height: 1.2em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 
@@ -177,11 +174,11 @@ p {
   text-transform: lowercase;
 
   @include max($large) {
-    font-size: 2em;
+    font-size: 1.4em;
   }
 
   @include max($small) {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 }
 
@@ -203,5 +200,15 @@ p {
 
   50% {
     transform: translateY(-3%);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0%);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

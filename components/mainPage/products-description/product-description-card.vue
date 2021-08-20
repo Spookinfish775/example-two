@@ -2,8 +2,8 @@
 	<div class="product-description-card-wrapper">
 		<img :src="`/img/product-icon/${data.image}`" :alt="data.title" />
 		<div class="product-information">
-			<h2 class="card-title title-card">{{ data.title }}</h2>
-			<p class="card-text text-card">{{ data.description }}</p>
+			<h2 class="card-title">{{ data.title }}</h2>
+			<p class="card-text">{{ data.description }}</p>
 		</div>
 	</div>
 </template>
@@ -21,33 +21,29 @@ export default {
 
 <style lang="scss">
 .product-description-card-wrapper {
-	height: 55em;
 	width: 55em;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	.title-card {
-		letter-spacing: 0.2em;
-	}
-	.text-card {
-		font-size: 1.6em;
-		line-height: 1.8em;
+	@include max($small) {
+		padding: 0 1.5em;
 	}
 	img {
 		height: 17em;
-		margin: 0 0 4em 0;
 	}
 	.product-information {
-		h2 {
+		.card-title {
 			text-align: center;
+			letter-spacing: 0.2em;
 			color: $default-text-color;
+			margin: 1.8em 0;
 		}
-		p {
-			margin: 2.5em 0 0 0;
+		.card-text {
 			text-align: center;
 			color: $default-text-color;
 			text-transform: none;
+			line-height: 1.8em;
 		}
 	}
 }

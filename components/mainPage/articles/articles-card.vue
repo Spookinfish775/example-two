@@ -5,9 +5,7 @@
 			<div class="articles-information">
 				<h2 class="card-title">{{ data.title }}</h2>
 				<router-link :to="data.link" class="detail-button">
-					<span>
-						{{ $t("products.more") }}
-					</span>
+					{{ $t("products.more") }}
 				</router-link>
 			</div>
 		</div>
@@ -31,8 +29,6 @@ export default {
 
 <style lang="scss">
 .articles-card-wrapper {
-	width: 32em;
-	height: 46em;
 	&.position-1 {
 		margin: 10em 0 0 0;
 		@include max($small) {
@@ -41,22 +37,20 @@ export default {
 	}
 	.articles-card {
 		width: 32em;
-		height: 40em;
 		position: relative;
-		img {
-			max-width: 32em;
-			max-height: 32em;
+		@include max($small) {
+			width: 28em;
 		}
-		h2 {
-			width: 12.5em;
+		img {
+			width: 100%;
+			max-height: 30em;
 		}
 		.card-title {
 			font-family: "Montserrat";
+			margin: 1.5em 0 0.5em 0;
 		}
-	}
-	.detail-button {
-		display: block;
-		span {
+		.detail-button {
+			display: block;
 			color: $blue-sky;
 			font-family: "Montserrat";
 			font-style: normal;
