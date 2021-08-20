@@ -5,7 +5,6 @@
       <div class="blog-img"></div>
       <p class="page-text">{{ $t("blog.howWash.description") }}</p>
     </div>
-
     <div
       class="description-block"
       v-for="(item, index) in content"
