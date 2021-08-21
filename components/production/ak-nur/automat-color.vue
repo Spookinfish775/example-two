@@ -152,7 +152,7 @@ export default {
         width: 8em;
         height: 10em;
         left: 5em;
-        top: 20em;
+        top: 14em;
         animation: bubble1 linear infinite 4s;
         @include max($large) {
           display: none;
@@ -162,7 +162,7 @@ export default {
         width: 13em;
         height: 15em;
         left: 15em;
-        top: 15em;
+        top: 12em;
         animation: bubble1 linear infinite 6s;
         @include max($large) {
           display: none;
@@ -172,7 +172,7 @@ export default {
         width: 8em;
         height: 10em;
         left: 25em;
-        top: 10em;
+        top: 7em;
         animation: bubble1 linear infinite 4s;
         @include max($large) {
           display: none;

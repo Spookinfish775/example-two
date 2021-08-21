@@ -53,7 +53,7 @@ export default {
   position: relative;
   .detail-button {
     display: block;
-    max-width: 23em;
+    min-width: 15em;
     height: 8em;
     margin: 3.2em 0 0 0;
     padding: 0 1em;
@@ -63,14 +63,14 @@ export default {
     justify-content: center;
     background-color: $blue-sky;
     @include max($small) {
-      max-width: 100%;
-      margin: 1em;
+      min-width: 100%;
+      margin: 3em 0 0 0;
     }
     span {
       font-family: "TT Hazelnuts";
       font-style: normal;
       font-weight: 900;
-      font-size: 1.8em;
+      font-size: 1.4em;
       line-height: 0.8em;
       letter-spacing: 0.2em;
       text-transform: uppercase;

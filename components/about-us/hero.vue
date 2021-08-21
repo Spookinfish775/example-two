@@ -138,7 +138,7 @@ export default {
 	.description-content {
 		width: 54em;
 		margin: 0 26em 0 0;
-		@include max($large) {
+		@include max($medium) {
 			margin: 0 3em 0 0;
 		}
 		@include max($small) {

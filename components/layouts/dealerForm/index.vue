@@ -60,7 +60,9 @@
 				<label for="agree">{{ $t("form.agreePlaceholder") }}</label>
 			</div>
 			<button :disabled="!agree" type="submit" class="submit">
-				{{ $t("dealer.submitPlaceholder") }}
+				<span>
+					{{ $t("dealer.submitPlaceholder") }}
+				</span>
 			</button>
 		</form>
 	</div>
@@ -297,22 +299,39 @@ export default {
 			}
 		}
 		.submit {
-			width: 11em;
-			height: 4em;
+			display: block;
+			min-width: 15em;
+			height: 8em;
+			margin: 3.2em 0 0 0;
+			padding: 0 1em;
+			border-radius: 11.1em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			background-color: $blue-sky;
-			border: none !important;
-			padding: 0 !important;
-			border-radius: 2em;
-			color: $default-text-color;
-			font-size: 1.8em;
-			text-transform: uppercase;
-			font-weight: 900;
-			letter-spacing: 0.1em;
-			opacity: 1;
 			transition: 0.3s;
-			cursor: pointer;
 			&:disabled {
 				opacity: 0.7;
+			}
+			@include max($small) {
+				min-width: 100%;
+				margin: 3em 0 0 0;
+			}
+			span {
+				font-family: "TT Hazelnuts";
+				font-style: normal;
+				font-weight: 900;
+				font-size: 1.4em;
+				line-height: 0.8em;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				color: #ffffff;
+				@include max($large) {
+					font-size: 1.8em;
+				}
+				@include max($small) {
+					font-size: 1.6em;
+				}
 			}
 		}
 	}
@@ -363,17 +382,10 @@ export default {
 					margin-left: 0em;
 				}
 			}
-			.submit {
-				width: 12em;
-				height: 4em;
-				border-radius: 4em;
-				font-size: 2em;
-				margin: 2em 0 0 0;
-			}
 		}
 	}
 	@include max($small) {
-		padding: 15em 1em 5em 3em;
+		padding: 15em 1.5em 5em 1.5em;
 		justify-content: center;
 		align-items: flex-start;
 		.dealer-header {
@@ -422,13 +434,6 @@ export default {
 					font-size: 1.4em;
 					margin-left: 0em;
 				}
-			}
-			.submit {
-				margin-top: 2em;
-				width: 100%;
-				height: 4em;
-				border-radius: 4em;
-				font-size: 1.4em;
 			}
 		}
 	}
