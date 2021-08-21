@@ -299,39 +299,33 @@ export default {
 			}
 		}
 		.submit {
+			cursor: pointer;
 			display: block;
-			min-width: 15em;
-			height: 8em;
 			margin: 3.2em 0 0 0;
-			padding: 0 1em;
+			padding: 1.5em;
 			border-radius: 11.1em;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			background-color: $blue-sky;
+			font-family: TT Hazelnuts;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 1.8em;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: #ffffff;
 			transition: 0.3s;
 			&:disabled {
 				opacity: 0.7;
 			}
 			@include max($small) {
+				font-size: 1.6em;
 				min-width: 100%;
 				margin: 3em 0 0 0;
-			}
-			span {
-				font-family: "TT Hazelnuts";
-				font-style: normal;
-				font-weight: 900;
-				font-size: 1.4em;
-				line-height: 0.8em;
-				letter-spacing: 0.2em;
-				text-transform: uppercase;
-				color: #ffffff;
-				@include max($large) {
-					font-size: 1.8em;
-				}
-				@include max($small) {
-					font-size: 1.6em;
-				}
 			}
 		}
 	}

@@ -7,11 +7,11 @@
 				<p class="card-text">{{ data.description }}</p>
 			</div>
 		</div>
-		<nuxt-link :to="data.link" :class="`detail-button ${data.color}`">
-			<span>
+		<button :class="`detail-button ${data.color}`">
+			<nuxt-link :to="data.link">
 				{{ $t("products.more") }}
-			</span>
-		</nuxt-link>
+			</nuxt-link>
+		</button>
 	</div>
 </template>
 
@@ -67,33 +67,26 @@ export default {
 		}
 	}
 	.detail-button {
-		display: block;
-		max-width: 23em;
-		height: 8em;
+		cursor: pointer;
 		margin: 2.2em 0 0 0;
+		padding: 1.5em;
 		border-radius: 11.1em;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		@include max($small) {
-			max-width: 90%;
-			margin: 3em 1em 1em 1em;
-		}
-		span {
-			font-family: "TT Hazelnuts";
-			font-style: normal;
-			font-weight: 900;
-			font-size: 1.8em;
-			line-height: 0.8em;
-			letter-spacing: 0.2em;
-			text-transform: uppercase;
+		font-family: "TT Hazelnuts";
+		font-style: normal;
+		font-weight: 900;
+		font-size: 1.8em;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		a {
 			color: #ffffff;
-			@include max($large) {
-				font-size: 1.8em;
-			}
-			@include max($small) {
-				font-size: 1.6em;
-			}
+		}
+		@include max($small) {
+			width: 90%;
+			margin: 3em 1em 1em 1em;
+			font-size: 1.6em;
 		}
 	}
 	.blue-sky {
