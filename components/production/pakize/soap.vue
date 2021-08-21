@@ -316,6 +316,7 @@ export default {
 				opacity: 0.7;
 				transition: 0.3s;
 				&.active {
+					transform: scale(0.8);
 					opacity: 1;
 				}
 				@include max($small) {
