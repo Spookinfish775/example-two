@@ -157,6 +157,9 @@ export default {
     @include max($large) {
       flex-direction: column;
     }
+    		@include max($small) {
+			margin: 6em 0 0 0;
+		}
     .product-image {
       width: 45em;
       height: 65em;
