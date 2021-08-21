@@ -16,7 +16,7 @@ export default {
       "Päkize gözellik sabyny",
       "Kislorodly agardyjy",
     ],
-    contactsSubMenuLink: "Diller boluň",
+    contactsSubMenuLink: "Diler boluň",
     contactsSubMenuLocation: "Türkmenistan, Ahal welaýaty, Ak bugdaý etraby Änew şäheri, Telekeçiler köçesi, 14-nji jaý."
   },
   form: {
