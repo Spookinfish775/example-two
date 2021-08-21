@@ -145,7 +145,7 @@ export default {
 .dealer-wrapper {
 	width: 100%;
 	min-height: 110vh;
-	padding: 25em 12em 15em 12em;
+	padding: 25em 12em 15em 15em;
 	position: relative;
 	.dealer-header {
 		height: 10%;

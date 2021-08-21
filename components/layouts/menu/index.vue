@@ -115,7 +115,7 @@ export default {
 	justify-content: space-between;
 	align-items: center;
 	font-family: Montserrat;
-	padding: 0 10em;
+	padding: 0 5em;
 	.link-group {
 		width: 35%;
 		height: 100%;
