@@ -269,7 +269,6 @@ export default {
 			#agree + label {
 				display: inline-flex;
 				align-items: center;
-				user-select: none;
 			}
 			#agree + label::before {
 				content: "";
