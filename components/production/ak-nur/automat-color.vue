@@ -250,16 +250,18 @@ export default {
 		.product-buttons {
 			display: flex;
 			align-items: center;
-			margin: 5em 0 0 25em;
+			margin: 5em 0 0 20em;
+			width: 45em;
+			justify-content: center;
 			@include max($large) {
-				justify-content: center;
 				margin: 5em 0 5em 0;
+				width: 100%;
 			}
 
 			.button {
 				width: 7em;
 				height: 7em;
-				margin: 0 2em 0 0;
+				margin: 0 1em 0 1em;
 				cursor: pointer;
 				background-position: center;
 				background-repeat: no-repeat;

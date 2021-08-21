@@ -49,6 +49,7 @@ export default {
 			font-family: "Montserrat";
 			margin: 1.5em 0 0.5em 0;
 			font-weight: 700;
+			text-transform: none;
 		}
 		.detail-button {
 			display: block;

@@ -297,15 +297,17 @@ export default {
 			display: flex;
 			align-items: center;
 			margin: 5em 0 0 0;
+			width: 45em;
+			justify-content: center;
 			@include max($large) {
-				justify-content: center;
 				margin: 5em 0 5em 0;
+				width: 100%;
 			}
 
 			.button {
 				width: 7em;
 				height: 7em;
-				margin: 0 2em 0 0;
+				margin: 0 1em 0 1em;
 				cursor: pointer;
 				border-radius: 50%;
 				background-position: center;
