@@ -5,7 +5,7 @@ export default {
   mode: 'spa',
   target: 'server',
   head: {
-    title:"Bagtly zamana",
+    title: "Bagtly zamana",
     meta: [{
         charset: 'utf-8'
       },
@@ -16,7 +16,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || 'Хозяйственное общество «Багтлы замана» было основано в 2013 году и начало производство различных видов синтетических моющих средств и туалетного мыла в 2019 году.'
+        content: 'Хозяйственное общество «Багтлы замана» было основано в 2013 году и начало производство различных видов синтетических моющих средств и туалетного мыла в 2019 году.'
       }
     ],
     link: [{
