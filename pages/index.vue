@@ -17,6 +17,17 @@ import ProdutsDescription from "~/components/mainPage/products-description/index
 import Contacts from "~/components/mainPage/contacts.vue";
 import Articles from "~/components/mainPage/articles/index.vue";
 export default {
+	head: {
+		title: "Bagtly zamana",
+		meta: [
+			{
+				hid: "description",
+				name: "description",
+				content:
+					"Хозяйственное общество «Багтлы замана» было основано в 2013 году и начало производство различных видов синтетических моющих средств и туалетного мыла в 2019 году."
+			}
+		]
+	},
 	components: {
 		Hero,
 		Description,
