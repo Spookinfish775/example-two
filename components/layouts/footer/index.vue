@@ -84,7 +84,7 @@ export default {
         "Content-Type": "multipart/form-data",
       };
       let formData = new FormData();
-      formData.append(email, this.email);
+      formData.append('email', this.email);
       try {
         await this.$axios.post("/mailing", formData, options);
         this.email = "";
