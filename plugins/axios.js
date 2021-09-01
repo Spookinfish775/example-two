@@ -4,7 +4,7 @@ export default function ({
     i18n
   }
 }) {
-  $axios.setBaseURL(document.location.origin);
+  $axios.setBaseURL(`${document.location.origin}/api`);
   $axios.onError(error => {
     throw error
   });
