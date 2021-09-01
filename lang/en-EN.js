@@ -6,7 +6,7 @@ export default {
     aboutLink: "About",
     articlesLink: "Articles",
     contactLink: "Contacts",
-    socialLink: "We are in social media",
+    socialLink: "We are on social media",
     emailLabel: "subscribe for news and promotions",
     rightsLabel: "© 2021 ES \"Bagtly zamana\". All rights reserved.",
     langBar: "RU",
@@ -102,7 +102,7 @@ export default {
       woolenTitle: "HOW TO WASH WOOLLENS?",
       woolenDescription: "Wash wool as infrequently as possible. To get rid of odors, worn but not too dirty clothes can simply be a good airing. Minimize the amount of time in contact with water. Long pre-soaking will almost certainly cause the product to stretch. Forbidden to use spinning. After washing, remove excess water by blotting the woolen garment with a terry towel.",
       childTitle: "HOW TO WASH BABY GARMENTS?",
-      childDescription: "Wash not only dirty baby clothes, but also those that have been stored in the closet for a long time, as well as new ones before first wearing them.This way you will keep your baby safe from harmful microflora.Choosing at what temperature to wash baby clothes, guided by the maximum allowable under the manufacturer's recommendations. The hotter the water, the more microorganisms it destroys. When the cycle is complete, run the rinse cycle again. It is important not to allow detergent particles to remain in the fabric fibers. By following the tips on how to wash your clothes, you will not only achieve perfect cleanliness, but also prolong the life of the washing machine.",
+      childDescription: "Wash not only dirty baby clothes, but also those that have been stored in the closet for a long time, as well as new ones before first wearing them.This way you will keep your baby safe from harmful microflora.Choosing at what temperature to wash baby clothes, guided by the maximum allowable under the manufacturer's recommendations. The hotter the water, the more microorganisms it destroys. When the cycle is complete, run the rinse cycle again. It is important not to allow detergent particles to remain in the fabric fibers.<br/> By following the tips on how to wash your clothes, you will not only achieve perfect cleanliness, but also prolong the life of the washing machine.",
     },
     washer: {
       title: "Deep cleaning of the washing machine",
@@ -116,10 +116,10 @@ export default {
     },
     production: {
       title: "High efficiency of \"Bagtly zamana\" products",
-      descriptionOne: "The policy of Economic Society \"Bagtli zamana\" is to provide consumers with high- quality household chemistry products, and that is why all production lines at our plant are furnished with equipment from leading Italian manufacturers with many years of experience in this field and the latest technology that meets all modern environmental requirements, quality standards and health and safety requirements.",
+      descriptionOne: "The policy of Economic Society \"Bagtly zamana\" is to provide consumers with high- quality household chemistry products, and that is why all production lines at our plant are furnished with equipment from leading Italian manufacturers with many years of experience in this field and the latest technology that meets all modern environmental requirements, quality standards and health and safety requirements.",
       descriptionTwo: "All raw materials used in our production only high quality products from leading manufacturers with a worldwide reputation, which have been carefully selected according to a recipe specially developed by leading experts of the Research Institute of Household Chemistry of Russia for our enterprise.",
       descriptionThree: "Products of our manufacture effectively purify at low temperatures and at any water hardness.",
-      descriptionFour: "Our plant is continuously upgraded according to the latest environmental protection requirements, so our production are environmentally friendly and we save as much as possible on valuable resources such as water, gas and electricity.",
+      descriptionFour: "Our plant is continuously upgraded according to the latest environmental protection requirements, so our production is environmentally friendly and we save as much as possible on valuable resources such as water, gas and electricity.",
     },
     funds: {
       title: "Laundry detergents",
@@ -320,7 +320,7 @@ export default {
       },
       oxy: {
         title: "OXYGEN BLEACH AK NUR OXI ACTION 500 G.",
-        subTitle: "Intended for removing stubborn stains that detergents cannot cope with. It does not contain chlorine. Follow the washing instructions on the garmet label. ",
+        subTitle: "Intended for removing stubborn stains that detergents cannot cope with. It does not contain chlorine. Follow the washing instructions on the garment label. ",
         compount: "32% or more oxygenated bleach, not less than 5% non-ionic and anionic surfactants, TPF, optical brightener, 2% enzyme and other additives.",
         precautionaryMeasures: " Keep away from children, hazardous in the eyes and if swallowed. Do not use with chlorine-containing products. Wash hands thoroughly after use.",
         precautionaryMeasures2: "In case of contact with eyes, rinse immediately with plenty of water and seek medical advice immediately.",
@@ -334,7 +334,7 @@ export default {
         title: "AY NUR for HAND WASHING ",
         subTitle: "Intended for hand washing and laundering in washing machines of activator type, white and colored linen, clothes of cotton, linen artificial, synthetic and mixed fabrics. The product is ideal for everyday washing of clothes.",
         compount: "5-15% anionic surfactants, silicates, less than 5% phosphates, enzymes, optical brighteners, fragrance additive. ",
-        precautionaryMeasures: "Keep out of the reach of children. Keep away from foodstuffs. Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand.",
+        precautionaryMeasures: "Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water. Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand. ",
         precautionaryMeasures2: " In case of contact with eyes, rinse immediately with plenty of running water. ",
         precautionaryMeasures3: "After complete use, dispose of packaging as household waste.",
         storageConditions: "Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture.  ",
@@ -352,9 +352,9 @@ export default {
     pakize: {
       soap: {
         title: "PAKIZE BEAUTY SOAP 100 G.",
-        subTitle: "The gental formula of hygienic cosmetics delicately cleanses, disinfects and is ideal for all skin types. Toilet soap \"Pakize\" has an increased foaming, dissolves well in cold and hot water, has a good smell that will be in addition to the cosmetics that you use daily.",
-        compount: "Palm oil, coconut oil, water, perfume composition, grape seed oil, sodium chloride, titanium dioxide, sodium silicate, citric acid, dyes, EDTA,BHT, optical brightener.",
-        precautionaryMeasures: "Use for external use only; In case of contact with eyes, rinse generously with water. In case of contact with the mouth - rinse thoroughly with running water.",
+        subTitle: "The gentle  formula of hygienic cosmetics delicately cleanses, disinfects and is ideal for all skin types. Toilet soap \"Pakize\" has an increased foaming, dissolves well in cold and hot water, has a good smell that will be in addition to the cosmetics that you use daily.",
+        compount: "Palm oil, coconut oil, water, perfume composition, grape seed oil, sodium chloride, titanium dioxide, sodium silicate, citric acid, dyes, EDTA, BHT, optical brightener.",
+        precautionaryMeasures: "Use for external use only. In case of contact with eyes - rinse  generously with water. In case of contact with the mouth - rinse thoroughly with running water.",
         storageConditions: "Store at a temperature not lower than -5°С and humidity not more than 75%.",
         lavender: "Lavender",
         mint: "Mint",

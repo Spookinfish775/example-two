@@ -52,7 +52,7 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
-    ['nuxt-i18n', {
+    ['@nuxtjs/i18n', {
       strategy: 'no_prefix',
       detectBrowserLanguage: {
         useCookie: true,

@@ -17,7 +17,7 @@ export default {
       "Kislorodly agardyjy",
     ],
     contactsSubMenuLink: "Diler boluň",
-    contactsSubMenuLocation: "Türkmenistan, Ahal welaýaty, Ak bugdaý etraby Änew şäheri, Telekeçiler köçesi, 14-nji jaý."
+    contactsSubMenuLocation: "Türkmenistan, Ahal welaýaty, Ak bugdaý etraby, Änew şäheri, Telekeçiler köçesi, 14-nji jaý."
   },
   form: {
     namePlaceholder: "Ady",
@@ -48,7 +48,7 @@ export default {
       title: "Kiri dogry ýuwmagyň düzgünleri barada",
       description: "\"Önümleri nädip dogry ýuwmaly?\" diýen soragyň jogabyny olaryň belliklemesinden tapmak bolar. Egin-eşiklerdäki belliklerde elmydama olara nähili ideg etmelidigini görkezýän piktogrammalar bardyr. Önümleri kategoriýa boýunça sortlamak bilen, siz olaryň ulanyş möhletini ep-esli uzaldarsyňyz we has gowy hilli kir ýuwmagy gazanarsyňyz.",
       sortByColorTitle: "Egin-eşikleri reňkine görä sortlamak",
-      sortByColorDescription: "Ak eşikleri reňkli eşiklerden aýry ýuwmagy maslahat berýäris. Reňkli geýimleriň arasynda aşa solýanlary bolmaly däl. Olary aýratynlykda ýuwmaly. Kir ýuwulýan mahaly diffuziýa hadysasy bolup geçýär. Reňkli we ak matalar bilelikde ýuwlanda reňkli matalaryň düzümindäki reňkleýjiler we molekulalar ak matanyň düzümine girip, şol ýerde galýarlar. Ak eşikleriň ozalky görnüşini saklamak üçin şeýle eşikleri reňkli eşiklerden aýry ýuwmak maslahat berilýär.",
+      sortByColorDescription: "Ak eşikleri reňkli eşiklerden aýry ýuwmagy maslahat berýäris. Reňkli geýimleriň arasynda aşa solýanlary bolmaly däl. Olary aýratynlykda ýuwmaly. Kir ýuwulýan mahaly diffuziýa hadysasy bolup geçýär. Reňkli we ak matalar bilelikde ýuwulanda reňkli matalaryň düzümindäki reňkleýjiler we molekulalar ak matanyň düzümine girip, şol ýerde galýarlar. Ak eşikleriň ozalky görnüşini saklamak üçin şeýle eşikleri reňkli eşiklerden aýry ýuwmak maslahat berilýär.",
       sortByCompounTitle: "Önümleri düzümi boýunça sortlamak ",
       sortByCompounDescription: "Nah we kendir matalar; sintetika we garyşyk matalar; ýüň; ýüpek, ýuka we nepis matalar; jins.",
       sortByDirtTitle: "Egin-eşikleri hapalanyş derejesi boýunça sortlamak",
@@ -56,13 +56,13 @@ export default {
       choiceWashModeTitle: "Laýyk bolan kir ýuwuş düzgünini saýlamak",
       choiceWashModeDescription: "Ilki bilen önümleriňizi öndürijiniň maslahatlaryna eýeriň. Her önümde kir ýuwmagyň we sykmagyň düzgünlerini beýan edýän nyşanlary görkezilen belliklenmeler bolmaly: olaryň käbirine şu bölümde serederis.",
       washModeTitle: "Kir ýuwmagyň düzgüni",
-      washModeDescription: "Iň amatly temperatura derejeler ýa-da nokatlar bilen görkezilip bilner. Ikinji ýagdaýda bir nokat 30°C, iki nokat 40°C, üç nokat 60°C diýmegi aňladýar.",
+      washModeDescription: "Iň amatly temperatura derejeler ýa-da nokatlar bilen görkezilip biliner. Ikinji ýagdaýda bir nokat 30°C, iki nokat 40°C, üç nokat 60°C diýmegi aňladýar.",
       washTempTitle: "Belliklenme ýitirilen bolsa önümleri haýsy gyzgynlykda ýuwmaly?",
-      washTempDescription: "Aşakdaky düzgünlere eýeriň. 60 ° C-den ýokary temperaturalarda diňe berk, açyk reňkli nah we kendir matalary ýuwmak bolýar. Reňkli nah we kendir matalar üçin iň amatly temperatura 40-60 ° C-dyr. Sintetik üçin  40-50 ° C temperatura we aýlaw tizligi minutda 900 aýlawdan ýokary bolmaly däl. Näzik matalar minutda 600  aýlaw tizliginde 30-40 ° C gyzgynlykda ýuwulmaly. Ýuwmak üçin gyzgynlygy saýlanyňyzda, eşikleriň ýazgylaryndaky maslahatlara eýeriň. Bu makalada öň hem aýdylyşy ýaly, matanyň durkunyň üýtgemezligi we solmazlygy üçin eşikleriň belliklenmelerinde görkezilen nyşanlara eýermegiňizi maslahat berýäris.",
+      washTempDescription: "Aşakdaky düzgünlere eýeriň. 60 ° C-dan ýokary temperaturalarda diňe berk, açyk reňkli nah we kendir matalary ýuwmak bolýar. Reňkli nah we kendir matalar üçin iň amatly temperatura 40-60 ° C-dyr. Sintetik üçin  40-50 ° C temperatura we aýlaw tizligi minutda 900 aýlawdan ýokary bolmaly däl. Näzik matalar minutda 600  aýlaw tizliginde 30-40 ° C gyzgynlykda ýuwulmaly. Ýuwmak üçin gyzgynlygy saýlanyňyzda, eşikleriň ýazgylaryndaky maslahatlara eýeriň. Bu makalada öň hem aýdylyşy ýaly, matanyň durkunyň üýtgemezligi we solmazlygy üçin eşikleriň belliklenmelerinde görkezilen nyşanlara eýermegiňizi maslahat berýäris.",
       dryTitle: "Tebigy guratmak",
       dryDescription: "Kese çyzyk önümleri keseligine, degişlilikde dik çyzyk bolsa - dikligine guratmak zerurlygyny görkezýär. Iki çyzyk bar bolsa, bu sykman guratmagy aňladýar.",
       spinningTitle: "Kir ýuwujy maşynda sykmak we guratmak",
-      spinningDescription: "Bu nyşan önümleriň adaty maşynda ýa-da elektrik guradyjyda guradylyp biljekdigini aňladýar. Tegelekdäki nokat önümleriň 60 ° C gyzgynlykda elektrik guradyjyda, iki nokat 90 °C gyzgynlykda guradylyp bilinjekdigini aňladýar.",
+      spinningDescription: "Bu nyşan önümleriň adaty maşynda ýa-da elektrik guradyjyda guradylyp biljekdigini aňladýar. Tegelekdäki bir nokat önümleriň 60 ° C gyzgynlykda elektrik guradyjyda, iki nokat 90 °C gyzgynlykda guradylyp bilinjekdigini aňladýar.",
       ironingTitle: "Ütüklemek",
       ironingDescription: "Nokatlaryň haýsy gyzgynlygy aňladýandygyny ýatda saklamak hökman däl, ütük öndürijiler, adatça, termostatlarda şol bir bellikleri ulanýarlar. Temperatura kesgitlenmedik bolsa, bir nokat 110 ° С, iki nokat 150 ° С, üç nokat 200 ° С.",
       dryСleaningTitle: "Himiki arassalaýyş",
@@ -85,7 +85,7 @@ export default {
       dryTitle: "Guratmaklyk",
       dryDescription: "Mümkin boldugyça, guratmak üçin düşekçe daşlyklaryny daşaryda seriň. Gün şöhlesi - bu tebigy agardyjy we zyýansyzlandyryjy serişdedir. Başarsaňyz, her iki aýdan bir gezek gaýtalamagy unutmaň!",
       ironingTitle: "Ütüklemek",
-      ironingDescription: "Ýorgan-düşek daşlyklaryny elmydama ütükläň, sebäbi ütüklemek ýuwlandan soň galyp biljek iň soňky mikroblary we tozan bölejiklerini öldürmäge kömek edýär. Şeýle hem ütüklemeklik düşekleriňizi aýawly saklamaga kömek eder.",
+      ironingDescription: "Ýorgan-düşek daşlyklaryny elmydama ütükläň, sebäbi ütüklemek ýuwulandan soň galyp biljek iň soňky mikroblary we tozan bölejiklerini öldürmäge kömek edýär. Şeýle hem ütüklemeklik düşekleriňizi aýawly saklamaga kömek eder.",
       storageTitle: "Saklamak",
       storageDescription: "Täze ýuwulan düşekçe daşlyklaryny salkyn we gurak ýerde saklaň! Her iki aýdan bir gezek daşarda gün şöhlesiniň aşagynda guratmagyň artykmaçlyklary bar. Şeýle-de bolsa, daşlyklaryňyzyň täze ýaly görünmegini isleseňiz, esasanam reňkler barada aýdylanda, olaryň solmazlygy üçin göni gün şöhlesinden gorap saklaň!",
       accordTitle: "Laýyklyk",
@@ -94,15 +94,15 @@ export default {
     lifehacks: {
       title: "Kir ýuwmagyň syrlary",
       howWashTitle: "Gyşky geýimleri kir maşynda nähili ýuwmaly?",
-      howWashDescription: "Kurtkany ýuwmazdan ozal eşigiňizi daşyna çöwüriň. Ýuwmak üçin ýörite topjagazlary ýa-da tennis üçin niýetlenen 2-3 sany topy maşyna salyň. Bu kurtkanyň doldurgyjynyň tokga tutmagynyň öňüni alar. Kurtkalar we aşaky penjekler üçin ýörite programma ýok bolsa, önümi 30 ° C çenli näzik tertipde ýuwuň we ýuwlandan soň goşmaça durulamaga goýuň.",
+      howWashDescription: "Kurtkany ýuwmazdan ozal eşigiňizi daşyna çöwüriň. Ýuwmak üçin ýörite topjagazlary ýa-da tennis üçin niýetlenen 2-3 sany topy maşyna salyň. Bu kurtkanyň doldurgyjynyň tokga tutmagynyň öňüni alar. Kurtkalar we aşaky penjekler üçin ýörite programma ýok bolsa, önümi 30 ° C çenli näzik tertipde ýuwuň we ýuwulandan soň goşmaça durulamaga goýuň.",
       shoesTitle: "Aýakgaby kir maşynda nähili ýuwmaly?",
-      shoesDescription: "Krasowkalar ýa-da kedy ýaly diňe mata üstleri bolan aýakgaplary maşynda ýuwuň. Enjamy zaýalap biljek aýakgabyň aşagyndaky daşjagazlary aýyryň. Bagjyklary we peteklerini çykaryň. Olary krossowkaňyz bilen ýuwup bilersiňiz, ýöne barabanda aýratyn ýerleşdirmeli. Ýuwýan wagtyňyz aýakgabyň barabana urmazlygy üçin, uly göwrüli zatlary (meselem, köne polotensalary) bilelikde goýuň. \"Delicates\" programmasyny 30 ° C-de ulanyň, sykmaklygy we guratmagy öçüriň.",
+      shoesDescription: "Krossowkalar  ýa-da kedy ýaly diňe mata üstleri bolan aýakgaplary maşynda ýuwuň. Enjamy zaýalap biljek aýakgabyň aşagyndaky daşjagazlary aýyryň. Bagjyklary we peteklerini çykaryň. Olary krossowkaňyz bilen ýuwup bilersiňiz, ýöne barabanda aýratyn ýerleşdirmeli. Ýuwýan wagtyňyz aýakgabyň barabana urmazlygy üçin, uly göwrümli zatlary (meselem, köne polotensalary) bilelikde goýuň. \"Delicates\" programmasyny 30 ° C-da ulanyň, sykmaklygy we guratmagy öçüriň.",
       slimTitle: "Ýukajyk matalary we içki geýimleri nähili ýuwmaly?",
       slimDescription: "Has berk matalardan tikilen önümler, eger tornagyşly, seçekleri bar bolsa näzik önümlere degişlidir. Olary kir maşynda ýuwmazdan ozal, ýörite torbalara salyň. Näzik önümleriň 2-3 sanysyny bilelikde ýa-da toplumlaýyn ýuwuň, şeýle edilende olar gowy arassalanar.",
       woolenTitle: "Ýüň önümlerini nähili ýuwmaly?",
-      woolenDescription: "Ýüň önümlerini mümkin boldugyça seýrek ýuwuň. Geýlen, ýöne entek gaty hapa däl eşikleriň yslaryny  ýok etmek üçin olary gowy şemallatmak bolar. Suw bilen galtaşmagyň wagtyny minimuma getiriň.  Uzak wagtlap suwda ezip goýmaklyk eşigiň süýnmegine eltip biler. Sykmaly däl. Ýuwlandan soň  ýüň eşigi tüýli polotensa bilen siňdirip, artykmaç suwuny aýyryň.",
+      woolenDescription: "Ýüň önümlerini mümkin boldugyça seýrek ýuwuň. Geýlen, ýöne entek gaty hapa däl eşikleriň yslaryny  ýok etmek üçin olary gowy şemallatmak bolar. Suw bilen galtaşmagyň wagtyny minimuma getiriň.  Uzak wagtlap suwda ezip goýmaklyk eşigiň süýnmegine eltip biler. Sykmaly däl. ýuwulandan soň  ýüň eşigi tüýli polotensa bilen siňdirip, artykmaç suwuny aýyryň.",
       childTitle: "Çaga geýimlerini nähili ýuwmaly?",
-      childDescription: "Diňe hapa çaga eşiklerini däl, eýsem şkafda uzak wagtlap saklananlary, şeýle hem ilkinji gezek geýmezden öň täze eşikleri hem ýuwuň. Şeýlelik bilen çagaňyzy zyýanly mikrofloralardan gorarsyňyz. Çagalaryň eşiklerini haýsy temperaturada ýuwmalydygyny saýlanyňyzda, öndürijiniň maslahatlaryna laýyklykda rugsat berilýän iň ýokary gyzgynlygy saýlap alyň. Suw näçe gyzgyn bolsa, şonça-da köp mikroblary ýok eder. Ähli tapgyrlar tamamlandan soň, durulamaga gaýtadan goýuň.  Kir ýuwujy serişdesiniň bölejikleriniň matanyň süýümlerinde galmagyna ýol bermeli däldir. Egin-eşigiňizi nädip ýuwmalydygy baradaky bu maslahatlara eýerip, diňe arassaçylyk gazanman, eýsem kir ýuwujy maşynyňyzyň ömrüni hem uzaldyp bilersiňiz.",
+      childDescription: "Diňe hapa çaga eşiklerini däl, eýsem şkafda uzak wagtlap saklananlary, şeýle hem ilkinji gezek geýmezden öň täze eşikleri hem ýuwuň. Şeýlelik bilen çagaňyzy zyýanly mikrofloralardan gorarsyňyz. Çagalaryň eşiklerini haýsy temperaturada ýuwmalydygyny saýlanyňyzda, öndürijiniň maslahatlaryna laýyklykda rugsat berilýän iň ýokary gyzgynlygy saýlap alyň. Suw näçe gyzgyn bolsa, şonça-da köp mikroblary ýok eder. Ähli tapgyrlar tamamlandan soň, durulamaga gaýtadan goýuň. Kir ýuwujy serişdesiniň bölejikleriniň matanyň süýümlerinde galmagyna ýol bermeli däldir. <br/> Egin-eşigiňizi nädip ýuwmalydygy baradaky bu maslahatlara eýerip, diňe arassaçylyk gazanman, eýsem kir ýuwujy maşynyňyzyň ömrüni hem uzaldyp bilersiňiz.",
     },
     washer: {
       title: "Kir ýuwujy maşyny arassalamak",
@@ -116,7 +116,7 @@ export default {
     },
     production: {
       title: "\"Bagtly Zamananyň\" önümleriniň  ýokary netijeliligi",
-      descriptionOne: "\"Bagtly zamana\" Hojalyk jemgyýetiniň işiniň esasy maksady  sarp edijileri ýokary hilli kir ýuwujy we arassalaýjy serişdeler bilen üpjün etmekdir. Hut şonuň üçin hem  zawodymyzdaky ähli önümçilik binýady bu ugurda köp ýyllyk tejribesi bolan öňdebaryjy italýan öndürijileriniň enjamlary we häzirkizaman daşky gurşaw talaplaryna, hil standartlaryna we saglygy goramak hem-de zähmet howpsuzlygyny üpjün etmek talaplaryna laýyk gelýän iň täze tehnologiýalar bilen enjamlaşdyrylandyr.",
+      descriptionOne: "\"Bagtly zamana\" hojalyk jemgyýetiniň işiniň esasy maksady  sarp edijileri ýokary hilli kir ýuwujy we arassalaýjy serişdeler bilen üpjün etmekdir. Hut şonuň üçin hem  zawodymyzdaky ähli önümçilik binýady bu ugurda köp ýyllyk tejribesi bolan öňdebaryjy italýan öndürijileriniň enjamlary we häzirkizaman daşky gurşaw talaplaryna, hil standartlaryna we saglygy goramak hem-de zähmet howpsuzlygyny üpjün etmek talaplaryna laýyk gelýän iň täze tehnologiýalar bilen enjamlaşdyrylandyr.",
       descriptionTwo: "Önümçiligimizde ulanylýan ähli çig mallar, kärhanamyz üçin Russiýanyň Hojalyk himiýasy ylmy-barlag institutynyň hünärmenleri tarapyndan ýörite taýýarlanan reseptler esasynda saýlanan dünýädäki abraýly çig mal öndürijileriniň ýokary hilli önümleridir.",
       descriptionThree: "Kärhanamyzyň öndüren taýýar önümleri pes temperaturada we suwuň islendik gatylygynda netijeli arassalaýar.",
       descriptionFour: "Zawodymyz daşky gurşawy goramagyň iň häzirkizaman talaplaryna laýyklykda yzygiderli döwrebaplaşdyrylýar we şonuň üçin önümçiligimiz daşky gurşawymyza zyýanly däldir. Şeýle hem suw, gaz we elektrik energiýasy ýaly gymmatly çeşmeleri-de mümkin boldugyça tygşytlaýarys.",
@@ -169,8 +169,8 @@ export default {
   aboutUs: {
     hero: {
       title: "Biz arassaçylygyň aladasyny edýäris",
-      text: "\"Bagtly zamana\" hojalyk jemgyýeti 2013-nji ýylda esaslandyryldy we 2019-njy ýyldan başlap dürli görnüşli ýuwujy serişdelerini we gözellik sabynlaryny öndürip başlady. Kärhanamyz häzirki wagtda Türkmenistanda kir ýüwujy serişdeleriniň önümçiliginde öňdebaryjy kärhanalaryň biridir.",
-      text2: "Kärhananyň esasy iş ugry kir ýüwujy serişdelerini, agardyjylary we gözellik sabynlaryny öndürmekdir."
+      text: "\"Bagtly zamana\" hojalyk jemgyýeti 2013-nji ýylda esaslandyryldy we 2019-njy ýyldan başlap dürli görnüşli ýuwujy serişdelerini we gözellik sabynlaryny öndürip başlady. Kärhanamyz häzirki wagtda Türkmenistanda kir ýuwujy serişdeleriniň önümçiliginde öňdebaryjy kärhanalaryň biridir.",
+      text2: "Kärhananyň esasy iş ugry kir ýuwujy serişdelerini, agardyjylary we gözellik sabynlaryny öndürmekdir."
     },
     blueSpaceOne: {
       title: "Kärhanamyz italýan tehnologiýasy boýunça \"başnýa usulyny\" ulanmak arkaly kir ýuwujy serişdelerini öndürýän ýurdumyzdaky ýeke-täk öndürijidir.",
@@ -303,7 +303,7 @@ export default {
       automat: {
         title: "AK NUR AWTOMAT ",
         subTitle: "Nah, kendir, emeli, sintetiki we garyşyk matalardan tikilen ak we reňkli egin-eşikleri awtomatiki kir ýuwujy maşynlarda we elde ýuwmak üçin niýetlenendir. Bu serişde çalt we yzygiderli ýuwmak üçin amatlydyr. Şeýle-de ol çylşyrymly hapalaryň hem hötdesinden gelýär.",
-        compount: "5-15% anionly ÝIM (ýüzleý işjeň maddalar) fosfatlar, kislorodly agardyjy. 5% -den az ionogen däl ÝIM (ýüzleý işjeň maddalar), sabyn, enzimler, köpürjik ýatyryjylar, optiki agardyjylar, hoşboý ys beriji goşundylar.",
+        compount: "5-15% anionly ÝIM (ýüzleý işjeň maddalar) fosfatlar, kislorodly agardyjy, 5% -den az ionogen däl ÝIM (ýüzleý işjeň maddalar), sabyn, enzimler, köpürjik ýatyryjylar, optiki agardyjylar, hoşboý ys beriji goşundylar.",
         precautionaryMeasures: "Çagalaryň eli ýetip bilmejek ýerde saklamaly. Iýmit önümlerinden daşda saklamaly. Serişde göze degen halatynda bol mukdarda akar suw bilen ýuwmaly.",
         precautionaryMeasures2: "Deriniň ýokary duýujylykly we zeper ýetmeleri bolan halatynda serişde bilen dowamly galtaşykdan saklanmaly, elde ýuwulanda rezin ellikler ulanylmaly.",
         precautionaryMeasures3: "Serişde doly ulanylyp gutarylandan soňra daşky gabyny durmuş zir-zibili ýaly ýok etmeli.",
@@ -312,8 +312,8 @@ export default {
       automatColor: {
         title: "AKNUR AWTOMAT COLOR",
         subTitle: "Nah, kendir, emeli, sintetiki we garyşyk matalardan tikilen reňkli we ak egin-eşikleri awtomatiki kir ýuwujy maşynlarda we elde ýuwmak üçin niýetlenendir. Bu serişde mataňyzyň durkuny gorap, geýimiňiziň reňkiniň solmagynyň öňüni alýar. Şeýle-de ol çylşyrymly hapalaryň hem hötdesinden gelýär.",
-        compount: "5-15% anionly ÝIM (ýüzleý işjeň maddalar), silikatlar, 5% -den az ionogen ÝIM (ýüzleý işjeň maddalar), fosfatlar, polikarboksilatlar, enzimler, köpürjik ýatyryjylar, optiki agardyjylar, hoşboý ys beriji goşundylar.",
-        precautionaryMeasures: "Çagalaryň eli ýetip bilmejek ýerde saklamaly. Iýmit önümlerinden daşda saklamaly.Serişde göze degen halatynda bol mukdarda akar suw bilen ýuwmaly.",
+        compount: "5-15% anionly ÝIM (ýüzleý işjeň maddalar), silikatlar, 5% -den az ionogen däl ÝIM (ýüzleý işjeň maddalar), fosfatlar, polikarboksilatlar, enzimler, köpürjik ýatyryjylar, optiki agardyjylar, hoşboý ys beriji goşundylar.",
+        precautionaryMeasures: "Çagalaryň eli ýetip bilmejek ýerde saklamaly. Iýmit önümlerinden daşda saklamaly. Serişde göze degen halatynda bol mukdarda akar suw bilen ýuwmaly.",
         precautionaryMeasures2: "Deriniň ýokary duýujylykly we zeper ýetmeleri bolan halatynda serişde bilen dowamly galtaşykdan saklanmaly, elde ýuwulanda rezin ellikler ulanylmaly. ",
         precautionaryMeasures3: "Serişde doly ulanylyp gutarylandan soňra daşky gabyny durmuş zir-zibili ýaly ýok etmeli.",
         storageConditions: "Gaplanan serişdäni  gury otaglarda, göni gün şöhlesinden goragly, çyglylygy 95% -den ýokary bolmadyk ýerde saklamaly. Çyglylykdan goraň.",
@@ -322,7 +322,7 @@ export default {
 
         title: "\"Ak Nur Oxi Action\" kislorodly agardyjy 500 g",
         subTitle: "Kir ýuwujy serişdeleriň aýryp bilmedik kyn, çylşyrymly  hapalary we tegmilleri aýyrmak üçin niýetlenendir. Düzüminde hlor ýokdur. Agartmak üçin egin-eşiklerdäki bellikleriň gözükdirijilerine eýermeli.",
-        compount: "32% ýa-da ondan köp mukdarda düzüminde kislorodly agardyjy, iň az 5% ionogen däl we anion ÝIM (ýüzleý işjeň maddalar); TPF; optiki agardyjylar, 2% enzim we beýleki goşundylar.",
+        compount: "32% ýa-da ondan köp mukdarda düzüminde kislorodly agardyjy, iň az 5% ionogen däl we anion ÝIM (ýüzleý işjeň maddalar), TPF, optiki agardyjylar, 2% enzim we beýleki goşundylar.",
         precautionaryMeasures: "Çagalardan daşda saklamaly. Göze galtaşanda we ýuwdulanda howpludyr. Düzüminde hlor bolan serişdeler bilen bilelikde ulanmaly däl. Ulanylandan soňra eliňizi gowy edip ýuwmaly.",
         precautionaryMeasures2: "Göze degen ýagdaýynda dessine köp mukdarda suw bilen ýuwmaly we lukmana ýüz tutmaly.",
         precautionaryMeasures3: "Tötänlikde ýuwdulan ýagdaýynda köp mukdarda suw içmeli we dessine lukmana ýüz tutmaly we gabyny görkezmeli.",
@@ -356,7 +356,7 @@ export default {
         subTitle: "Gigiýeniki kosmetiki serişdäniň ýumşak formulasy deriniň ähli görnüşleri üçin ýaramlydyr we ol derini näziklik bilen arassalaýar, zyýansyzlandyrýar. \"Päkize\" gözellik sabyny ýumşak köpürjik emele getirýär, sowuk we ýyly suwda aňsatlyk bilen ereýär, ýakymly ysa eýe bolan bu gözellik sabyny gündelik ulanýan kosmetiki serişdeleriňiziň üstüni ýetirer.",
         compount: "Palma ýagy, kokos ýagy, suw, hoşboý ys berijiler, üzüm dänesiniň ýagy, natriý hloridi, titan dioksidi, natriý silikaty, limon turşusy, reňk berijiler, EDTA, BHT, optiki agardyjy.",
         precautionaryMeasures: "Diňe daşky ulanyş üçin niýetlenendir. Sabyn köpürjigi gözüňize düşen ýagdaýynda - gözüňizi arassa suw bilen ýuwuň. Agzyňyza düşen ýagdaýynda - agzyňyzy suw bilen çaýkaň.",
-        storageConditions: "-50С-den pes bolmadyk temperaturada we çyglylyk 75% -den köp bolmadyk ýerde saklamaly.",
+        storageConditions: "-5°С-dan pes bolmadyk temperaturada we çyglylyk 75% -den köp bolmadyk ýerde saklamaly.",
         lavender: "Lawanda",
         mint: "Narpyz",
         garnet: "Nar",
