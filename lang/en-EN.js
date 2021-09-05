@@ -335,7 +335,7 @@ export default {
         subTitle: "Intended for hand washing and laundering in washing machines of activator type, white and colored linen, clothes of cotton, linen artificial, synthetic and mixed fabrics. The product is ideal for everyday washing of clothes.",
         compount: "5-15% anionic surfactants, silicates, less than 5% phosphates, enzymes, optical brighteners, fragrance additive. ",
         precautionaryMeasures: "Keep out of the reach of children. Keep away from foodstuffs. In case of contact with eyes, rinse immediately with plenty of running water. Avoid prolonged contact with the product in case of hypersensitivity and skin injuries; use rubber gloves when washing by hand. ",
-        precautionaryMeasures2: " In case of contact with eyes, rinse immediately with plenty of running water. ",
+        precautionaryMeasures2: "",
         precautionaryMeasures3: "After complete use, dispose of packaging as household waste.",
         storageConditions: "Store packed powder in dry places, protect from direct sunlight, with relative air humidity not more than 95%. Keep away from moisture.  ",
       },
